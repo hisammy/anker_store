@@ -9,13 +9,6 @@
 > [Babel](http://babeljs.io/) and [BrowserSync](http://www.browsersync.io/).
 > 一套高效开发,同步现时代的最新最优实现的方案.
 
-### 相关文档
-
-  * **版本控制**
-    - [Github](https://github.com/oceanwing/anker_store_tablet/)
-
-  * **API文档**
-    - [Spree架构](http://ostx.oceanwing.com/)(账号：ostx)(密码ostanker)
 
 ### 目录布局
 
