@@ -1,0 +1,7 @@
+{
+  "name": "Member",
+  "Member": "./Member.js",
+  "Profile": "./Profile.js",
+  "private": true,
+  "version": "0.0.1"
+}

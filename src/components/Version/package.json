@@ -1,0 +1,6 @@
+{
+  "name": "Version",
+  "version": "0.0.1",
+  "main": "./Version.js",
+  "private": true
+}

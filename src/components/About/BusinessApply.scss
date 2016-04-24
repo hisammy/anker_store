@@ -1,0 +1,189 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.BusinessApply {
+  margin: 0 auto;
+  padding-top: 42px;
+  line-height: 1.5;
+  .title{
+    padding: 30px 0 0;
+    text-align:center;
+    h2 {
+      margin:0;
+      font-size: 2.4rem;
+      font-weight: 400;
+      color:$gray-dark;
+    }
+  }
+  a{
+    color: $blue;
+    text-decoration: underline;
+  }
+  .dib{display: inline-block;}
+  .hide{display:none;}
+  .fr{float:right;}
+  .tac{text-align:center;}
+  :focus{
+    outline: 0;
+  }
+  i{font-style: normal;}
+  h3{
+    font-size:16px;
+    margin: 18px 0 38px;
+  }
+  h4{
+    margin: 0 0 5px;
+    font-weight: 700;
+  }
+  ul{
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  button{
+    border: none;
+    padding: 0 15px;
+  }
+  textarea{
+    box-sizing: border-box;
+    padding: .5rem .6rem;
+    min-height: 65px;
+    border:1px solid $gray-light;
+    border-radius:5px;
+  }
+  p{
+    margin: 0 0 2px;
+  }
+  .content{
+    max-width: 580px;
+    margin: 0 auto;
+  }
+  .placeholder{
+    /*display: block;text-indent:.6rem;*/
+    color:$gray;
+  }
+  .box{
+    padding-bottom: 20px;
+    word-wrap: break-word;
+    p{
+      margin: 0 0 10px;
+    }
+  }
+  .large{
+    width: 100%;
+  }
+  .row{
+    display: table;
+    width: 100%;
+  }
+  .cell{
+    display: table-cell;
+    vertical-align: middle;
+    &.label{
+      white-space: nowrap;
+      padding-right: 10px;
+    }
+    &.text{
+      width:100%;
+    }
+  }
+  .radio-box{
+    label{
+      display:inline-block;
+      white-space: nowrap;
+      margin: 0 30px 8px 0;
+    }
+    input{
+      margin-right:5px;
+    }
+  }
+  .add-more{
+    height: 32px;
+    padding: 0 10px;
+    background: $blue;
+    color:#FFF;
+    i{
+      font-weight: 700;
+    }
+  }
+  .pad-hide{
+    @media only screen and (max-width: 768px){
+      display: none;
+    }
+  }
+  .phone-hide{
+    @media only screen and (max-width: 450px){
+      display: none;
+    }
+  }
+  .monthly-purchase{
+    @media only screen and (max-width: 450px){
+      .placeholder{
+        font-size: 0.95rem;
+      }
+    }
+    @media only screen and (max-width: 375px){
+      .placeholder{
+        font-size: 0.76rem;
+      }
+    }
+  }
+  .submit{
+    margin-right: 10px;
+    background: $blue;
+    color: #FFF;
+  }
+  .reset{
+    background:$gray;
+    color:#FFF;
+  }
+  .captcha-box{
+  }
+  .captcha{
+    display: inline-block;
+    width: 80%;
+  }
+  .captcha-img{
+    float:right;
+    height: $normal-height;
+    max-width: 90px;
+    vertical-align: top;
+  }
+  @media only screen and (max-width: 768px){
+    .cell{
+      display:block;
+      &.label{
+        white-space:normal;
+      }
+    }
+    .captcha-box{
+      text-align:left;
+      input{
+        float: left;
+      }
+      img{
+        float: right;
+      }
+      button{
+        display:table-cell;
+        width: 49%;
+        margin:0;
+        &:first-child{
+          margin-right: 2%;
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 450px){
+    .captcha{
+      width: 72%;
+    }
+  }
+  @media only screen and (max-width: 320px){
+    .captcha{
+      width: 67%;
+    }
+  }
+}

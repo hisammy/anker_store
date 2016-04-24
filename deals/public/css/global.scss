@@ -1,0 +1,16 @@
+@import "normalize.css";
+@import "iconfont/iconfont.css";
+@import "header.css";
+@import "footer.css";
+
+/* 全局样式 */
+
+html{
+  font-family:Whitney,Helvetica,Arial,sans-serif;
+  font-size:14px;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+}

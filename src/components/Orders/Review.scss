@@ -1,0 +1,100 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.Review {
+  max-width:$max-content-width;
+  margin:0 auto;
+  p,ul,li{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  .ReviewDetail{
+    margin:4.6rem 0 100px 0;
+  }
+  .orderDetailList{
+    li{
+      width:100%;
+      margin-top:1rem;
+      .orderDetail{
+        display:flex;
+        margin-bottom:1rem;
+        border:1px solid $gray-light;
+        img {
+          width:7rem;
+          height:7rem;
+        }
+        .sale{
+          margin-left:12px;
+        }
+        .orderInfo{
+          flex:1;
+          padding-left:.5rem;
+        }
+      }
+    }
+  }
+  .orderPath{
+    margin-buttom:1rem;
+    color:$gray-dark;
+    a:visited{
+      color:$gray-dark;
+    }
+    a{
+      text-decoration:underline;
+    }
+  }
+  .star{
+      text-align:center;
+      line-height:12px;
+      padding-top:2rem;
+      i{
+        font-size:2rem;
+        margin:.5rem;
+        color:$yellow;
+      }
+  }
+  .reviewContent{
+  }
+  .submit{
+    text-align:right;
+    margin:1rem;
+    a{
+      background-color:$blue;
+      text-align:center;
+      color:white;
+      display:inline-block;
+      width:25%;
+      line-height:3rem;
+      height:3rem;
+    }
+  }
+  .onStar{
+    color:#000;
+  }
+  @media screen and (max-width: 768px) {
+    .orderDetailList{
+      li{
+        .orderDetail{
+          display:block;
+          .orderInfo{
+            display:inline-block;
+          }
+        }
+      }
+    }
+    
+    .submit{
+      margin:1rem;
+      a{
+        width:100%;
+      }
+    }
+    .star{
+      margin:1rem 0;
+    }
+  }
+}
+
+

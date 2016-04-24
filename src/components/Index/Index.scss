@@ -1,0 +1,108 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.Index{
+
+  .sub-activity {
+    margin-top:4.6rem;
+    @media only screen and (max-width: 767px) {
+      margin-top:1rem;
+    }
+    .items{
+      .item{
+        @media only screen and (max-width: 639px) {
+          width:100%;
+        }
+        float:left;
+        position:relative;
+        width:50%;
+        text-decoration:none;
+        .image, .text {
+          float:left;
+          box-sizing:border-box;
+          width:50%;
+        }
+        .image {
+          overflow:hidden;
+          img {
+            transition:200ms;
+            float:left;
+            width:100%;
+          }
+        }
+        .text {
+          padding:0 4%;
+          color:$gray-dark;
+          .title {
+            margin:1rem 0;
+            font-size:2.3rem;
+          }
+          .description {
+            font-size:1.2rem;
+            margin:0;
+            float:left;
+          }
+          @media only screen and (max-width: 1080px) {
+            .title {
+              font-size:1.6rem;
+              margin:.5rem 0;
+            }
+            .description {
+              font-size:1rem;
+            }
+          }
+          @media only screen and (max-width: 767px) {
+            .title {
+              font-size:1.2rem;
+              margin:.5rem 0;
+            }
+            .description {
+              font-size:.8rem;
+            }
+          }
+        }
+        .more {
+          position:absolute;
+          left:75%;
+          margin-left:-3.8rem;
+          bottom:2rem;
+          border:1px solid $gray;
+          padding:.5rem 1rem;
+          background:white;
+          box-shadow:0 0 5px #ccc;
+          @media only screen and (max-width: 1080px) {
+            padding:.3rem .5rem;
+            bottom:1rem;
+            margin-left:-3.4rem;
+          }
+        }
+        &:nth-of-type(4n-1), &:nth-of-type(4n) {
+          .more{
+            left:25%;
+          }
+        }
+        &:hover {
+          background:$blue;
+          .text{
+            color:white;
+          }
+          .image {
+            img {
+              transform:scale(1.3);
+            }
+          }
+          .more {
+            border-color:white;
+            background:$blue;
+          }
+        }
+      }
+    }
+  }
+
+  .best-sellers {
+    min-height:12rem;
+    position:relative;
+  }
+}

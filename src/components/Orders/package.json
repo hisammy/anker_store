@@ -1,0 +1,15 @@
+{
+  "name": "order",
+  "version": "0.0.1",
+  "Orders": "./Orders.js",
+  "OrderDetail":"./OrderDetail.js",
+  "Review":"./Review.js",
+  "Shipping":"./Shipping.js",
+  "Cart": "./Cart.js",
+  "Address": "./Address.js",
+  "Delivery": "./Delivery.js",
+  "Payment": "./Payment.js",
+  "Complete": "./Complete.js",
+  "Action": "./Action.js",
+  "Coupon": "./Counpon.js"
+}

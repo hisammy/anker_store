@@ -1,0 +1,8 @@
+{
+  "name": "Product",
+  "version": "0.0.0",
+  "private": true,
+  "Variant": "./Variant.js",
+  "Search": "./Search.js",
+  "Products": "./Products.js"
+}

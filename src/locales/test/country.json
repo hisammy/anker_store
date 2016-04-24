@@ -1,0 +1,15 @@
+{
+  "title": "Anker | Choose Country",/*test comments*/
+  /*test comments*/
+  "list": [
+    {
+      "title": "Why do you have the Power User Program?",
+      "text": "<p>Power Users are individuals who not only appreciate free products, they are pioneers who enjoy testing, sharing helpful suggestions to our product, marketing, and customer service teams. They also enjoy sharing their experiences with other prospective buyers.</p>",
+    },
+    {
+      "title": "What are the Program benefits?",
+      "text": "
+      <p>Power Users will occasionally have the opportunity to get bonus gifts after helping us complete surveys.</p>",
+    },
+  ],
+}

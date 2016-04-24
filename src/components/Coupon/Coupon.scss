@@ -1,0 +1,84 @@
+@import '../variables.scss';
+
+.Coupon{
+	max-width:$max-content-width;
+  margin:0 auto;
+	&-container{
+		margin:4.6rem 0 0 0;
+		span{
+			display:inline-block;
+		}
+		h3{
+			font-size:1.2rem;
+			margin:0 0 1rem 0;
+			padding:0;
+		}
+		h3:nth-child(2){
+			margin-top:1rem;
+		}
+		.code{
+			>div{
+				width:70%;
+				display:inline-block;
+				margin-right:5%;
+			}
+			.submit{
+				width:25%;
+				vertical-align:top;
+				button{
+					width:100%;
+					background-color:$blue;
+		      color:white;
+		      border:0 none;
+		      height:3rem;
+				}
+			}
+		}
+ }
+ &-list{
+			padding:0;
+			margin-top:2rem;
+			margin-bottom:100px;
+			.used{
+				border:1px solid $gray-light;
+				background-color:$gray-light;
+				color:$gray;
+			}
+			li{
+				list-style:none;
+				margin-top:1rem;
+				border:1px solid $blue;
+				.couponName{
+					font-size:1.5rem;
+				}
+
+				a{
+					padding:.5rem;
+					position:relative;
+					display:block;
+				}
+			}
+		}
+@media screen and (max-width: 768px) {
+	h3{
+		text-align:center;
+		marin:0;
+		font-size:2rem;
+	}
+	&-container{
+		margin:2rem 1rem;
+	}
+	&-list{
+		margin:2rem 1rem;
+		li{
+			.status{
+				right:auto;
+				top:.3rem;
+				color:#3aa8e2;
+			}
+			.couponName{
+			}
+		}
+	}
+}
+}

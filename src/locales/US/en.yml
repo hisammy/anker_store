@@ -1,0 +1,108 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  the_account_does_not_exist: "Email address or password incorrect, please check. If you are member from ianker.com. Please use same Email and Register again."
+  the_account_is_incorrect: "Email address or password incorrect, please check."
+  the_password_is_incorrect: "The password is incorrect"
+  the_account_is_no_active: "This account has not been activated"
+  the_account_active_success: "This account active success"
+  the_account_active_faild: "Invalid activation code"
+  email_is_existed: "This email address has already been registered"
+  email_is_existed_subscribe: "The email address you entered is linked to an existing account. Please register with a different one."
+  email_is_not_existed: "This email address is not exist"
+  repeat_active_account_error: "You have successfully activated the account"
+  sign_up_failed: "Registration failed"
+  subscribe_faild: "Sorry, Request failed."
+  max_qty: "Sorry, the selected quantity is unavailable"
+  please_enter_a_valid_promo_code: "Promo code incorrect"
+  the_coupon_is_expired: "Promo code expired"
+  the_coupon_has_been_bound: "Promo code bound to your account"
+  product_is_not_available: "Product is not available"
+  you_have_applied_a_coupon: "You have applied a coupon"
+  promo_is_not_valid_for_sale: "The promo code is not valid for SALE/DEAL products"
+  the_coupon_has_been_removed: "The coupon has been removed"
+  promo_code_cannot_be_empty: "Promo code cannot be empty"
+  the_order_is_reviewed: "The order has been reviewed"
+  invalid_order_state: "Invalid Order Status"
+  order_had_paid: "You have already paid"
+  create_pay_button_error: "Create payment buttons failure"
+  please_enter_your_email_address: "Please enter your email address"
+  invalid_pu_apply_status: "Sorry, it's not possible to re-apply."
+  pu_apply_deficiency_params_of_country_code: "Please enter a country"
+  pu_apply_deficiency_params_of_user_name: "Please enter a username"
+  pu_apply_email_have_exist: "Sorry. Your email is currently being processed as part of the Power User application. If you haven't received notification of your application result after 3 business days then please feel free to contact marketing@anker.com."
+  pu_sample_apply_error_status: "Sorry, an error has occurred. Please contact marketing@anker.com"
+  pu_sample_apply_error_market: "Please enter a market"
+  pu_sample_apply_error_buyerid: "Please enter a buyer ID"
+  pu_sample_apply_error_gift: "Sample application invalid"
+  pu_sample_apply_error_asin: "Asin code invalid"
+  pu_sample_out_of_stock: "Sample out of stock"
+  operate_faild: "Operation failed"
+  captcha_faild: "Incorrect captcha. Please try again."
+  captcha_invalid: "Incorrect captcha. Please try again."
+  password_reset_link_invalid: "Password reset link invalid"
+  failed_to_change_password: "Password change failed"
+  invalid_old_password: "Old password incorrect"
+  third_cant_change_password: "Password cannot be changed when logged in via Facebook"
+  spree:
+    selected_quantity_not_available: ', the selected quantity of %{item} is unavailable.'
+    coupon_code_not_found: Promo code incorrect.
+    mail_methods:
+      send_welcome_mail: Send Welcome Mail
+    coupon_code_already_applied: The promo code has already been applied to this order
+    coupon_code_applied: The promo code was successfully applied to your order.
+    coupon_code_better_exists: The previously applied coupon code results in a better deal
+    coupon_code_expired: Promo code expired
+    coupon_code_max_usage: Promo code usage limit exceeded
+    coupon_code_not_eligible: This promo code is not eligible for this order
+    coupon_code_not_found: The promo code you entered doesn't exist. Please try again.
+    coupon_code_unknown_error: This promo code could not be applied to the cart at this time.
+    promotion_label: '%{name}'
+    eligibility_errors:
+      messages:
+        has_excluded_product: This promo code is not valid for one or more items in your cart.
+        item_total_less_than: This promo code is only valid for orders of at least %{amount} items (excludes sale items).
+        item_total_less_than_or_equal: This promo code is only valid for orders of more than %{amount} items (excludes sale items).
+        item_total_more_than: This promo code is not valid for orders of more than %{amount} items (excludes sale items).
+        item_total_more_than_or_equal: This promo code is only valid for orders of fewer than %{amount} items (excludes sale items).
+        limit_once_per_user: This promo code has already been redeemed.
+        missing_product: This promo code can't be redeemed because you don't have all the necessary items in your cart.
+        missing_taxon: This promo code can't be redeemed because you don't have all the necessary items in your cart.
+        no_applicable_products: This promo code is not valid for one or more items in your cart.
+        no_matching_taxons: This promo code is not valid for one or more items in your cart.
+        no_user_or_email_specified: Please log in to apply this promo code.
+        no_user_specified: Please log in to apply this promo code.
+        not_first_order: This promo code was only valid for your first order.
+    review_not_found: The review doesn't exist. Please try again.
+    promotion_rule_types:
+      variant:
+        name: Variant(s)
+        description: Order includes specified variant(s)
+    variant_rule:
+      choose_variants: Choose variants
+      label: Order must contain x amount of these variants
+      match_all: all
+      match_any: at least one
+      match_none: none
+      variant_source:
+        group: From variant group
+        manual: Manually choose

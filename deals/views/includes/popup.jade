@@ -1,0 +1,49 @@
+//- include ./includes/popup.jade
+script.
+  var config = !{JSON.stringify(config)};
+link(href="/deals/css/popup.css", rel="stylesheet")
+script(src="https://apis.google.com/js/platform.js")
+script(src="/deals/javascript/_popup.js")
+
+#popupsignup.PopupSignup
+    .PopupSignup-mask()
+      .Empty()
+      .PopupSignup-container()
+        i.close.iconfont() &#xe60d;
+        .cnt()
+          .Register()
+            .info
+              .ico
+                i.iconfont &#xe60e;
+              .text
+                h4
+                div
+            .cel.img()
+            .cel.form()
+              form()
+                ul.input()
+                  li()
+                    .input-normal()
+                      span.placeholder()
+                        span() Email Address #{config.a}
+                        i.required-flag() *
+                      input(type='email', name='email', value='', autocomplete='off')
+                  li()
+                    .input-normal.fill()
+                      span.placeholder()
+                        span() Password
+                        i.required-flag() *
+                      input(type='password', name='password', maxlength='20', value='')
+                  li()
+                    button.submit(type='submit') SUBSCRIBE
+                    p.pop-loading
+                      i.iconfont &#xe60c;
+              p.connect.tac() or connect with
+              .footer()
+                button.fb()
+                  i.iconfont() &#xe605;
+                button.gg()
+                  i.iconfont.google() &#xe601;
+              p.sign()
+                span() Already a member? 
+                a(class='login' href='/login') SIGN IN

@@ -1,0 +1,17 @@
+{
+  "about_title": "Anker | About Us",
+  "about_sub_title": "About Us",
+  "about_contents": [
+    {
+      "title": "Who We Are",
+      "terms": "<p>Anker was founded in 2009, the brainchild of a group of friends working at Google. Fast forward a few years and we’re now the industry leader in mobile power.</p>
+      <p>Our vision is to create a world where mobile truly means mobile. A world where nothing holds you back from where you want to go, or what you want to do.</p>
+      <p>Join us on the journey. Together we can create limitless, powerful possibilities.</p>"
+    },
+    {
+      "title": "What We Do",
+      "terms": "<p>At Anker, we give people the power and freedom to enjoy life’s adventures. Our range of chargers and other accessories make sure you get the most out of your mobile devices.</p>
+      <p>Explore our <a href=\"/products\">product lines</a>.</p>"
+    }
+  ]
+}

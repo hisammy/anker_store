@@ -1,0 +1,11 @@
+{
+  "activation_title": "Activation",
+  "activation_tip_title": "Activate Your Account",
+  "activation_tip_desc": "<div>Thank you for registering at anker.com</div>
+  <div>we’re excited to have you with us!</div>
+  <div>We have sent an Activation Email to below Email address.</div>
+  <div>Please open the mail to complete registration</div>",
+  "activation_resend_the_email": "Resend the Email",
+  "activation_resend_email_success": "Resend the Email Successfully.",
+  "activation_resend_email_failed": "Resend the Email Failed."
+}

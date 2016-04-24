@@ -1,0 +1,38 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/protection.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/dialog.css", rel="stylesheet")
+    link(href="/deals/css/header.css?#{verson}", rel="stylesheet")
+    script(src="/deals/javascript/fastclick.js")
+    script(src="/deals/javascript/jquery.min.js")
+    script(src="/deals/javascript/jquery.cookie.js")
+    script(src="/deals/javascript/protection.js?#{verson}")
+  body
+    include header
+    div.protection
+      div.imgItem
+        img(src="/deals/images/protection/home.jpg?#{verson}", alt='Anker').pc
+        img(src="/deals/images/protection/homemb.jpg?#{verson}", alt='Anker').moblie
+      div.login
+        p(style="font-size:16px;") Rules:
+        p 1.  Offer ends 03/25/2016.
+        p 2.  Entrants must join anker.com via a Galaxy S7 phone.
+        p 3.  SlimShell must be purchased via Anker's amazon.com store.
+        p 4.  200 coupon codes available each day at 00:00 PDT.
+        p 5.  US only.
+        div.loginDiv
+          input(type="email" id="userEmail" placeholder="Email:").emailInput
+        div
+          input(type="button" value="SIGN UP").btn
+        div.like
+          
+          a(href="https://www.facebook.com/Anker.fans" target="_blank")
+            i.iconfont &#xe605; 
+            span Like us on Facebook
+    include footer
+    include ./includes/analytics.jade
+    include ./includes/popup.jade

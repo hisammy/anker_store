@@ -1,0 +1,373 @@
+doctype html
+html
+
+  head
+    title #{title}
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css", rel="stylesheet")
+    link(href="/deals/css/audio.css", rel="stylesheet")
+    link(href="/deals/css/dialog.css", rel="stylesheet")
+    script(src="/deals/javascript/jquery.min.js")
+    script(src="/deals/javascript/jquery.cookie.js")
+    script(src="/deals/javascript/fastclick.js")
+    script(src="/deals/javascript/dialog.js")
+
+    <meta name="fb:app_id" content="#{config.FB_APP_ID}" />
+
+    <meta name="og:url" content="https://www.anker.com/deals/music_for_you" />
+    <meta name="og:title" content="#{title}" />
+    <meta name="og:description" content="Discounts on premium audio data. Prizes for you and your loved one. Ends 2/16/2015. US & UK only. Surprise your loved one with #AnkerValentines."/>
+    <meta name="og:image" content="https://www.anker.com/deals/images/audio/fb_share.jpg?201602011010" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Ankerofficial" />
+    <meta name="twitter:title" content="#{title}" />
+    <meta name="twitter:description" content="Discounts on premium audio data. Prizes for you and your loved one. Ends 2/16/2015. US & UK only. Surprise your loved one with #AnkerValentines."/>
+    <meta name="twitter:image" content="https://www.anker.com/deals/images/audio/tw_share.jpg?201602030941" />
+    <meta name="twitter:url" content="https://www.anker.com/deals/images/audio" />
+
+    script.
+      $(function() {
+
+        FastClick.attach(document.body);
+
+        //获取时间
+        day_zone();
+
+        //获取中奖信息
+        winner();
+
+        //签到
+        shareEntries('check_in');
+
+        var nick_name = localStorage.getItem('nick_name');
+        var email = localStorage.getItem('email');
+        var country_code = localStorage.getItem('country_code');
+        if($.cookie('token')) {
+          $("#step1").html(nick_name ? nick_name : email);
+        }
+        if(country_code) {
+          $("#step2").html(country_code);
+        }
+        $("#country_submit").click(function() {
+          country_code = $("#country_value").val()
+          if(country_code) {
+            localStorage.setItem('country_code', country_code);
+            $("#step2").html(country_code);
+            //签到
+            shareEntries('check_in');
+          }
+        })
+      })
+
+      var config = !{JSON.stringify(config)};
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : config.FB_APP_ID,
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+      $.getScript('//platform.twitter.com/widgets.js', function() {
+        function handleTweetEvent(event) {
+          if (event) {
+            //不论'取消'还是分享'都会返回对象，视为分享成功
+            shareEntries('twitter');
+          }
+        }
+        twttr.events.bind('tweet', handleTweetEvent);
+      });
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+      function FBShare(url) {
+        url = url || location.href;
+        FB.ui({
+          method: 'share',
+          href: url,
+        }, function (response) {
+          if(response) {
+            //不论'取消'还是分享'都会返回空数组，视为分享成功
+            shareEntries('facebook');
+          }
+        });
+      };
+
+      //分享步骤错误提示
+      function shareConfirm(event, val) {
+        ga('send', 'event', 'Valentine s Day Giveaway', 'btn_click', val);
+        if($.cookie('token') && localStorage.getItem('country_code')) {
+          if (val === 'Facebook') {
+            FBShare('https://www.anker.com/deals/music_for_you')
+          }
+          return true;
+        } else {
+          event.preventDefault();
+          event.stopPropagation();
+          dialog.confirm({
+            'content': 'Please complete previous step!'
+          }, function() {
+            //
+          }, '', 'OK');
+          return false;
+        }
+      };
+
+      //签到
+      function shareEntries(type) {
+        if($.cookie('token')) {
+          $.ajax({
+            method: "POST",
+            url: "/api/content?path=/api/deals/deals_audios/",
+            headers: {'token': $.cookie('token')},
+            contentType: 'application/json',
+            data: JSON.stringify({"action_type": type, "country_code": localStorage.getItem('country_code')}),
+            success: function(r) {
+              $('#entries').html(r.entries ? r.entries : 0);
+            },
+            complete: function(r) {
+              if(r.status === 401) logOut();
+            }
+          });
+        }
+      }
+
+      //获取中奖信息
+      function winner() {
+        $.ajax({
+          method: 'GET',
+          url: '/api/content?path=/api/deals/deals_audios/winner',
+          data: {'country_code': '#{country}'},
+          success: function(r) {
+            r.map(function(item){
+              var tmpDay = item.zone.split('-');
+              d = 'Day ' + tmpDay[0] + ' - Day ' + tmpDay[1];
+              $("#winner").append('<dd>' + d + ' : ' + item.email + '</dd>');
+            })
+          },
+          complete: function(r) {
+            if(r.status === 401) logOut();
+          }
+        })
+      };
+
+      //获取时间
+      function day_zone() {
+        $.ajax({
+          method: "GET",
+          url: "/api/content?path=/api/deals/deals_audios/day_zone",
+          contentType: 'application/json',
+          success: function(r) {
+
+            setDay(r.zone);
+            setTime($("#prize_time"), r.balance);
+
+            var title = r.zone === '1-2' ? 'SoundCore' :
+              r.zone === '3-4' ? 'SoundBuds Sport' :
+              r.zone === '5-6' ? 'Premium Stereo Bluetooth Speaker' :
+              r.zone === '7-8' ? 'Pocket Ultra Portable Bluetooth Speaker' :
+              r.zone === '9-10' ? 'SoundCore Sport' :
+              r.zone === '11-12' ? 'Portable Bluetooth Speaker' :
+              r.zone === '13-14' ? 'Portable Stereo Bluetooth Speaker' : ''
+            $("#prize_title").html(title)
+
+            var image = r.zone === '1-2' ? 'https://d2c6jjk3vnoatm.cloudfront.net/spree/products/4457/mini/A3102011_ND01.jpg?1452403642' :
+              r.zone === '3-4' ? 'https://d2c6jjk3vnoatm.cloudfront.net/spree/products/11563/mini/A3233011_TD01.jpg?1453097479' :
+              r.zone === '5-6' ? 'https://d2c6jjk3vnoatm.cloudfront.net/spree/products/1118/mini/A3143011_ND01.?1452396693' :
+              r.zone === '7-8' ? 'https://d2c6jjk3vnoatm.cloudfront.net/spree/products/10053/mini/A7910011_TD01.jpg?1452226424' :
+              r.zone === '9-10' ? 'https://d2c6jjk3vnoatm.cloudfront.net/spree/products/11217/mini/A3182011_TD01.jpg?1452403748' :
+              r.zone === '11-12' ? 'https://d2c6jjk3vnoatm.cloudfront.net/spree/products/1619/mini/A7908012_01.jpg?1452062583' :
+              r.zone === '13-14' ? 'https://d2c6jjk3vnoatm.cloudfront.net/spree/products/1598/mini/A7909011_ND01.jpg?1452062582' : ''
+            $("#prize_image").attr('src',image);
+          }
+        });
+      }
+
+      //退出
+      function logOut() {
+        $.removeCookie('token', { path: '/' });
+        localStorage.removeItem('nick_name');
+        localStorage.removeItem('email');
+        location.href=location.href;
+      }
+
+      function setDay(d) {
+        var tmpDay = d.replace(/d/g , '').split('-');
+        d = 'Day ' + tmpDay[0] + ' - Day ' + tmpDay[1];
+        $("#prize_day").html(d);
+      };
+
+      function setTime(dom, t) {
+        var tmpTime = t.split(':');
+        dom.html(tmpTime[0] + ' : ' + tmpTime[1] + ' : ' + tmpTime[2] + ' (PST)');
+        tmpTime.map(function(item) {
+          item = parseInt(item);
+        });
+        if(tmpTime[2] > 0) {
+          tmpTime[2]--;
+          if(tmpTime[2] < 10) tmpTime[2] = '0' + tmpTime[2];
+        } else {
+          tmpTime[2] = '59';
+          if(tmpTime[1] > 0) {
+            tmpTime[1]--
+            if(tmpTime[1] < 10) tmpTime[1] = '0' + tmpTime[1];
+
+            if(tmpTime[1] == 30 || tmpTime[1] == 00) {
+              //每30分钟请求一次node的时间
+              day_zone();
+              return false;
+            }
+
+          } else {
+            tmpTime[1] = '59'
+            if(tmpTime[0] > 0) {
+              tmpTime[0]--
+              if(tmpTime[0] < 10) tmpTime[0] = '0' + tmpTime[0];
+            } else {
+              tmpTime[0] = '00'
+            }
+          }
+        }
+        var newTime = tmpTime[0] + ':' + tmpTime[1] + ':' + tmpTime[2];
+        setTimeout(function() {
+          setTime(dom,newTime)
+        }, 1000);
+      };
+
+  body
+    include header
+
+    .country
+      .module-container
+        ul#country
+          li
+            a(href="/deals/music_for_you?country=#{country}") #{country}
+          li
+            a(href="/deals/music_for_you?country=#{country === 'US' ? 'UK' : 'US'}") #{country === 'US'? 'UK' : 'US'}
+
+    .content
+      .banner
+      .line
+        div
+          span
+            | Buy
+            strong 1
+            | Get
+            strong 10% OFF
+            | Code: #{data.coupon.p10}
+          span
+            | Buy
+            strong 2
+            | Get
+            strong 15% OFF
+            | Code: #{data.coupon.p15}
+      .module
+        .module-content
+          ul.master
+            each item in data.master
+              li
+                span.title #{item.name}
+                span.description #{item.description}
+                span.image
+                  img(src="#{item.image}")
+                  span.price #{item.price}
+                  span.attr
+                    each color in item.color.split(',')
+                      a(class="#{color}")
+                  a(class="#{item.link ? 'buy' : 'buy none'}", href="#{item.link ? item.link : 'javascript:void(0)'}", target="_blank") #{item.link ? 'Buy At Amazon' : 'Not Available'}
+              li.after
+          ul.sub
+            each item in data.sub
+              li
+                span.image
+                  img(src="#{item.image}")
+                span.attr
+                  each color in item.color.split(',')
+                    a(class="#{color}")
+                span.title #{item.name}
+                span.price #{item.price}
+                a(class="#{item.link ? 'buy' : 'buy none'}", href="#{item.link ? item.link : 'javascript:void(0)'}", target="_blank") #{item.link ? 'Buy At Amazon' : 'Not Available'}
+              li.after
+          div.intro
+            p 1.Add the qualifying item(s) to your cart on Amazon and enter the code at checkout. 
+            p 2.Buy 2 or more qualifying items for a 15% discount. 
+            p 3.The promotion will end once stock runs out. 
+            p 4.Please contact support@anker.com if you have any other questions.
+      .module.valentine
+        .module-name
+          span Valentine’s Day Giveaway - For You & Your Loved One
+        .module-content
+          .prize
+            .image
+              img#prize_image(src="")
+            .time
+              #prize_title.title
+              #prize_day.day
+              #prize_time.hours
+              dl.rules
+                dt RULES:
+                dd 1. Winners will be awarded two products
+                dd 2. One winner per country
+                dd 3. Open to US & UK only
+                dd 4. Each giveaway lasts 48 hours
+                dd 5. Entrants can participate once per day
+          .work
+            .title
+              | HOW IT WORKS:
+            ul.step
+              li.step1
+                .step-title
+                  .text
+                    img(src="/deals/images/audio/heart.png")
+                    p STEP 1
+                    p Log in / Register to enter
+                #step1.step-content
+                  a.red(href="/login?back=deals/music_for_you", onClick="ga('send', 'event', 'Valentine s Day Giveaway', 'btn_click', 'LOGIN')" ) LOGIN
+                  span.or
+                    span or
+                  a.blue(href="/register?back=deals/music_for_you", onClick="ga('send', 'event', 'Valentine s Day Giveaway', 'btn_click', 'REGISTER')" ) REGISTER
+              li.step2
+                .step-title
+                  .text
+                    img(src="/deals/images/audio/heart.png")
+                    p STEP 2
+                    p Select Country
+                #step2.step-content
+                  select#country_value.select
+                    option(value="") Select Country
+                    option(value="US") US
+                    option(value="UK") UK
+                  a#country_submit.red SUBMIT
+              li.step3
+                .step-title
+                  .text
+                    img(src="/deals/images/audio/heart.png")
+                    p STEP 3
+                    p Share on Facebook and/or Twitter for extra entries
+                #step3.step-content
+                  a(onCLick="shareConfirm(event, 'Facebook')")
+                    i.iconfont &#xe605;
+                    span 3 Entries Share
+                  a(onClick="shareConfirm(event, 'Twitter')", href='https://twitter.com/intent/tweet?text=%40AnkerOfficial%20%23Sale%20%23Giveaway%20on%20audio%20products%20%23AnkerValentines%20%23ValentinesDay.%20US%2FUK%20only%20http%3A%2F%2Fbit.ly%2FMusic4You', target='_blank')
+                    i.iconfont &#xe607;
+                    span 2 Entries Tweet
+          .result
+            .title
+              | RESULT:
+            .coupon
+              span.key
+                | YOUR
+                br
+                | ENTRIES
+              span#entries.value 0
+              img(src="/deals/images/audio/coupon.jpg")
+            dl#winner.list
+              dt WINNER LIST:
+
+    include footer
+    include ./includes/analytics.jade
+    include ./includes/popup.jade

@@ -1,0 +1,67 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.PressCenter {
+  .title {
+    padding: 6rem 0 2rem;
+    text-align:center;
+    font-size:3rem;
+    border-bottom:1px solid $gray;
+  }
+  .content {
+    padding: 2rem 8%;
+    min-height:12rem;
+    .press {
+      padding:0;
+      margin:0;
+      li {
+        list-style:none;
+        padding:1rem 0;
+        border-bottom:1px solid $gray-light;
+        cursor:pointer;
+        position:relative;
+        &:hover{
+          .press-title{
+            color:$blue;
+          }
+        }
+      }
+      &-title {
+        font-size:1.2rem;
+        line-height:1.8rem;
+      }
+      &-author,&-date {
+        font-size:.9rem;
+        padding-right:2rem;
+        color:$gray;
+        display:inline-block;
+        line-height:1.8rem;
+      }
+      &-content {
+
+      }
+    }
+  }
+}
+.PressDetail {
+  .content{
+    padding:4rem 5%;
+    .press-title{
+      font-size:1.6rem;
+      line-height:2.4rem;
+    }
+    .press-subtitle{
+      font-size:1.2rem;
+      color:$gray;
+      line-height:2.4rem;
+    }
+    .press-author, .press-date{
+      padding-right:2rem;
+      line-height:2.4rem;
+    }
+    .press-content{
+      margin-top:3rem;
+    }
+  }
+}

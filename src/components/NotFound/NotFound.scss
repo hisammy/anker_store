@@ -1,0 +1,11 @@
+@import '../variables.scss';
+
+.page404{
+  text-align:center;
+  padding:15rem 0;
+  background:url('../../public/404.jpg') no-repeat 50% 50%;
+  background-size:contain;
+  @media only screen and (max-width: 960px){
+  	background-size:auto 60%;
+  }
+}

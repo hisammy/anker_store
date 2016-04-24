@@ -1,0 +1,28 @@
+@import '../variables.scss';
+
+.Complete{
+  .Complete-mod{
+    text-align:center;
+    margin:10rem 0;
+    p{
+      margin:.5rem;
+      color:$blue;
+      font-weight:700;
+      font-size:3.4rem;
+    }
+    .links{
+      >a{
+        display:inline-block;
+        margin:12px 20%;
+        text-align:center;
+        line-height:2.6rem;
+        font-size:1.2rem;
+        padding:0 2rem;
+        background:$blue;
+        color:white;
+        text-align:center;
+        text-decoration:none;
+      }
+    }
+  }
+}

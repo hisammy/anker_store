@@ -1,0 +1,233 @@
+@import '../variables.scss';
+
+.Activity {
+  /*padding-bottom:2rem;*/
+  &-container {
+    /*background: white;*/
+  }
+  .banner {
+    overflow:hidden;
+    text-align: center;
+    img{
+      max-width:100%;
+    }
+  }
+  .text{
+    padding:0 10px;
+    h1{
+      margin:0;
+      padding: 12px 0;
+      font-size: 2rem;
+      font-weight: 400;
+      text-align: center;
+    }
+    .detail{
+      margin:0;
+      font-size: 1.2rem;
+      color: $gray;
+      text-align: center;
+    }
+  }
+  .share {
+    margin:0 0 20px;
+    padding-top: 12px;
+    display: block;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color: #FFF;
+    i.iconfont{
+      margin:0 5px 0 0;
+      font-size: 1.2rem;
+      line-height: 12px;
+    }
+    .item{
+      display:inline-block;
+      line-height: $input-height;
+      margin:0;
+      padding: 0 10px;
+      cursor:pointer;
+    }
+    .fb{
+      background:$facebook-blue;
+    }
+  }
+
+  .prod-list{
+    position: relative;
+    overflow: hidden;
+    min-height: 200px;
+    .wraper{
+      list-style-type:none;
+      margin:0 -1% 0 0;
+      padding: 0;
+      @media only screen and (max-width: 768px){
+        margin-right: -2%;
+      }
+    }
+    .box{
+      position:relative;
+      float:left;
+      box-sizing: border-box;
+      overflow:hidden;
+      width: 24%;
+      margin:40px 1% 0 0;
+      color:$gray;
+      @media only screen and (max-width: 768px){
+        width:48%;
+        margin-right:2%;
+      }
+      @media only screen and (max-width: 489px){
+        width:98%;
+        margin-right:2%;
+      }
+    }
+    .item{
+      cursor:pointer;
+      border:1px solid $gray-light;
+      text-decoration:none;
+      position:relative;
+      overflow:hidden;
+      a{text-decoration: none;}
+      .attr {
+        padding-top:10px;
+        text-align:center;
+        .color{
+          display:inline-block;
+          margin:0;
+          padding:0;
+          li{
+            list-style:none;
+            margin:0 3px;
+            float:left;
+            img{
+              height:12px;
+            }
+          }
+        }
+      }
+      .image{
+        position:relative;
+        text-align:center;
+        overflow:hidden;
+        img{
+          max-width:100%;
+          max-height:100%;
+        }
+      }
+      .available{
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin-left: -12px;
+        margin-top: -12px;
+        width: 12px;
+        height: 12px;
+        background: rgba(87, 87, 87, .6);
+        color: white;
+        font-size: 12px;
+        line-height: 12px;
+        border-radius:50%;
+        z-index:1;
+        display: block;
+        align-items:center;
+        text-align:center;
+        pointer-events:none;
+      }
+      .title{
+        font-size:1.2rem;
+        line-height:1.5rem;
+        height:3rem;
+        overflow:hidden;
+        margin:.6rem;
+        text-align:center;
+        color:$gray-dark;
+      }
+      .description{
+        font-size:1rem;
+        line-height:1rem;
+        height:3rem;
+        overflow:hidden;
+        margin:0 .6rem 1rem;
+        text-align:center;
+        color:$gray;
+      }
+      @media only screen and (max-width: 768px){
+        .description{
+          display:none;
+        }
+      }
+      .border{
+        position:absolute;
+        top:-1px;
+        left:50%;
+        z-index: 9;
+        width:0;
+        height:3px;
+        overflow:hidden;
+        background:$blue;
+        transition:200ms;
+      }
+      &:hover{
+        /*border-color:$blue;*/
+        /*box-shadow:0 0 5px $gray;*/
+        .border{
+          left:0;
+          width:100%;
+        }
+        .type, .price{
+          background:$blue;
+          color:#FFF;
+        }
+      }
+    }
+    .actions{
+      padding: 8px 0 0;
+      p{margin:0;}
+      .price{
+        text-align:center;
+        p{display: inline-block;}
+        .original{
+          padding-left: 1rem;
+          font-size: 1.2rem;
+          color: $gray;
+          text-decoration:line-through;
+        }
+        .paid{
+          font-size: 2rem;
+          color: #333;
+        }
+      }
+      .info{
+        padding: 8px 0;
+      }
+      .link{
+        color: $blue;
+      }
+      /*.copy{float:right;font-size: 27px;color:#272636;cursor:pointer;}*/
+      .code{
+        /*appearance:textfield;*/
+        display:inline-block;
+        font-style: normal;
+      }
+      .action{
+        display:inline-block;
+        width:100%;
+        line-height:$input-height;
+        background: $blue;
+        font-size: 1.2rem;
+        color:#FFF;
+        text-align:center;
+        text-decoration:none;
+        cursor:pointer;
+      }
+      .amazon{
+        background: $amazon-yellow;
+      }
+      .disable{
+        background:$gray;
+        cursor:not-allowed;
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/ingress.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/dialog.css", rel="stylesheet")
+    link(href="/deals/css/header.css?#{verson}", rel="stylesheet")
+    <meta name="fb:app_id" content="#{config.FB_APP_ID}" />
+
+    <meta name="og:url" content="/deals/ingress_giveaway" />
+    <meta name="og:title" content="Enter The #AnkerIngress Giveaway Here!" />
+    <meta name="og:description" content="Anker and Ingress have joined forces with a massive 300 portable charger giveaway. US only. Ends 3/20/2016." />
+    <meta name="og:image" content="/deals/images/ingress/share.jpg" />
+
+
+    script(src="https://apis.google.com/js/platform.js")
+    script(src="/deals/javascript/fastclick.js")
+    script(src="/deals/javascript/jquery.min.js")
+    script(src="/deals/javascript/jquery.cookie.js")
+    script(src="/deals/javascript/dialog.js")
+    script.
+      var config = !{JSON.stringify(config)};
+    script(src="/deals/javascript/ingress.js?#{verson}")
+  body
+    include header
+    div.ingress
+      div.banner
+        img(src="/deals/images/ingress/home.jpg?#{verson}", alt='Anker').imgpc
+        img(src="/deals/images/ingress/home.png?#{verson}", alt='Anker').imgmb
+        div.homeTips 
+          p Anker and Ingress have joined forces to keep agents on the go.
+          p 300 Astro E4 13000mAh Ingress style portable chargers up for grabs.
+          p 150 for The Resistance and 150 for The Enlightened.
+      div.bg
+        div.rule
+          div.ruleMenu
+            em Rules:
+            div.line
+          div
+            p (1) US Only.
+            p (2) Giveaway ends March 20th 24:00 PDT.
+            p (3) Winners will be emailed directly.
+            p (4) Collect tickets to enter the giveaway. 
+            p The more tickets you have, the greater your chances of winning.
+          div
+        div.share
+          div.shareMenu
+            em Collect tickets here:
+            div.line
+          div.totalTips Ticket Total
+          div.ticketPackge 
+            span.count 0
+          div 
+            div.setp1
+              span STEP 1
+              div.setp1Info
+                a#login(href="/login?back=deals/ingress_giveaway")   Log In 
+                span or 
+                a#register(href="/Register") Register
+            div.setp2
+              span STEP 2 
+              span Select Side 
+              div  
+                a.resistance Resistance 
+                span or 
+                a.enlightenment Enlightenment 
+          div
+            div.setp3
+              span STEP 3
+              div.first
+                div.setpTips Follow Anker (1 Ticket for Each)
+                div.shareBtn
+                  a(href="https://plus.google.com/114663344536204280808/posts" target="_blank")
+                    img(src="/deals/images/ingress/google.jpg").anker_google
+                  a(target="_blank" href="https://www.youtube.com/user/AnkerOceanwing")
+                    img(src="/deals/images/ingress/youtube.jpg" ).anker_youtube
+                  a(target="_blank" href="https://twitter.com/Ankerofficial")
+                    img(src="/deals/images/ingress/twitter.jpg").anker_twitter
+                  a(target="_blank" href="https://www.facebook.com/Anker.fans")
+                    img(src="/deals/images/ingress/facebook.jpg").anker_facebook
+              div.second
+                div.setpTips Follow Ingress (1 Ticket For Each)
+                div.shareBtn
+                  a(target="_blank" href="https://plus.google.com/+Ingress")
+                    img(src="/deals/images/ingress/google.jpg" ).ingress_google
+                  a(href="https://www.youtube.com/user/ingress" target="_blank")
+                    img(src="/deals/images/ingress/youtube.jpg").ingress_youtube
+                  a(href="https://twitter.com/ingress" target="_blank")
+                    img(src="/deals/images/ingress/twitter.jpg").ingress_twitter
+                  a(href="http://www.facebook.com/Ingress" target="_blank")
+                    img(src="/deals/images/ingress/facebook.jpg").ingress_facebook
+              div.three
+                div.setpTips Share on G+ (2 Tickets)
+                div.shareBtn
+                  a
+                    img(src="/deals/images/ingress/google.jpg").share_google 
+    include footer
+    include ./includes/analytics.jade
+    include ./includes/popup.jade

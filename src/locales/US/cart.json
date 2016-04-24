@@ -1,0 +1,14 @@
+{
+  "cart_title": "Anker | Cart",
+  "cart_is_empty": "Your cart is empty",
+  "shopping_cart": "Shopping Cart",
+  "price": "Price: %s",
+  "color_colon": "Color: %s",
+  "cart_quantity": "Quantity",
+  "checkout": "CHECK OUT",
+  "subtotal_colon": "Subtotal: %s",
+  "remove_item": "REMOVE ITEM",
+  "remove_item_desc": "Are you sure you want to remove this item from your cart?",
+  "no": "NO",
+  "yes": "YES"
+}

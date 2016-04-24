@@ -1,0 +1,8 @@
+{
+  "shipping_title": "Anker | Shipping",
+  "orders_orders": "Orders",
+  "orders_order": "Order: %s",
+  "delivery_method_colon": "Delivery method: %s",
+  "color_colon": "Color: %s",
+  "quantity_colon": "Quantity: %s"
+}

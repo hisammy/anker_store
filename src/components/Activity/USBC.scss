@@ -1,0 +1,375 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.USBC {
+  overflow: hidden;
+  margin: 0 auto;
+  line-height: 1.5;
+  h1 {
+    margin:0;
+    font-size: 2rem;
+  }
+  h3, h4, h5{
+    margin:0;
+  }
+  p{
+    margin:0;
+    padding:0;
+  }
+  img{
+    vertical-align: middle;
+  }
+  a{
+    color: #6f6f6f;
+    text-decoration: none;
+  }
+  :focus{
+    outline: 0;
+  }
+  .word {
+    font-style: normal;
+    white-space: nowrap;
+  }
+  .tac{
+    text-align:center;
+  }
+  .header{
+    display: block;
+    background: #17223B;
+    padding: 12px 30px;
+    text-align: left;
+    font-size: 13px;
+    a{
+      color: #ddd;
+    }
+  }
+  .banner{
+    min-height: 500px;
+    overflow: hidden;
+    background: linear-gradient(#030F2B, #030F2B 58%, #005F88 83%, #00ABDE);
+    color: #f1f1f1;
+    text-align: center;
+    font-size: 1.1rem;
+    .img{
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    h2{
+      margin: 30px 10px 0;
+      font-size: 2rem;
+      text-shadow: 0px 0px 10px #00A1D3, 0px 0px 10px #00A1D3;
+      font-weight: 100;
+    }
+    h3{
+      margin: 15px 10px 0;
+      font-size: 1.2rem;
+      text-shadow: 0px 0px 10px #00A1D3, 0px 0px 10px #00A1D3, 0px 0px 10px #00A1D3, 0px 0px 10px #0053BA, 0px 0px 10px #0053BA, 0px 0px 10px #0053BA, 0px 0px 10px #00A1D3;
+      font-weight: 400;
+    }
+    .anchors {
+      margin: 80px 0 50px;
+      a{
+        color: #BADDEC;
+        text-decoration: underline;
+      }
+    }
+    @media screen and (max-width: 768px) {
+      h2{
+        font-size:18px;
+      }
+      h3{
+        font-size: 12px;
+      }
+    }
+  }
+  .wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .nav{
+    background: linear-gradient(to bottom, #e0e0e0, #efefef 50%, #e0e0e0);
+    a{
+      position: relative;
+      display: inline-block;
+      padding: 30px 0 40px 0;
+      width: 24%;
+      white-space: normal;
+      vertical-align: top;
+      text-align: center;
+      &.active {
+        color: #53BADF;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 1px;
+        height: 100%;
+        background: radial-gradient(#666, #e0e0e0 70%);
+      }
+      &:last-child:after{
+        display: none;
+      }
+    }
+    .icon{
+      display:block;
+      width: 112px;
+      height: 116px;
+      margin: 10px auto;
+      background-repeat:no-repeat;
+      background-position:50% 50%;
+      background-size:contain;
+    }
+    .cable{
+      .icon{background-image:url(../../public/usbc/btns/cable.png);}
+    }
+    .hub{
+      .icon{background-image:url(../../public/usbc/btns/hub.png);}
+    }
+    .battery{
+      .icon{background-image:url(../../public/usbc/btns/battery.png);}
+    }
+    .charger{
+      .icon{background-image:url(../../public/usbc/btns/charger.png);}
+    }
+    h5{
+      font-size: 1.2rem;
+      font-weight:400;}
+    p{
+      margin:0;
+      padding: 0 20px;
+      color: #999;
+      font-size: 13px;
+    }
+    @media screen and (max-width: 768px){
+      a{
+        width:50%;
+        &:after{}
+      }
+      .icon{
+        width: 65px;
+        height: 68px;
+      }
+    }
+    @media screen and (max-width: 400px){
+      a{
+        width:100%;
+        &:after{
+          width: 100%;height: 1px; top: auto;bottom:0;
+        }
+      }
+    }
+  }
+
+  .products{
+    padding: 20px 10px;
+    background: #F5F5F5;
+    ul{
+      margin:0;
+      padding:0;
+      list-style-type:none;
+      margin-right: -2%;
+    }
+    li{
+      position:relative;
+      float: left;
+      box-sizing: border-box;
+      width: 23%;
+      /*min-height: 295px;*/
+      margin-right: 2%;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      /*background: #fff;
+      box-shadow: 0 0 6px #ddd;*/
+      vertical-align: top;
+      font-size: 1.1rem;
+      text-align:center;
+    }
+    img{
+      max-width:100%;
+    }
+    .img{
+      position:relative;
+      margin: 0 auto 10px;
+    }
+    .name{
+      height:40px;
+      overflow: hidden;
+      margin-bottom:5px;
+    }
+    .price{
+      margin:0;
+      min-height:1.8rem;
+    }
+    .btns{
+      display:none;
+      margin:0;
+      position:absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(220, 220, 220, .8);
+      color: #222;
+      white-space: normal;
+      text-align: left;
+      .btn{
+        position: absolute;
+        left: 5%;
+        bottom: 10px;
+        display:block;
+        width:90%;
+        margin: 0 auto;
+        line-height: $input-height;
+        background:$blue;
+        color:#FFF;
+        text-decoration:none;
+        text-align: center;
+      }
+      .amazon{
+        background: $amazon-yellow;
+      }
+    }
+    li:hover{
+      .btns{
+        display:block;
+      }
+    }
+    @media screen and (max-width: 899px){
+      li{
+        width:31.3%;
+      }
+    }
+    @media screen and (max-width: 670px){
+      li{
+        width:48%;
+      }
+    }
+    @media screen and (max-width: 400px){
+      ul{
+        margin-right:0;
+      }
+      li{
+        width:100%;
+        margin-right:0;
+      }
+    }
+  }
+
+  .more{
+    background: linear-gradient(to bottom, #00ABDE, #002E4F 40%, #030F2B);
+    padding-bottom: 100px;
+    color: #FAFDFE;
+    img{
+      max-width:100%;
+    }
+    h4{
+      padding: 20px;
+      font-weight: 600;
+      font-size: 1.6rem;
+      text-align: center;
+    }
+    #usbc {
+      background: #04102C;
+      color: #018FBA;
+    }
+    #upd {
+        background: #11365b;
+        color: #3ba8e2;
+    }
+    .desc{
+      padding: 20px 50px 0;
+      font-size: 1.3rem;
+      font-weight: 100;
+      word-break: break-word;
+      text-align:center;
+      @media screen and (max-width: 768px) {
+        padding: 20px 10px 0;
+        font-size:12px;
+      }
+    }
+    .features{
+      margin: 50px 0 0;
+      padding: 0 10px 10px;
+      list-style-type:none;
+      li{
+        display:inline-block;
+        box-sizing: border-box;
+        width:33.3%;
+        padding: 0 1rem 1rem;
+        vertical-align: top;
+        color: #ddd;
+        div{
+          display:inline-block;
+          box-sizing: border-box;
+          width:73%;
+          padding-left:20px;
+        }
+        img {
+          width: 27%;
+          margin: -8px 0 0;
+          padding:0;
+          vertical-align: top;
+        }
+        h6 {
+          margin:0;
+          font-size: 1.3rem;
+          font-weight:500;
+          color: #efefef;
+        }
+      }
+      @media screen and (max-width: 768px){
+        li{
+          font-size:12px;
+          width: 100%;
+          img{
+            max-width: 120px;
+            margin-top: 0;
+          }
+          h6{
+            font-size:16px;
+          }
+        }
+      }
+    }
+    .devices{
+      padding-top:5rem;
+      h4{
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+      ul{
+        padding: 50px 10px 0;
+      }
+      li{
+        float: left;
+        display: inline-block;
+        width: 33.3%;
+        vertical-align: top;
+        padding: 0 0 40px;
+      }
+      img {
+        float: left;
+        width: 30%;
+        min-height: 53px;
+        margin-right: 20px;
+        margin-top: -10px;
+      }
+      @media screen and (max-width: 768px){
+        li{
+          font-size:12px;
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 450px){
+        li{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

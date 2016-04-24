@@ -1,0 +1,21 @@
+{
+  "place_title": "Anker | Order Place",
+  "payment_fail": "PAYMENT FAIL",
+  "back_home": "Back HOME",
+  "check_orders": "Check Orders",
+  "cart_empty": "Cart Empty",
+  "cart_empty_desc": "You currently have no items in your cart",
+  "payment": "Payment",
+  "preorder": "Preorder",
+  "color_colon": "Color: %s",
+  "quantity_colon": "Quantity: %s",
+  "ship_by": "Ship by: %s",
+  "place_subtotal": "Subtotal:",
+  "place_shipping": "Shipping:",
+  "place_taxes": "Taxes:",
+  "place_total": "Total:",
+  "payment_method": "Payment method",
+  "payment_method_desc": "All transactions are secure and encrypted. Credit card information is never stored.",
+  "payment_method_paypal": "You will be redirected to PayPal to complete <br/>your purchase securely.",
+  "pay_with_paypal": "PAY WITH PAYPAL"
+}

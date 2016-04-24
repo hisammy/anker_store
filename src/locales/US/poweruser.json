@@ -1,0 +1,156 @@
+{
+  "pu_title": "Anker | Power Users",
+  "pu_apply_title": "Anker | Power User Application",
+  "banner_title": "POWER USERS",
+  "sub_title": "Power Users explain",
+  "banner_text": "<div>
+    <p>
+    At Anker, we’re committed to constant improvement through user feedback. Our Power User programme is one of the main ways we engage with users to learn how we can do better.
+    </p>
+    <p>
+    As a Power User, you can sign up to receive free samples of existing and pre-release products in exchange for insightful and unbiased feedback.
+    </p>
+    <p>
+    Try our products. Share your experience. Help us get it right.
+    </p>
+  </div>",
+  "sample_claimed": "SAMPLE CLAIMED",
+  "get_sample": "GET SAMPLE",
+  "apply_now": "APPLY NOW",
+  "apply_failed": "Application failed.",
+  "apply_success": "Application successful.",
+  "sample_apply": "Sample Apply",
+  "my_sample": "My Sample",
+  "ship_info": "Ship Information",
+  "address1": "Address 1",
+  "address2": "Address 2",
+  "phone": "Phone",
+  "faqs": "FAQs",
+  "faq_list": [
+    {
+      "title": "Why do you have the Power User Program?",
+      "text": "<p>At Anker, we strive to design our products from a consumer perspective with a commitment to constant improvement. The Power User Program was created so we can more directly engage with users to learn how we can do better. Particularly for our new release products, we offer a limited supply of free test samples in exchange for early feedback. This feedback helps us better gauge market response and get a head start on any areas that might need improvement. We also encourage Power Users to share their reviews publicly to help inform prospective buyers about what they can expect from new Anker products. </p>
+      <p>Power Users are individuals who not only appreciate free products, they are pioneers who enjoy testing, sharing helpful suggestions to our product, marketing, and customer service teams. They also enjoy sharing their experiences with other prospective buyers.</p>"
+    },
+    {
+      "title": "What are the Program benefits?",
+      "text": "<p>Power Users can apply for a free Anker product to review and keep up to 8 times every year (12 months from first product request). Selections will vary to reflect our product focus, but Power Users may choose according to their own interest – there is no obligation to receive or review an undesired product. </p>
+      <p>Power Users also receive regular exclusive discounts on Anker products. </p>
+      <p>Power Users will occasionally have the opportunity to get bonus gifts after helping us complete surveys.</p>"
+    },
+    {
+      "title": "What are the Program responsibilities?",
+      "text": "<p>Power Users are expected to test and provide detailed and unbiased feedback on the test sample within one week of receiving the product. If circumstances prevent a Power User from providing timely feedback, they are expected to provide advanced notice. Otherwise, delayed feedback may impact eligibility to apply for future Anker products. </p>
+      <p>Power Users are expected to help us by completing surveys that help us improve our products and brand image. </p>
+      <p>If in need of assistance during the testing, Power Users are encouraged to contact our customer support team (<a href=\"mailto:support@anker.com\">support@anker.com</a>) directly.</p>
+      "
+    },
+    {
+      "title": "Who is eligible to apply?",
+      "text": "<p>This program is not open to the public. Applicants are selected based on several criteria, including their history and helpfulness of reviews on Amazon and other sites such as YouTube, tech websites, forums, etc. Some basic requirements for application: </p>
+      <p>1. Location: </p>
+      <p>Applicants must reside in one of the following countries: the United States, the United Kingdom, Germany, Japan, Canada, France, Italy, Spain. </p>
+      <p>2. Active and helpful history:</p>
+      <p>A. For applicants in the US and UK, note that our program has grown very quickly. In order to better distribute our limited resources across diverse online communities, we are having to limit our program to applicants qualifying for the requirements below:
+      </p>
+      <p>
+      ● Comprehensive and detailed review history on amazon;<br>
+      ● Active online presence on platforms other than amazon, such as major tech websites (Top 100,000 on Alexa global rank and quality posts/threads), YouTube (at least 5000 subscribers & quality video), other forums (top 100,000 on Alexa global rank & senior member with quality posts/threads);<br>
+      ● Valid links to your amazon account, website, YouTube or forum must be provided for evaluation.</p>
+      <p>
+      B. For non-US applicants, you must have an Amazon online account with a history of high quality reviews or be an established product reviewer or tech blogger.
+      </p>
+      <p>Anker maintains full rights to judge and determine an applicant's acceptance into the Power User Program.</p>"
+    },
+    {
+      "title": "How can I join the program?",
+      "text": "<p>Please complete and submit the application form. You will receive notification of the outcome within 3 business days.</p>"
+    },
+    {
+      "title": "I'm a new Power User. How do I get started?",
+      "text": "<p>To get started, please log in and choose the product you would like to review.</p>
+      <ol>
+        <li>Log into your Power User account.</li>
+        <li>Click “POWER USERS” at the top of the page.</li>
+        <li>Select one of the products displayed. </li>
+        <li>Click “GET SAMPLE” for the product you want to review. You will receive a delivery notification from <a href=\"mailto:marketing@anker.com\">marketing@anker.com</a> within 2 business days. Please note that you may only review one product at a time. If a product shows \"SAMPLE CLAIMED\", samples for that product are no longer available.</li>
+      </ol>
+      "
+    },
+    {
+      "title": "What if I am not interested in the current product selections?",
+      "text": "<p>If none of the current products strike your fancy, please wait for an update of selection which typically occurs every couple weeks.</p>"
+    },
+    {
+      "title": "How will I be notified of new product selections?",
+      "text": "<p>If a product has limited compatibility (such a specific cell phone or laptop model battery), we will contact Power Users who have related device by email. So to receive more customized updates, please indicate your preferences, interests, and relevant devices in your application. Power Users who miss the chance to review any Anker products for 3 consecutive months can directly email <a href=\"mailto:marketing@anker.com\">marketing@anker.com</a> under the title “Power User - Product Waiting List Request” to be placed on the review waiting list.</p>"
+    }
+  ],
+  "mailto": "Problems submitting your application?
+    Send an email to <a href=\"mailto:marketing@anker.com\">marketing@anker.com</a> with the heading \"Submission Problem\" and we'll get back to you in at least three work days.
+  ",
+  "pu_flash_deal": "POWER USER FLASH DEAL",
+  "pu_apply_banner_title": "POWER USER APPLY",
+  "pu_apply_desc": "<p>
+    Please like us on Facebook or follow us on Twitter to get firsthand updates on sample selection.
+  </p>
+  <p>
+    The fields marked <i className=\"required-flag\">*</i> are required.
+  </p>",
+  "pu_apply_pu_information": "Power User Information",
+  "pu_apply_input_username": "Username",
+  "pu_apply_input_email": "Email",
+  "pu_apply_input_amazon_domain": "Your Amazon account country domain",
+  "pu_apply_input_location": "Location",
+  "pu_apply_link_to_profile": "Link to the Amazon.com user profile relevant to your review history:",
+  "pu_apply_link_to_profile_tip": "Please log in to your Amazon account, <a target=\"_blank\" href=\"%s\">go to Your Account</a> to access your profile.
+  <br/>
+  Exp: http://www.amazon.com/gp/pdp/profile/A3Q4TYJVAM4IRM",
+  "pu_apply_amazon_profile_url": "Amazon profile URL",
+  "pu_apply_review_invitations_tip": "Review invitations will be sent according to the data below:",
+  "pu_apply_include_links_tip": "I actively contribute to or participate in (please include links to your posts)",
+  "pu_apply_interests_tip": "We'd love to learn more about you so that we can offer products more relevant to your interests.",
+  "pu_apply_interested_in": "I am interested in:",
+  "pu_apply_identify_tip": "I would identify myself as a(n):",
+  "pu_apply_hear_way_tip": "How did you hear about the Power User program?",
+  "pu_fill_username": "Please enter your username.",
+  "pu_fill_amazon_market": "Please select an Amazon regional website.",
+  "pu_fill_amazon_profile_link": "Please enter a link to your Amazon profile.",
+  "pu_fill_post_links": "Please include links to your posts.",
+  "pu_participates": [
+    "YouTube channel",
+    "Tech websites or forums",
+    "Deal forums",
+    "Other social communities"
+  ],
+  "pu_interests": [
+    "USB Hubs and Adapters",
+    "Cell Phone Batteries",
+    "USB Wall/Car Chargers",
+    "Screen Protectors",
+    "Phone/Tablet Cases",
+    "Portable Chargers",
+    "Phone/Laptop Batteries",
+    "Keyboards and Mice",
+    "Audio Products",
+    "Home Products",
+    "Other"
+  ],
+  "pu_identifys": [
+    "Average consumer",
+    "Tech savvy consumer",
+    "Tech or gaming fanatic",
+    "IT expert"
+  ],
+  "pu_hear_ways": [
+    "Received a mailed invitation card",
+    "Discovered the program on the Anker website",
+    "Read about the program elsewhere online",
+    "Learned about it from a friend",
+    "Other"
+  ],
+  "pu_placeholder_gender": "Gender",
+  "pu_prefer_not_to_answer": "Prefer Not To Answer",
+  "pu_male": "Male",
+  "pu_female": "Female"
+}

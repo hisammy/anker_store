@@ -1,0 +1,70 @@
+{
+	"sec1": {
+    "slogan": "America's Leading USB Charging Brand",
+    "main_title": "How We Perfect<br> the Portable Charger",
+    "sub_title": "A 10,000-Hour Process"
+  },
+  "sec2": {
+    "title": "Industrial Design - Understated Complexity",
+    "desc": "To you, your portable charger is an everyday piece of tech for that pesky low phone battery. To us, your portable charger is the fruit of thousands of hours of labor. Our industrial designers spent months developing Anker's Power series.  Countless combinations of shapes, sizes and materials were examined. Now we're able to provide you with the safest, most compact and most durable portable charger in the world. What you should take for granted, we uphold as our guarantee to each and every customer.",
+    "list": ["Aluminum Shell", "Reinforcement Layer", "LED Power Wheel"]
+  },
+  "sec3": {
+    "title": "Not All Batteries Are Created Equal",
+    "desc": "At the heart of every portable charger is its battery. In order to deliver industry-leading charging performance, battery power and efficiency must be maximized. The Anker PowerCore series use only the highest grade lithium-ion cells in the world. And to ensure your Anker portable charger keeps going and going, the battery cells undergo a full year of longevity testing before they are ready to go inside our chargers.",
+    "list": [
+      "Charged to<br>40%-50%", "Aged for<br>1 Year", "Charged to 100%<br>at 1X Speed",
+      "Emptied to 0%<br>at 2X Speed", "Charged and Emptied<br>5 More Times over 4 Hours"
+    ]
+  },
+  "sec4": {
+    "title": "The Most Intelligent Microchips",
+    "desc": "If the battery is the heart of a portable charger, the microchip is the brain. These tiny but powerful chips communicate with their counterparts inside your mobile device to enable adaptable and dynamic charging. As is the case with our battery cells, the microchips we use are the most advanced in the world and have a fail rate of less than 1 in 500,000. That's around 50 times more reliable than regular chip components."
+  },
+  "sec5": {
+    "title": "Our Industry-Leading Technology",
+    "desc": "Our engineers spend up to 200 hours optimizing the fusion of battery cells and electrical circuitry to enable the fastest and smartest charging performance. You don't need to know the technologies behind PowerIQ, VoltageBoost and MultiProtect; you just need to know that with an Anker charger, your device will always be charged as quickly and safely as possible.",
+    "list": [
+      {"name": "PowerIQ®", "desc": "Detects your device. Delivers the fastest charge."},
+      {"name": "VoltageBoost™", "desc": "Maintains the fastest speed, whatever cable you use."},
+      {"name": "Qualcomm® Quick Charge™ 2.0", "desc": "Charges compatible devices up to 75% faster."}
+    ],
+    "faster": "Faster",
+    "safer": "Safer",
+    "sub_img": "/deals/images/10000hours/sec5/iconSecr.png",
+    "sub_desc": "MultiProtect™<br/>These chips also provide a layer of advanced safety features, which together form our unique MultiProtect™ safety system. It's like a powerful immune system that protects not just the charger itself, but also your device, your cable, and — most importantly —  you.",
+    "sub_list": [
+      "Output Current Limiter", "Battery Cell Protection", "Output Current Stabilizer", "Short Circuit Prevention", "Output Voltage Surge Protection",
+      "Temperature Control", "Input Voltage Surge Protection", "Power Overload Recovery", "Auto Shutoff Sleep Mode", "Low Voltage Protection"
+    ]
+  },
+  "sec6": {
+    "title": "The Most Comprehensive Testing",
+    "desc": "During production, our chargers must pass an exhaustive list of tests before they can leave the factory. The series of tests cover around twenty potential hazards, from fire to friction, humidity, and more. Our world-class quality control team spends hundreds of hours thoroughly examining each and every product to make sure the product you receive works every time and lasts a long time.",
+    "list": [
+      "Temperature - Endures over 143 hours of extreme temperature testing", "Shock - Vibrated in all directions for a total of 9 hours",
+      "USB Ports - Plugged and unplugged 5,000 times", "Impact - Struck repeatedly with an 18-ounce steel ball from over 4 feet"
+    ]
+  },
+  "sec7": {
+    "title": "Full Safety Approval",
+    "desc": "With the tests complete, we make sure our chargers have all the safety certifications required. We even obtain certificates not usually seen on products like these — including the U.S. Department of Energy's highest energy efficiency rating — all to ensure maximum safety, reliability and peace of mind."
+  },
+  "sec8": {
+    "title": "Signed, Sealed, Delivered",
+    "desc": "At last the charger is ready to package. This too takes time to get right. We spend hours testing each type of packaging against impacts, vibration and extreme temperatures. If both product and packaging come through completely unscathed, then we seal it up and send your Anker charger to you."
+  },
+  "sec9": {
+    "title": "The Choice of Over 10 Million Happy Users",
+    "desc": "Such excellence hasn't gone unnoticed. Anker chargers have been praised by leading tech bloggers, featured in international news media and voted best-in-class by countless online reviewers. <br>Here's what they have to say:",
+    "list": [
+      {"user": "9TO5Mac", "comment": "As a design judge and tester of literally thousands of Apple accessories, it's very clear to me that Anker really knows what it's doing."},
+      {"user": "9TO5Mac", "comment": "I was a lot more impressed by Astro E7 than I'd expected to be: from its eco-conscious packaging to the charging performance and build quality, Anker is the real deal."},
+      {"user": "The Wirecutter", "comment": "Anker is a company that has built a strong reputation in the mobile-accessory field with well-designed products that often work better than the competition, usually at lower prices."},
+      {"user": "GottaBeMobile", "comment": "Anker is one of the best, and have high quality battery cells that will last, and actually hold a steady charge."}
+    ]
+  },
+  "sec10": {
+    "desc": "Take a look at our newest collection - The Power Series:"
+  }
+}

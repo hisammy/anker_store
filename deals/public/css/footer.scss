@@ -1,0 +1,93 @@
+
+/* 底部样式 */
+
+.Footer {
+  background:#3d3938;
+  font-size: 0.9rem;
+  line-height:1.4rem;
+  padding:2rem 0;
+  color:white;
+  a{
+    color:white;
+  }
+  .module-container {
+    width:100%;
+    padding:0;
+  }
+  .table{
+    display:block;
+    .cell{
+      display:block;
+    }
+  }
+  .contact{
+    text-align:center;
+    float:none;
+    max-width:100%;
+    padding: 0 1rem;
+    h4{
+      display:none;
+    }
+    .tels{
+      line-height:1.5rem;
+      >div{
+        margin:0;
+      }
+    }
+    .email{
+      margin-top:1rem;
+    }
+    p{
+      display:inline-block;
+      margin:0 .5rem;
+    }
+  }
+
+  .follow {
+    text-align:center;
+    float:none;
+    display:inline-block;
+    width:100%;
+    padding:0;
+    margin-bottom:2rem;
+    h3{
+      font-size:1.8rem;
+      font-weight:400;
+    }
+    a{
+      display:inline-block;
+      margin:0 .5rem;
+      span{
+        display:none;
+      }
+      .iconfont{
+        font-size:1.8rem;
+        display:block;
+        float:left;
+        color:#FFF;
+        &.google{
+          font-size:2.8rem;
+        }
+      }
+    }
+  }
+
+  .sub{
+    .copyright{
+      text-align:center;
+      float:none;
+    }
+    .country{
+      margin-top:1.5rem;
+      display:block;
+      width:100%;
+      text-align:center;
+      a{
+        float:none;
+        img{
+          float:none;
+        }
+      }
+    }
+  }
+}

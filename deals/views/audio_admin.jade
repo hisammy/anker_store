@@ -1,0 +1,131 @@
+doctype html
+html
+
+  head
+    title #{title}
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css", rel="stylesheet")
+    link(href="/deals/css/audio_admin.css", rel="stylesheet")
+    script(src="/deals/javascript/jquery.min.js")
+    script(src="/deals/javascript/jquery.cookie.js")
+    script(src="/deals/javascript/jquery.cookie.js")
+    script.
+      $(function() {
+
+        all_entreis('US', '1-2');
+
+        var tabs = $(".tabs a"), pannel = $(".contents .module");
+        tabs.click(function() {
+          var country = tabs.index($(this));
+          pannel.eq(country).addClass('cur').siblings().removeClass('cur');
+          tabs.eq(country).addClass('cur').siblings().removeClass('cur');
+        })
+
+        $(".day_select").change(function() {
+          all_entreis($(".day_country").val(), $(this).val());
+        })
+
+        $(".day_country").change(function() {
+          all_entreis($(this).val(), $(".day_select").val());
+        })
+
+      })
+
+      //获取所有用户entries
+      function all_entreis(country_code, zone) {
+        $.ajax({
+          method: 'GET',
+          url: '/api/content?path=/api/deals/deals_audios/all_entries',
+          headers: {'token': $.cookie('token')},
+          data: {"country_code": country_code, "zone":zone},
+          success: function(result) {
+            var dom = $("#prize");
+            dom.html("<tr><th>Email</th><th>Country</th><th>ENTRIES</th><th>中奖操作</th></tr>");
+            for (i in result) {
+              dom.append("<tr><td>" + result[i].email + "</td><td>" + result[i].entries + "</td><td>" + country_code + "</td><td><a onClick=\"add_winner(\'" + country_code + "','" + zone + "\',\'" + result[i].user_id + "\')\">设置中奖</a></td></tr>")
+            }
+          }
+        })
+      };
+
+      //提交某个时间段中奖用户
+      function add_winner(country_code, zone, user_id) {
+        if(confirm('确定') ) {
+          $.ajax({
+            method: "PUT",
+            url: "/api/content?path=/api/deals/deals_audios/add_winner",
+            headers: {'token': $.cookie('token')},
+            contentType: 'application/json',
+            data: JSON.stringify({"country_code":country_code, "zone": zone ,"user_id": user_id}),
+            success: function(r) {
+              console.info(r);
+            }
+          });
+        }
+      }
+
+  body
+    include header
+
+    .content
+      .tabs
+        a.cur 参与名单
+        a 设置商品
+      .contents
+        .module.cur
+          .country
+            span Country 
+            select.day_country
+              option US
+              option UK
+          .days
+            span Days
+            select.day_select
+              each item in days
+                option #{item}
+          .list
+            table#prize.prize
+              tr
+                th Email
+                th Country
+                th ENTRIES
+                th 中奖操作
+
+        .module
+          form.products
+            each json, country in data
+              .list
+                h3 #{country}
+
+                h4 Counpon
+                table.coupon
+                  tr
+                    each key, val in json.coupon
+                      th #{val}
+                      td
+                        input(type="text", name="#{country}[coupon][#{val}]" ,value="#{key}")
+
+                h4 master
+                .master
+                  each number, index in json.master
+                    h5 products#{index + 1}
+                    table
+                      each key, val in number
+                        tr
+                          th #{val}
+                          td
+                            input(type="text", name="#{country}[master][#{index}][#{val}]", value="#{key}")
+                h4 sub
+                .sub
+                  each number, index in json.sub
+                    h5 products#{index + 1}
+                    table
+                      each key, val in number
+                        tr
+                          th #{val}
+                          td
+                            input(type="text", name="#{country}[sub][#{index}][#{val}]", value="#{key}")
+            .submit
+              input(id="submit",type="submit",value="发布")
+    
+    include footer

@@ -1,0 +1,113 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/powerHouse.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/header.css?#{verson}", rel="stylesheet")
+
+
+    script(src="/deals/javascript/fastclick.js")
+    script(src="/deals/javascript/jquery.min.js")
+    script(src="/deals/javascript/jquery.cookie.js")
+    script.
+      var config = !{JSON.stringify(config)};
+      var inviter_code1 = "!{invitation_code}";
+      var nowDate = !{nowDate};
+    script(src="/deals/javascript/powerHousedetail.js?#{verson}")
+  body
+    include header
+    div.powerhouse
+      .page1(style="display:#{invitation_code?'block':'none'}")
+        div.banner1
+          img(src="/deals/images/powerHouse/home2.jpg?#{verson}", alt='Anker').imgpc
+          div.userTips 
+            div
+              div
+                h4 POWERHOUSE IS HERE
+                div.tips1
+                  p(style="font-size:16px") The World's Most Advanced 400Wh Portable Power Supply
+
+                  p(style="margin-top:1.2rem") 
+                    span Preorder Now for 
+                    span(style="color:#00a8de")$399 
+                    span(style="text-decoration: line-through;font-size:14px") $499
+                  p 
+                    span Using Code: 
+                    span(style="color:#00a8de") ANKPower
+
+
+                div(style="display:none").invitation
+                  input(type="text" readOnly="true").input#invitation_code
+                div.share
+                  a(href="http://www.amazon.com/Anker-PowerHouse-Generator-Recharges-Emergency/dp/B0196GQAKM/ref=sr_1_1?ie=UTF8&qid=1461042780&sr=8-1&keywords=anker+powerhouse&tag=ianker-20" target="_blank" style="background-color:#F9A706;").sharebtn.facebook#facebookShare 
+                    span Buy at Amazon
+        .registcount
+          h3.title Thank you for participating - here are your final results:
+          div#registLine
+            .setup
+              .line
+            .index
+              div 5
+              div 
+                div 20W 2-Port 
+                div Wall Charger
+                img(src="/deals/images/powerHouse/20w.jpg?#{verson}")
+            .index
+              div 10
+              div Astro E1
+              img(src="/deals/images/powerHouse/E1.jpg?#{verson}")
+            .index
+              div 30
+              div PowerCore 20100 
+              img(src="/deals/images/powerHouse/20100.jpg?#{verson}")
+            .index
+              div 100
+              div 
+                div PowerHouse 
+                div(style="width:7rem") (Worth $500)
+              img(src="/deals/images/powerHouse/powerhouse.png?#{verson}")
+            .start
+              div 
+                span FRIENDS 
+                span JOINED
+              div 
+                span ANKER'S 
+                span PRODUCT
+          div.noDate 
+            p.dataCount 
+              span Winners will be contacted via email between 
+              span(style="color:#00a8de") April 19th - April 22nd.
+            p 
+              span If you have any questions about the event, please contact 
+              span(style="color:#00a8de") marketing@anker.com.
+            p 
+              span For questions about our products get in touch with 
+              span(style="color:#00a8de") support@anker.com.
+        div.time
+          div
+            div.countdown
+              h3 Time Remaining: 
+                span(style="#{days}"==1 ?"display:none":"") 
+              div
+                div#hours 000
+                div HOURS
+              div
+                div#minutes 00
+                div MINUTES
+              div
+                div#seconds 00
+                div SECONDS
+            .rule
+              h3 Rules:
+              ul
+                li Participants will only receive the top reward for their level of referrals.
+                li Valid until April 18th, 2016 or until stock lasts
+                li Successful participants will have their reward confirmed via email between  April 19th - April 22nd.
+                li Anker reserves the right of final explanation to the giveaway.
+                li Only one sign-up per person counts.
+                li If your account is suspected of using fake referrals, we will consider this cheating and all referrals will be removed.
+                li US only
+    include footer
+    include ./includes/analytics.jade

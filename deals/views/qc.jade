@@ -1,0 +1,348 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/qc.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/dialog.css", rel="stylesheet")
+    link(href="/deals/css/header.css?#{verson}", rel="stylesheet")
+    <meta name="fb:app_id" content="#{config.FB_APP_ID}" />
+
+    <meta name="og:url" content="/deals/anker_qc/#{country}" />
+    <meta name="og:title" content="Anker Quick Charge Revolution" />
+    <meta name="og:description" content="28 smartphones up for grabs and discounts on the latest Qualcomm Quick Charge gear. Join the Anker Quick Charge Revolution now: http://bit.ly/FBAnkerQCR US, UK, Germany and Japan only."/>
+    <meta name="og:image" content="/deals/images/qc/fbShare.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Ankerofficial" />
+    <meta name="twitter:title" content="Anker Quick Charge Revolution" />
+    <meta name="twitter:description" content="#Win 1 of 28 smartphones in @AnkerOfficial’s #Giveaway! Open to US, UK, DE & Japan http://bit.ly/QCRevo #AnkerQCR"/>
+    <meta name="twitter:image" content="/deals/images/qc/twShare.jpg" />
+    <meta name="twitter:url" content="/deals/anker_qc" />
+
+    script(src="/deals/javascript/fastclick.js")
+    script(src="/deals/javascript/jquery.min.js")
+    script(src="/deals/javascript/jquery.cookie.js")
+    script(src="/deals/javascript/dialog.js")
+    script.
+      var config = !{JSON.stringify(config)};
+      var selectCountry = "#{isSelectCountry}";
+      var lang = !{JSON.stringify(lang)};
+      var dayIndex = "#{dayIndex}";
+      $(function(){
+        $("#head-menu").click(function(){
+          $("#head-container").toggleClass('show');
+        })
+        $("#head-mask").click(function(){
+          $("#head-container").toggleClass('show');
+        })
+      })
+       function chageURL(obj){
+        var $this = $(obj);
+        var array = ["PowerCore+ 10050","PowerCore+ 26800 & PowerPort+ 1"];
+        if(selectCountry.toUpperCase() =="US" || !selectCountry){
+          if(array.indexOf($this.parent().parent().attr("charegtype"))>=0){
+            var url = $this.attr("chargerUrl");
+            $this.attr("href",url+"&qid="+Math.round(new Date().getTime()/1000-60));
+          }
+        }
+      }
+    script(src="/deals/javascript/qc.js?#{verson}")
+  body
+    div.Header.clearfix.close
+      div.registerTips
+      .Header-fixed
+        .navigator
+          #head-container.module_container
+            a.logo(href='/')
+              img(src="/deals/images/logo.png?#{verson}", alt='Anker')
+            a#head-menu.menu
+              i.iconfont &#xe60b;
+            ul.list
+              li
+                a(href='/') #{lang.home}
+                i.iconfont &#xe60a;
+              li
+                a(href='/products') #{lang.products}
+                i.iconfont &#xe60a;
+              li.search
+                a(href='/search') #{lang.search}
+                i.iconfont &#xe60a;
+              li
+                a(href='/poweruser') #{lang.powerUsers}
+                i.iconfont &#xe60a;
+              li
+                a(href='/support') #{lang.support}
+                i.iconfont &#xe60a;
+            #head-mask.mask
+    .country
+      .module-container
+        ul#country
+          li
+            a #{country}
+          li(style="display:#{country=='US'?'none':'list-item'}")
+            a(href="/deals/anker_qc/us") US
+          li(style="display:#{country=='UK'?'none':'list-item'}")
+            a(href="/deals/anker_qc/uk") UK
+          li(style="display:#{country=='DE'?'none':'list-item'}")
+            a(href="/deals/anker_qc/de") DE
+          li(style="display:none")
+            a(href="/deals/anker_qc/jp") JP
+    div.qc
+      div.banner
+        img(src='/deals/images/qc/#{country=="DE"?"banerde.jpg":"bannerus.jpg"}')
+      div.prize(style="#{isOver == true ? 'display:none':''}")
+        img(src='/deals/images/qc/win.jpg?#{verson}' style="#{country == 'DE' ? 'display:none':''}" ).win
+        img(class="#{country == 'DE' ? 'winTipsDE':''}",src='/deals/images/qc/win#{country}.png?#{verson}').winTips
+        img(src='/deals/images/qc/#{phoneImg}').phone
+        div 
+          div.fs25 #{lang.winnerTips}
+          div.fs16(style="margin-top:1rem") #{lang.prizeTips} 
+            strong #{phoneName}
+      div.joinTips(class="#{country == 'DE' ? 'joinTipsDE':''}" style="#{isOver == true ? 'display:none':''}")
+        img(src='/deals/images/qc/#{country == "DE" ? "joinTipsDE":"joinTips"}.jpg?#{verson}')
+      div.linediv(style="#{isOver == true ? 'display:none':''}")
+        div.line.line1 1
+        div.empty.empty1
+        div.line.line2 2
+        div.empty.empty2
+        div.line.line3 3
+      div.login(style="#{isOver == true ? 'display:none':''}")
+        div.step1
+          i.iconfont.img1 &#xe600;
+          div#step1.setup
+            div
+              a#login
+                strong #{lang.login} 
+            div 
+              a.noLink  #{lang.or}
+            div
+              a(href='/Register')#register
+                strong #{lang.register}
+        div#step2.step2
+          i.iconfont.img2 &#xe602;
+          div.setup(style= '#{isSelectCountry ? "visibility:hidden" :""}')
+            div
+              a #{lang.select} 
+            div
+              a #{lang.your}
+            div
+              a #{lang.country}
+          .country
+            .module-container
+              ul#country1(style= '#{!isSelectCountry ? "display:none" :""}')
+                li
+                  a #{country}
+                li(style="display:#{country=='US'?'none':'list-item'}")
+                  a(href="/deals/anker_qc/us") US
+                li(style="display:#{country=='UK'?'none':'list-item'}")
+                  a(href="/deals/anker_qc/uk") UK
+                li(style="display:#{country=='DE'?'none':'list-item'}")
+                  a(href="/deals/anker_qc/de") DE
+                li(style="display:none")
+                  a(href="/deals/anker_qc/jp") JP
+        div#step3.step3
+          i.iconfont.img3 &#xe603;
+          div.setup
+            div
+              a#tweetShare(href='https://twitter.com/intent/tweet?text=%23Win+1+of+28+smartphones+in+%40AnkerOfficial%e2%80%99s+%23Giveaway!+Open+to+US%2c+UK%2c+DE+%26+Japan+http%3a%2f%2fbit.ly%2fQCRevo+%23AnkerQCR', target='_blank')
+                strong #{lang.tweet} 
+            div 
+              a.noLink #{lang.or} 
+            div
+              a#facebookShare 
+                strong #{lang.share}
+      div#shareTips #{lang.shareTips}
+      div.rules(style="#{isOver == true ? 'display:none':''}")
+        span #{lang.rules}:
+        div
+          div #{lang.rules1}
+          div #{lang.rules2}
+          div #{lang.rules3}
+          div #{lang.rules4}
+          div #{lang.rules5}
+          div #{lang.rules6}
+            span#winnerId
+      div.revolution(style="display:none")
+        div.title.fs32
+          span.fb #{lang.the} 
+          strong #{lang.revolutionls} 
+          strong #{lang.beginning}
+        p #{lang.revolutionTips}
+        p #{lang.revolutionTips1}
+        p.desc #{lang.revolutionTips2}
+        p #{lang.revolutionTips3}
+        div
+          img(src='/deals/images/qc/arrow.png?#{verson}').arrowBtn
+        a.btn#batteryBtn #{lang.revolutionBtn}
+        div.timer
+          div
+            img(src='/deals/images/qc/timer.png?#{verson}').timerBg
+            div.imgOne
+              img(src='/deals/images/qc/0.png').img0
+              img(src='/deals/images/qc/1.png').img1
+              img(src='/deals/images/qc/2.png').img2
+              img(src='/deals/images/qc/3.png' style="display:inline").img3
+              img(src='/deals/images/qc/4.png').img4
+              img(src='/deals/images/qc/5.png').img5
+              img(src='/deals/images/qc/6.png').img6
+              img(src='/deals/images/qc/7.png').img7
+              img(src='/deals/images/qc/8.png').img8
+              img(src='/deals/images/qc/9.png').img9
+            div.imgTwo
+              img(src='/deals/images/qc/0.png' style="display:inline").img0
+              img(src='/deals/images/qc/1.png').img1
+              img(src='/deals/images/qc/2.png').img2
+              img(src='/deals/images/qc/3.png').img3
+              img(src='/deals/images/qc/4.png').img4
+              img(src='/deals/images/qc/5.png').img5
+              img(src='/deals/images/qc/6.png').img6
+              img(src='/deals/images/qc/7.png').img7
+              img(src='/deals/images/qc/8.png').img8
+              img(src='/deals/images/qc/9.png').img9
+            div.imgThree
+              img(src='/deals/images/qc/0.png' style="display:inline").img0
+              img(src='/deals/images/qc/1.png').img1
+              img(src='/deals/images/qc/2.png').img2
+              img(src='/deals/images/qc/3.png').img3
+              img(src='/deals/images/qc/4.png').img4
+              img(src='/deals/images/qc/5.png').img5
+              img(src='/deals/images/qc/6.png').img6
+              img(src='/deals/images/qc/7.png').img7
+              img(src='/deals/images/qc/8.png').img8
+              img(src='/deals/images/qc/9.png').img9
+            div.imgFour
+              img(src='/deals/images/qc/0.png' style="display:inline").img0
+              img(src='/deals/images/qc/1.png').img1
+              img(src='/deals/images/qc/2.png').img2
+              img(src='/deals/images/qc/3.png').img3
+              img(src='/deals/images/qc/4.png').img4
+              img(src='/deals/images/qc/5.png').img5
+              img(src='/deals/images/qc/6.png').img6
+              img(src='/deals/images/qc/7.png').img7
+              img(src='/deals/images/qc/8.png').img8
+              img(src='/deals/images/qc/9.png').img9
+        ul
+          li.battery1
+            div.title #{lang.Conventional_charging}
+            div.battery
+              img(src='/deals/images/qc/battery.png?#{verson}')
+              div#progress1.progress
+              div#progressTisp1.progressTisp 0%
+          li.empty
+          li.battery2
+            div.batteryTitle.title
+              div
+                img(src='/deals/images/qc/log01.png?#{verson}')
+                div.fb #{lang.qualcomm}
+                div #{lang.quickcharge}
+              span 2.0
+            div.battery
+              img(src='/deals/images/qc/battery.png?#{verson}')
+              div#progress2.progress
+              div#progressTisp2.progressTisp 0%
+              img(src='/deals/images/qc/logo3.jpg?#{verson}').smaillLog
+            div
+              strong.fs48#progressAllTisp2 75
+              span %
+            div.fs16 !{lang.tips75}
+          li.empty
+          li.battery3
+            div.batteryTitle.title
+              div
+                img(src='/deals/images/qc/log01.png?#{verson}')
+                div.fb #{lang.qualcomm}
+                div #{lang.quickcharge}
+              span 3.0
+            div.battery
+              img(src='/deals/images/qc/battery.png?#{verson}')
+              div#progress3.progress
+              div#progressTisp3.progressTisp 0%
+              img(src='/deals/images/qc/logo3.jpg?#{verson}').smaillLog
+            div
+              strong.fs48#progressAllTisp3 85
+              span %
+            div.fs16 !{lang.tips240}
+        div
+          div.batteryTimerTips
+            strong.fs32 #{lang.batteryTimerTips}
+          div.relative
+            img(src='/deals/images/qc/arrow.jpg?#{verson}').arrowpc#arrow
+            img(src='/deals/images/qc/arrow1.jpg?#{verson}').arrowmo#arrow
+          ul.arrowList
+            li.battery1
+              div.title #{lang.Conventional_charging}
+              div.battery
+                span.hour 0
+                span h 
+                span.min 00
+                span min*
+            li.empty
+            li.battery2
+              div.batteryTitle.title
+                div
+                  img(src='/deals/images/qc/log01.png?#{verson}')
+                  div.fb #{lang.qualcomm}
+                  div #{lang.quickcharge}
+                span 2.0
+              div.battery
+                span.hour 0
+                span h 
+                span.min 50
+                span min**
+            li.empty
+            li.battery3
+              div.batteryTitle.title
+                div
+                  img(src='/deals/images/qc/log01.png?#{verson}')
+                  div.fb #{lang.qualcomm}
+                  div #{lang.quickcharge}
+                span 3.0
+              div.battery
+                span.hour 2
+                span h 
+                span.min 00
+                span min**
+          div.testingTips !{lang.testingTips}
+      div(style="text-align:center").newImg
+        img(src='/deals/images/qc/#{country=="DE" ? "qclinede":"qcline"}.jpg?#{verson}')
+      div.revolutionList
+        div
+          div.charge3#charge3
+            div.subject
+              div
+                img(src='/deals/images/qc/logo2.png?#{verson}')
+              div
+                div #{lang.quickcharge} 3.0
+                div #{lang.charge3Tips}
+            ul
+              each charge, index in qcList.charge3
+                li
+                  div
+                  div
+                    img(src='#{charge.imgurl}')
+                    div.name #{charge.name}
+                    div.desc #{charge.desc}
+                    div.btn
+                     a(href="#{charge.amazonUrl}", target='_blank') #{lang.buyAmazonbtn}
+          div.charge3#charge2
+            div.subject
+              div
+                img(src='/deals/images/qc/logo2.png?#{verson}')
+              div
+                div #{lang.quickcharge} 2.0
+                div #{lang.charge2Tips}
+            ul
+              each charge, index in qcList.charge2
+                li
+                  div
+                  div(charegType='#{charge.name}')
+                    img(src='#{charge.imgurl}')
+                    div.name #{charge.name}
+                    div.desc #{charge.desc}
+                    div.btn
+                     a(href="#{charge.amazonUrl}", chargerUrl="#{charge.amazonUrl}"  onclick="javascript:chageURL(this)", target='_blank') #{lang.buyAmazonbtn}
+    include footer
+    include ./includes/analytics.jade
+    include ./includes/popup.jade

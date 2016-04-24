@@ -1,0 +1,106 @@
+{
+  "business_title": "Anker | Business Center",
+  "business_sub_title": "Business Center",
+  "business_sub_desc": "<p>
+    Whether you're interested in selling our products as a distributor or just looking to make a single bulk order, we're thrilled about your interest in our products and look forward to helping you find a solution.
+  </p>
+  <p>
+    <a href=\"/business/apply\">Fill out the online form</a> to submit your information directly.
+  </p>",
+  "learn_more": "LEARN MORE",
+  "business_list": [
+    {
+      "title": "Business Partner / Distributor",
+      "summary": "Join in our growth as an Anker brand distributor or vendor. Click here to learn more about partnership benefits.",
+      "text": "<p>
+        Join our growth as a distributor of Anker brand products.<br/>
+        Anker specializes in consumer electronics accessories such as replacement and external batteries, USB 3.0 connectivity devices, mouse and keyboard peripherals, and more. Since our company was founded in 2011, we've risen quickly as a recognized top-ranked seller and top-rated brand on Amazon in several product categories.
+      </p>
+      <p>
+        We look forward to continued growth and welcome new opportunities to increase sales and expand our regional distribution. We're looking to partner with companies who can offer:
+        <br/>
+        • Demonstrated influence over a specific local market<br/>
+        • Proven and creative product promotion strategies<br/>
+        • Established sales and/or distribution channels
+      </p>
+      <p>
+        As an Anker business partner, you can look forward to the following benefits:
+        <br/>
+        • Regular launches of new and innovative products<br/>
+        • Certified quality (CE, FCC, RoHS)<br/>
+        • Professional partner support<br/>
+        • Distributor Pricing
+      </p>"
+    },
+    {
+      "title": "Corporate Gifts / Bulk Orders",
+      "summary": "Anker products make the perfect gift for your employees and clients. We offer a range of customization services and discounts.",
+      "text": "<p>
+        Anker products make the perfect gift for your employees or clients.
+      </p>
+      <p>
+        For example, our Anker® Astro line of portable external batteries are always welcome companions for today's mobile age. High capacity power and compact designs help ensure that your most important partners stay connected to what matters most -- you, of course.
+      </p>
+      <p>
+        For corporate and bulk orders, we're happy to arrange discounts, dedicated logistics, and expedited shipping. We can also arrange to add your custom logo to our products and packaging. Let us know what your needs are, and we can find the best solution for you.
+      </p>"
+    },
+    {
+      "title": "Government / Education Solutions",
+      "summary": "Anker is honored to offer custom solutions to our government and education partners.",
+      "text": "<p>
+        Anker is honored to serve our government and education customers with VIP sales support.
+      </p>
+      <p>
+        Anker has already served government, military, and education customers with products that empower. For example, our Anker® Astro line of external batteries serve as reliable backup power for military users to stay connected in the most urgent situations. In education,our external batteries and smart gadget peripherals help teachers make the most of their teaching tools so they can place more focus on students rather than juggling technology.
+      </p>
+      <p>
+        For government and education bulk orders, we're happy to arrange discounts, dedicated logistics, and expedited shipping. We can also arrange to add your custom logo to our products and packaging. Let us know what your needs are, and we can find the best solution for you.
+      </p>"
+    },
+    {
+      "title": "Other",
+      "summary": "If none of the previous solutions seem to meet your needs, please share your unique request with us via the following options:",
+      "text": "Please email your request directly to <a href=\"mailto:vip-support@anker.com\">VIP-support@anker.com</a>."
+    }
+  ],
+  "business_term_company_info": "Company/Customer Info",
+  "business_order_info": "Order info",
+  "placeholder_company_name": "Company name",
+  "placeholder_contact_name": "Contact name",
+  "placeholder_contact_phone_number": "Contact phone number",
+  "placeholder_email_address": "Email address",
+  "placeholder_website": "Website",
+  "placeholder_shipping_country": "Shipping Country",
+  "placeholder_shipping_address": "Shipping address",
+  "placeholder_billing_address": "Billing address",
+  "placeholder_estimated_order_size": "Estimated Order Size in USD",
+  "business_purchase_purpose": "Purchase Purpose",
+  "for_resellers_distributors_only": "For Resellers/Distributors only :",
+  "placeholder_the_regions_you_sell_in": "The regions you sell in",
+  "placeholder_the_channels_you_sell_through": "The channels you sell through",
+  "placeholder_the_channels_you_sell_through_remark": "provide details, include names of the channels",
+  "do_you_sell_on_3rd_party_platforms": "Do you sell on 3rd party platforms (ex. eBay,Amazon,etc.)",
+  "business_option_yes": "Yes",
+  "business_option_no": "No",
+  "if_yes_which_platforms": "If yes, which platforms",
+  "placeholder_your_yearly_revenue": "Your yearly revenue",
+  "placeholder_the_expected_monthly_purchase_value": "The expected monthly purchase value (in USD) from Anker",
+  "if_others_describe_your_purchase_purpose": "If Others, describe your purchase purpose",
+  "placeholder_product": "Product",
+  "placeholder_quantity": "Quantity",
+  "business_placeholder_product_link": "Product link from anker.com or amazon",
+  "business_add_more": "ADD MORE",
+  "placeholder_desired_delivery_date": "Desired Delivery Date",
+  "business_placeholder_message": "A Message to vip-support@anker.com(200 words max)",
+  "business_form_submitted": "Form submitted",
+  "fill_marked_fields": "Please complete all fields marked*.",
+  "business_purpose_gift": "Gift",
+  "business_purpose_bulk": "Bulk",
+  "business_purpose_retail": "Retail",
+  "business_purpose_retail": "Retail",
+  "business_purpose_reseller_distributor": "Reseller/Distributor",
+  "business_purpose_custom": "Custom",
+  "business_purpose_oem": "OEM",
+  "business_purpose_others": "Others"
+}

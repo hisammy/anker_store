@@ -1,0 +1,144 @@
+@import '../variables.scss';
+
+.search{
+
+  &-input{
+    background:$gray-sub;
+    color:white;
+    form{
+      margin:0 25px;
+      position:relative;
+      height:27rem;
+      input{
+        position:absolute;
+        top:11rem;left:0;
+        z-index:2;
+        width:100%;
+        line-height:normal;
+        height:5rem;
+        font-size:4rem;
+        line-height:normal;
+        background:transparent;
+        border:none;
+        padding:0;
+        margin:0;
+        &:focus{
+          outline:none;
+        };
+      }
+      .title{
+        font-size:1.2rem;
+        position:absolute;
+        z-index:1;
+        top:50px;
+        pointer-events:none;
+      }
+      .shadow{
+        display:none;
+        z-index:1;
+        position:absolute;
+        top:0;
+        line-height:385px;
+        font-size:100px;
+        color:$gray;
+        opacity:.2;
+        pointer-events:none;
+      }
+      .iconfont{
+        display:none;
+      }
+    }
+  }
+  @media only screen and (max-width: 767px){
+    &-input{
+      background:white;
+      border-bottom:1px solid $blue;
+      color:$gray;
+      padding:0;
+      form{
+        height:2.8rem;
+        margin:0 2rem 0 1rem;
+        input{
+          top:0;
+          height:2.8rem;
+          font-size:1rem;
+        }
+        .title{
+          display:none;
+        }
+        .iconfont{
+          display:block;
+          position:absolute;
+          top:0;
+          right:-1.4rem;
+          font-size:2rem;
+        }
+      }
+    }
+  }
+
+  &-result{
+    position:relative;
+    min-height:200px;
+    .search-tags{
+      padding-bottom:30px;
+      ul{
+        margin:0;
+        padding:0;
+        li{
+          list-style:none;
+          float:left;
+          min-width:16%;
+          text-align:center;
+          a{
+            white-space:nowrap;
+            text-decoration:none;
+            font-size:1.2rem;
+            padding:3px 15px;
+            color:$gray-dark;
+            position:relative;
+            span{
+              display:inline-block;
+            }
+            .border{
+              transition:200ms;
+              position:absolute;
+              left:50%;bottom:0;
+              width:0;
+              height:2px;
+              background:$blue;
+            }
+            &.cur,&:hover{
+              .border{
+                left:0;
+                width:100%;
+              }
+            }
+          }
+        }
+        @media only screen and (max-width: 767px){
+          li{
+            min-width:15%;
+            a{
+              font-size:.95rem;
+              padding:.1rem .5rem;
+            }
+          }
+        }
+        @media only screen and (max-width: 320px){
+          li{
+            a{
+              font-size:.8rem;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 767px){
+      .search-tags{
+        padding-bottom:.5rem;
+      }
+    }
+  }
+
+}

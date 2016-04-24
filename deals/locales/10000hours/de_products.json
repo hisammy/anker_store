@@ -1,0 +1,116 @@
+{
+  "currency": "€",
+  "marketplace": "amazon_de",
+  "learn_more": "Learn More",
+  "coming_soon": "Coming Soon",
+  "series": [
+    {
+      "title": "PowerCore",
+      "desc": "Unsere Flaggschiff-Serie an externen Akkus für Handys und Tablets. ",
+      "list": [
+        {
+          "sku": "A1310011",
+          "img": "A1310.png",
+          "name": "<b>PowerCore+</b> 10050",
+          "price": "29.99",
+          "url": "http://www.amazon.de/dp/B012SXRAVI/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        },
+        {
+          "sku": "A1315011",
+          "img": "A1315.png",
+          "name": "<b>PowerCore+</b> 13400",
+          "price": "35.99",
+          "url": "http://www.amazon.de/dp/B012SXCUFE/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        },
+        {
+          "sku": "A1214011",
+          "img": "A1214.png",
+          "name": "<b>PowerCore</b> 10400",
+          "price": "19.99",
+          "url": "http://www.amazon.de/dp/B00Z9EI6A8/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        }
+      ]
+    },
+    {
+      "title": "PowerPort",
+      "desc": "Eine komplett neue Serie an Multi-Port USB-Ladegeräten",
+      "list": [
+        {
+          "sku": "A2124311",
+          "img": "A2124.png",
+          "name": "<b>PowerPort</b> 5",
+          "price": "19.99",
+          "url": "http://www.amazon.de/dp/B00VUGOSWY/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        },
+        {
+          "sku": "A2123312",
+          "img": "A2123.png",
+          "name": "<b>PowerPort</b> 6",
+          "price": "29.99",
+          "url": "http://www.amazon.de/dp/B00PTLSH9G/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        },
+        {
+          "sku": "A2133311",
+          "img": "A2133.png",
+          "name": "<b>PowerPort</b> 10",
+          "price": "32.99",
+          "url": "http://www.amazon.de/dp/B00YRZ4YEC/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        }
+      ]
+    },
+    {
+      "title": "PowerDrive",
+      "desc": "Im Fahrzeug bei Höchstgeschwindigkeit laden",
+      "list": [
+        {
+          "sku": "A2307011",
+          "img": "A2307.png",
+          "name": "<b>PowerDrive</b> lightning",
+          "price": "11.99",
+          "url": "http://www.amazon.de/dp/B00VWEH1OG/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        },
+        {
+          "sku": "A2310011",
+          "img": "A2310.png",
+          "name": "<b>PowerDrive</b> 2",
+          "price": "11.99",
+          "url": "http://www.amazon.de/dp/B00JPYAC6Y/?_encoding=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        },
+        {
+          "sku": "A2308011",
+          "img": "A2308.png",
+          "name": "<b>PowerDrive</b> 2 lite",
+          "price": "9.99",
+          "url": "http://www.amazon.de/gp/product/B00WS27772/?ie=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        }
+      ]
+    },
+    {
+      "title": "PowerLine",
+      "desc": "Synchronisations- und Ladekabel",
+      "list": [
+        {
+          "sku": "A8132011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (3ft)",
+          "price": "5.99",
+          "url": "http://www.amazon.de/gp/product/B013BFXQFQ/?ie=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        },
+        {
+          "sku": "A8133011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (6ft)",
+          "price": "6.49",
+          "url": "http://www.amazon.de/gp/product/B013JE6EZ8/?ie=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        },
+        {
+          "sku": "A8134011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (10ft)",
+          "price": "7.99",
+          "url": "http://www.amazon.de/gp/product/B0140H6XJA/?ie=UTF8&camp=1638&creative=6742&linkCode=ur2&site-redirect=de&tag=10000hours-21"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+/*
+ * Colors
+ * ======================================================================== */
+
+$white-fade:    color(white alpha(.5));
+
+$gray-dark:     #3d3938;
+$gray:          #9e9f9f;
+$gray-light:    #eeeeee;
+$gray-sub:      #98a3ad;
+$blue:          #00a7e1;
+$blue-dark:     color($blue lightness(-25%));
+$facebook-blue: #5d82d1;
+$orange:        #fcbb6a;
+$red:           #ff0000;
+$google-red:    #eb5e4c;
+$yellow:        #FDBD01;
+$amazon-yellow: #fab23a;
+
+/*
+ * size
+ * ======================================================================== */
+$size-base:           1rem;
+$input-height:        2.3rem;
+$button-height:       2.4rem;
+$head-tablet:         5.8rem;
+$head-mobile:         5.1rem;
+$normal-height:       3.3rem;
+$normal-input-height: 3.2rem;
+
+
+/*
+ * Typography
+ * ======================================================================== */
+
+$font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;
+
+/*
+ * Layout
+ * ======================================================================== */
+
+$max-content-width:     1200px;
+
+/*
+ * Media queries breakpoints
+ * ======================================================================== */
+
+$screen-xs-min:         480px;  /* Extra small screen / phone */
+$screen-sm-min:         768px;  /* Small screen / tablet */
+$screen-md-min:         992px;  /* Medium screen / desktop */
+$screen-lg-min:         1200px; /* Large screen / wide desktop */
+
+/*
+ * Animations
+ * ======================================================================== */
+
+@keyframes bettering {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+@keyframes loading {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  from{
+    opacity:1;
+  }
+  to{
+    opacity:0;
+  }
+}
+@keyframes fadeIn {
+  from{
+    background:rgba(0, 0, 0, .1);
+  }
+  to{
+    background:rgba(0, 0, 0, .3);
+  }
+}
+$animation-swift-out:   .45s cubic-bezier(0.3, 1, 0.4, 1) 0s;
+$bettering: 2s bettering ease-out infinite;
+$loading: 1s loading linear infinite;
+$fadeOut: .2s fadeOut ease-out;
+$fadeIn: 2s fadeIn linear;
+

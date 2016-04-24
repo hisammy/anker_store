@@ -1,0 +1,230 @@
+@import '../variables.scss';
+
+.Download {
+  a {
+    text-decoration: none;
+  }
+  .Banner-container{
+    /*background: #ebebed;*/
+  }
+  .banner{
+    position: relative;
+    /*height: 480px;*/
+    /*background: url(../../public/support/banner.jpg) 0 0 no-repeat;*/
+    @media only screen and (max-width: 767px){
+      display: none;
+      /*.text{display: none;}*/
+    }
+    .img{
+      width: 100%;
+    }
+    .text {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 510px;
+      padding: 24px 40px;
+      background: color($gray-sub alpha(.7));
+      color: #FFF;
+      font-size: 14px;
+    }
+    h2{
+      margin: 0 0 5px;
+      color: white;
+      font-size: 2.3rem;
+    }
+    .search{
+      position: relative;
+      padding-top: 5px;
+    }
+    .txt{
+      box-sizing: border-box;
+      width: 88%;
+      height: 38px;
+      line-height: 38px;
+      padding: 0 10px;
+      font-size: 29px;
+      font-weight: 100;
+    }
+    .tip{
+      position: absolute;
+      margin: 0;
+      border: 1px solid transparent;
+      color: #838b93;
+    }
+    input{
+      outline:0;
+      position: relative;z-index:2;
+      vertical-align: top;
+      border: 1px solid #ebebed;
+      background: transparent;
+      color: white;
+      &:focus{
+        border-color: #00A8E3;
+      }
+    }
+    button{
+      outline:0;
+      width: 12%;
+      height: 38px;
+      border: 1px solid #ebebed;
+      background: transparent;
+      padding: 0 5px;
+      line-height: 0.5;
+      color: white;
+      i{font-size: 30px;}
+    }
+  }
+  .tiny-search{
+    position:relative;
+    background: #fff;
+    border-top: 1px solid $gray;
+    border-bottom: 1px solid $gray;
+    margin-bottom: 10px;
+    overflow: hidden;
+    input{
+      box-sizing: border-box;
+      padding: 0 10px;
+      outline:0;
+      border: none;
+      width: 88%;
+      height: 2.8em;
+    }
+    button{
+      position: absolute;top: 0;right: 0;bottom: 0;
+      outline:0;
+      width: 12%;
+      border: none;
+      background: transparent;
+      padding: 0 5px;
+      line-height: 0.5;
+      color: $gray-dark;
+      i{font-size: 30px;}
+    }
+    @media only screen and (min-width: 768px){
+      display:none;
+    }
+  }
+
+  .Download-container{
+    position: relative;
+  }
+  .down-dialog{
+    dl{
+      position: relative;
+      margin: 0;
+    }
+    dt{
+      float: left;
+      width: 30%;
+    }
+    dd{
+      float: right;
+      margin: 0;
+      width: 70%;
+    }
+    .wrap{
+      padding: 0 10px;
+    }
+    img{max-width: 100%;}
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &:after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 30%;
+      width: 1px;
+      height: 100%;
+      overflow: hidden;
+      background: #ccc;
+    };
+  }
+  .module-wraper{
+    width: 100%;
+  }
+  .module-items{
+    .price{
+     text-align:center;
+     color:$blue;
+     width:100%;
+     height:44px;
+     background:white;
+     line-height:44px;
+    }
+    .down{
+      position: absolute;
+      top:0;bottom:0;
+      z-index:9;
+      width:92%;
+      color: #fff;
+      font-size: 14px;
+      padding: 8px 8px;
+      .bg{
+        position: absolute;
+        top: 0;
+        right: -50%;
+        bottom: 0;
+        left: -50%;
+        background: color($blue alpha(.8));
+      }
+      .cnt{
+        position: relative;
+        z-index:1;
+        padding-top: 40px;
+      }
+      h4{
+        margin: 0;
+        padding: 0 0 10px;
+        font-size: 1.2rem;
+        border-bottom: 1px solid #FFF;
+      }
+      h5{
+        margin: 0;
+        padding: 0 0 10px;
+      }
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 10px 0 0 15px;
+      }
+      li{
+        list-style-type: square;
+        padding: 5px 0; 
+      }
+      a{
+        color: #fff;
+        text-decoration: underline;
+      }
+      .close{
+        position: absolute;
+        z-index:7;
+        line-height:1;
+        top:4px;
+        right:4px;
+        font-size: 24px;
+        cursor:pointer;
+        &:hover{
+          background: rgba(0, 0, 0, .2);
+        }
+      }
+    }
+    @media only screen and (max-width: 489px){
+      .item{
+        box-sizing: border-box;
+        overflow: visible;
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+        .title{
+          height: 63px;
+        }
+        .description{display:none;}
+        .price{display:none;}
+      }
+    }
+  }
+}

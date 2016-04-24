@@ -1,0 +1,115 @@
+@import '../variables.scss';
+.Products {
+  .banner {
+    &-img {
+      text-align:center;
+      max-width:1200px;
+      margin:0 auto;
+      position:relative;
+      img {
+        width:100%;
+      }
+      .ctrl {
+        position:absolute;
+        bottom:2rem;
+        right:2rem;
+        i {
+          font-size:4rem;
+          color:white;
+          cursor:pointer;
+          &:hover {
+            background:rgba(0,0,0,.2);
+          }
+        }
+        @media only screen and (max-width: 767px) {
+          bottom:1rem;
+          i {
+            font-size:3rem;
+          }
+        }
+      }
+    }
+    &-tabs {
+      overflow-x:auto;
+      -webkit-overflow-scrolling:touch;
+      .module-container {
+        display:table;
+        width:$max-content-width;
+        border-left:1px solid white;
+        box-sizing:border-box;
+        @media only screen and (max-width: 959px) {
+          width:100%;
+        }
+      }
+      a {
+        text-decoration:none;
+        display:table-cell;
+        text-align: center;
+        color: $gray-dark;
+        padding:.5rem;
+        min-width:5rem;
+        transition: 200ms;
+        cursor: pointer;
+        border-right:1px solid white;
+        box-sizing:border-box;
+        background:$gray-light;
+        position:relative;
+        &.cur {
+          background: white;
+        }
+        &.cur, &:hover {
+          .border{
+            left:0;
+            width:100%;
+          }
+        }
+        &.cur {
+          box-shadow:0 0 1rem $gray-light;
+        }
+        .border {
+          position:absolute;
+          top:0;left:50%;
+          height:2px;
+          width:0;
+          overflow:hidden;
+          font-size: 60px;
+          background:$blue;
+          transition:200ms;
+        }
+        .image {
+          padding:1rem 0;
+          display:block;
+          text-align:center;
+        }
+        .name {
+          display: block;
+          white-space:nowrap;
+          font-size: 1rem;
+        }
+      }
+    }
+    @media only screen and (max-width: 767px){
+      &-tabs {
+        a{
+          padding:0 .2rem .5rem;
+          i {
+            font-size: 2.5rem;
+            margin: .5rem 0;
+          }
+          .image{
+            img{
+              width:40px;
+            }
+          }
+          .name {
+            font-size: .8rem;
+          }
+        }
+      }
+    }
+  }
+  .module-category {
+    position:relative;
+    min-height:12rem;
+  }
+}

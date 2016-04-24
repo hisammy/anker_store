@@ -1,0 +1,202 @@
+@import '../variables.scss';
+
+.Cart {
+  .Cart-empty{
+    .iconfont{
+      padding-right:1rem;
+    }
+  }
+  &-title {
+    text-align: center;
+    .item {
+      display: inline-block;
+      .iconfont {
+        font-size: 8rem;
+        float: left;
+      }
+      span {
+        font-size: 3.4rem;
+        line-height: 12rem;
+      }
+      @media only screen and (max-width: 767px) {
+        .iconfont {
+          font-size: 4rem;
+        }
+        span {
+          line-height: 6rem;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  &-ul {
+    border-top: 1px solid $gray;
+    margin: 0;
+    padding: 0;
+    &-li {
+      border-bottom: 1px solid $gray;
+      padding: 1rem 0;
+      list-style: none;
+      display: table;
+      width: 100%;
+      > div {
+        display: table-cell;
+        vertical-align: middle;
+      }
+      .image {
+        width: 200px;
+        img {
+          width: 100%;
+        }
+      }
+      .text {
+        padding: 0 3rem;
+        > span {
+          display: block;
+        }
+        .title {
+          padding: .8rem 0;
+          font-size: 1.2rem;
+          font-weight: 700;
+          color: $gray-dark;
+          margin-top: -1rem;
+        }
+        .price {
+          color: $gray;
+        }
+        .color {
+          color: $gray;
+        }
+      }
+      .ctrl {
+        .table{
+          float:right;
+        }
+        .quantity-name {
+          display: table-cell;
+          vertical-align: middle;
+          line-height: 2.5rem;
+          color: $gray;
+          padding-right: 1rem;
+        }
+        .quantity {
+          display: table;
+          border: 1px solid $gray;
+          a {
+            width: 2rem;
+            text-align: center;
+            display: table-cell;
+            line-height: 2rem;
+            .iconfont {
+              vertical-align: middle;
+              font-size: 1.8rem;
+            }
+            &:hover {
+              background: $blue;
+              color: white;
+            }
+            &.reduce_1, &.add_999 {
+              opacity: .1;
+              cursor: not-allowed;
+            }
+          }
+          input {
+            display:table-cell;
+            vertical-align: middle;
+            border: none;
+            padding: 0;
+            height: 2rem;
+            line-height: normal;
+            text-align: center;
+            width: 50px;
+            appearance: none;
+          }
+        }
+        .remove {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 0 2rem;
+          .iconfont {
+            font-size: 1.8rem;
+            line-height: 2rem;
+            cursor: pointer;
+            &:hover {
+              color: $red;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 767px) {
+        .image {
+          width: 100px;
+        }
+        .text {
+          padding: 0 .5rem;
+          .title {
+            font-size: 1rem;
+          }
+          span {
+            font-size: .9rem;
+          }
+        }
+        .ctrl {
+          text-align: center;
+          .quantity-name {
+            display:block;
+            padding: 0;
+          }
+          .quantity {
+            margin: 0 auto;
+            display: table;
+            a {
+              line-height: 1.8rem;
+              width: 1.6rem;
+              display: table-cell;
+              .iconfont {
+                font-size: 1rem;
+              }
+            }
+            input {
+              width: 2.8rem;
+              height: 1.4rem;
+              font-size: 1rem;
+            }
+          }
+          .remove {
+            display:block;
+            padding: 0;
+            .iconfont {
+              font-size: 1.4rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-submit {
+    text-align: right;
+    @media only screen and (max-width: 767px) {
+      text-align: center;
+    }
+    padding: 3rem 0;
+    a {
+      display: inline-block;
+      width: 90%;
+      max-width: 20rem;
+      background: $blue;
+      color: white;
+      line-height: 3rem;
+      font-size: 1rem;
+      text-align: center;
+      text-decoration: none;
+      &:hover {
+        background: color($blue lightness(50%));
+      }
+      .total {
+        padding-right: 1rem;
+        margin-right: 1rem;
+        border-right: 1px solid white;
+      }
+    }
+  }
+}

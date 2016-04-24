@@ -1,0 +1,228 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="#{config.staticRoot}deals/css/global.css?#{verson}", rel="stylesheet")
+    link(href="#{config.staticRoot}deals/css/powerline_swap.css?#{verson}", rel="stylesheet")
+    link(href="#{config.staticRoot}deals/css/dialog.css", rel="stylesheet")
+    link(href="#{config.staticRoot}deals/css/header.css?#{verson}", rel="stylesheet")
+    <meta name="fb:app_id" content="#{config.FB_APP_ID}" />
+    <meta name="og:url" content="https://www.anker.com/deals/powerline_swap" />
+    <meta name="og:title" content="$0.01 For The World's Strongest Lightning Cable" />
+    <meta name="og:description" content="Just $0.01 for a kevlar-fiber reinforced PowerLine Lightning cable! Click here to learn more."/>
+    <meta name="og:image" content="https://www.anker.com/deals/images/powerline_swap/sharetw.jpg?verson=3" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Ankerofficial" />
+    <meta name="twitter:title" content="$0.01 For The World's Strongest Lightning Cable" />
+    <meta name="twitter:description" content="Loving @AnkerOfficial's #CableSwap! $0.01 for a kevlar-fiber reinforced cable: http://bit.ly/CableSwap"/>
+    <meta name="twitter:image" content="https://www.anker.com/deals/images/powerline_swap/sharetw.jpg?verson=2" />
+    <meta name="twitter:url" content="https://www.anker.com/deals/powerline_swap" />
+    script(src="#{config.staticRoot}deals/javascript/fastclick.js")
+    script(src="#{config.staticRoot}deals/javascript/jquery.min.js")
+    script(src="#{config.staticRoot}deals/javascript/jquery.cookie.js")
+    script(src="#{config.staticRoot}deals/javascript/dialog.js")
+    script.
+      var config = !{JSON.stringify(config)};
+      var selectCountry = "!{country}";
+      var userBody = !{JSON.stringify(userBody)};
+      var nowDate = !{nowDate};
+    script(src="#{config.staticRoot}deals/javascript/powerline_swap.js?#{verson}")
+  body
+    include header
+    div.swap
+      div.banner
+        div.bannerTips
+          h3 The Last Cable You’ll Ever Need
+          p Just $0.01 to pick up the world's best Lightning cable
+        img(src="#{config.staticRoot}deals/images/powerline_swap/home.gif")
+      div.background
+        div.videoDiv
+          div.videoTips
+            h3 Your Ticket Out Of Cable Hell
+            p Here because you're fed up of replacing Lightning cables? 
+            p You've come to the right place.
+            p We’re giving away 2,500 kevlar-fiber reinforced
+            p PowerLine Lightning cables for just $0.01 each!
+            p(style="margin-top:2rem;") Successor to the world’s 
+              a(href="http://thewirecutter.com/reviews/best-lightning-cable/" target="_blank")#videoLink “Best Lightning Cable”, 
+            p the PowerLine series charges faster and is even more durable.
+            p Don't believe us? Check this out ...
+          iframe(width="496" height="280" src="https://www.youtube.com/embed/gSb6D4F1PIs" frameborder="0" allowfullscreen="true")
+      div(style="background-color:#E9E9E9")
+        div.login
+          div.left
+            h3(style="#{isShow==true?'display:block':'display:none'}") Countdown Timer
+            div(style="#{isShow==true?'display:block':'display:none'}").countdown
+              div
+                div#hours 000
+                div HOURS
+              div
+                div#minutes 00
+                div MINUTES
+              div
+                div#seconds 00
+                div SECONDS
+            h3 Here's How It works
+            ul
+              li Open to US and UK only
+              li Start date: April 2nd / End date: April 6th
+              li 500 $0.01 codes released each day at 12:00 PM PDT
+              li $0.01 codes to be redeemed on Amazon US or Amazon UK
+              li $0.01 codes apply to the white 3ft PowerLine Lightning only
+              li $0.01 codes must be used prior to May 3rd
+              li Complete the steps opposite to participate
+          div.right
+            div.one
+              div 1. 
+                a#login LOGIN  
+                span  or  
+                a(href='/Register?back=deals/powerline_swap')#register REGISTER
+            div.two
+              div 2. Select your country
+              div 
+                select#selectCountry
+                  option(value="us") US
+                  option(value="uk") UK
+            div.three
+              div 3. Spread the word
+              div.share
+                div#tweetShare
+                  a(href='https://twitter.com/intent/tweet?text=Loving+the+%40AnkerOfficial+%23CableSwap!+%240.01+for+a+kevlar-fiber+reinforced+cable%3a+http%3a%2f%2fbit.ly%2fCableSwap', target='_blank')
+                    i.iconfont &#xe607;
+                div#facebookShare
+                  i.iconfont &#xe605;
+                div#googleShare
+                  i.iconfont &#xe601;
+            div.four
+              div(style="#{isShow==true?'display:none':'display:block'}") 4. Hit that button! (Active April 2nd 12:00 PM PDT)
+              div(style="#{isShow==true?'display:block':'display:none'}") 4. Hit that button! (Active from 12:00 PM PDT daily)
+              div 
+                input(type="button" value="GET A CODE")#getCode
+              div.error
+      div.itemList
+        div.itemListTips
+          h3(style="font-weight:normal")  Can’t wait for a $0.01 code?
+        div.itemListTips
+          h3  PowerLine
+          p  The World's Fastest, Most Durable Charging Cable
+        div#divList1
+          div.container
+            ul#list1(data-index="0" itemIndex="1" itemCount ="#{powerline['powerline'].length-1}")
+              each charge, index in powerline.powerline
+                li
+                  div.itemImg
+                    img(src="#{charge.imgurl}")
+                  div.info
+                    div.name #{charge.name}
+                    div.colorList
+                      each colorImg,index in charge.color
+                        div(style="background-color:#{colorImg}")
+                    div.btn
+                      a(href="#{charge.amazonUrl}" key-name="#{charge.name}" target="_blank") Buy at Amazon
+            div.up
+              i.iconfont(data-type="up") &#xe60f;
+            div.down
+              i.iconfont(data-type="down") &#xe60a;
+        div.empty
+        div#divList2
+          div.container
+            ul#list2(data-index="0" itemIndex="2" itemCount ="#{powerline['powerline2'].length-1}")
+              each charge, index in powerline.powerline2
+                li
+                  div.itemImg
+                    img(src="#{charge.imgurl}")
+                  div.info
+                    div.name #{charge.name}
+                    div.colorList
+                      each colorImg,index in charge.color
+                        div(style="background-color:#{colorImg}")
+                    div.btn
+                      a(href="#{charge.amazonUrl}" key-name="#{charge.name}" target="_blank") Buy at Amazon
+            div.up
+              i.iconfont(data-type="up") &#xe60f;
+            div.down
+              i.iconfont(data-type="down") &#xe60a;
+        div.itemListTips
+          h3  PowerLine+
+          p  The Premium Nylon-Braided Charging Cable
+        div#divList3
+          div.container
+            ul#list3(data-index="0" itemIndex="3" itemCount ="#{powerline['powerline+'].length-1}")
+              each charge, index in powerline["powerline+"]
+                li
+                  div.itemImg
+                    img(src="#{charge.imgurl}")
+                  div.info
+                    div.name #{charge.name}
+                    div.colorList
+                      each colorImg,index in charge.color
+                        div(style="background-color:#{colorImg}")
+                    div.btn
+                      a(href="#{charge.amazonUrl}" key-name="#{charge.name}" target="_blank") Buy at Amazon
+            div.up
+              i.iconfont(data-type="up") &#xe60f;
+            div.down
+              i.iconfont(data-type="down") &#xe60a;
+        div.empty
+        div#divList4
+          div.container
+            ul#list4(data-index="0" itemIndex="4" itemCount ="#{powerline['powerline+2'].length-1}")
+              each charge, index in powerline["powerline+2"]
+                li
+                  div.itemImg
+                    img(src="#{charge.imgurl}")
+                  div.info
+                    div.name #{charge.name}
+                    div.colorList
+                      each colorImg,index in charge.color
+                        div(style="background-color:#{colorImg}")
+                    div.btn
+                      a(href="#{charge.amazonUrl}" key-name="#{charge.name}" target="_blank") Buy at Amazon
+            div.up
+              i.iconfont(data-type="up") &#xe60f;
+            div.down
+              i.iconfont(data-type="down") &#xe60a;
+        div.itemListTips
+          h3  PowerLine USB-C
+          p  The Future of USB Connectivity
+        div#divList5
+          div.container
+            ul#list4(data-index="0" itemIndex="5" itemCount ="#{powerline['usbc'].length-1}")
+              each charge, index in powerline["usbc"]
+                li
+                  div.itemImg
+                    img(src="#{charge.imgurl}")
+                  div.info
+                    div.name #{charge.name}
+                    div.colorList
+                      each colorImg,index in charge.color
+                        div(style="background-color:#{colorImg}")
+                    div.btn
+                      a(href="#{charge.amazonUrl}" key-name="#{charge.name}" target="_blank") Buy at Amazon
+            div(style="#{powerline['usbc'].length>1?'display:block':'display:none'}").up
+              i.iconfont(data-type="up") &#xe60f;
+            div(style="#{powerline['usbc'].length>1?'display:block':'display:none'}").down
+              i.iconfont(data-type="down") &#xe60a;
+        div.empty
+        div#divList6
+          div.container
+            ul#list4(data-index="0" itemIndex="6" itemCount ="#{powerline['usbc2'].length-1}")
+              each charge, index in powerline["usbc2"]
+                li
+                  div.itemImg
+                    img(src="#{charge.imgurl}")
+                  div.info
+                    div.name #{charge.name}
+                    div.colorList
+                      each colorImg,index in charge.color
+                        div(style="background-color:#{colorImg}")
+                    div.btn
+                      a(href="#{charge.amazonUrl}" key-name="#{charge.name}" target="_blank") Buy at Amazon
+            div(style="#{powerline['usbc2'].length>1?'display:block':'display:none'}").up
+              i.iconfont(data-type="up") &#xe60f;
+            div(style="#{powerline['usbc2'].length>1?'display:block':'display:none'}").down
+              i.iconfont(data-type="down") &#xe60a;
+
+    include footer
+    include ./includes/analytics.jade

@@ -1,0 +1,8 @@
+{
+  "name": "Authorize",
+  "version": "0.0.0",
+  "private": true,
+  "login": "./Login.js",
+  "reg": "./Register.js",
+  "forget": "./Forget.js"
+}

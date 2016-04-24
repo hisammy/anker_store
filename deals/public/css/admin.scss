@@ -1,0 +1,145 @@
+.content{
+  line-height:2rem;
+  padding:2%;
+
+  .submit{
+    input{
+      background:#00a7e1;
+      color:white;
+      height:3rem;
+      width:8rem;
+      border:0;
+    }
+  }
+  
+  .tabs{
+    display:table;
+    width:100%;
+    box-sizing:border-box;
+    margin:0 auto;
+    a{
+      display:table-cell;
+      width:33.33%;
+      line-height:4rem;
+      text-align:center;
+      color:#00a7e1;
+      font-size:1.5rem;
+      &.cur{
+        background:#00a7e1;
+        color:white;
+      }
+    }
+  }
+  .module{
+    padding:2%;
+    display:none;
+    border:1px solid #00a7e1;
+    width:100%;
+    margin:0 auto;
+    text-align:center;
+    box-sizing:border-box;
+    &.cur{
+      display:table;
+    }
+    .days, .country{
+      display:table;
+      width:100%;
+      span{
+        float:left;
+        color:white;
+        width:30%;
+      }
+      select{
+        width:70%;
+        flaot:left;
+        height:2rem;
+        border:1px solid #999;
+      }
+    }
+    .days{
+      background:orange;
+    }
+    .country{
+      background:#00a7e1;
+    }
+  }
+  .list{
+    margin:1rem 0;
+    h3{
+      background:#00a7e1;
+      color:white;
+      line-height:2rem;
+      margin:0;
+    }
+    h4{
+      background:orange;
+      color:white;
+      margin-bottom:0;
+    }
+    h5{
+      background:#999;
+      margin:0;
+      color:white;
+    }
+    caption{
+      background: #00a7e1;
+      color:white;
+    }
+    table {
+      width:100%;
+      border-bottom:1px solid #00a7e1;
+      &.prize{
+        word-break:break-all;
+        a{
+          line-height:1.2rem;
+          color:orange;
+          &:hover{
+            color:#00a7e1;
+          }
+        }
+      }
+      &.coupon{
+        td input{
+          width:100%;
+        }
+      }
+      th{
+        width:30%;
+        &.num{
+          width:5%;
+        }
+        &.val{
+          width:24%
+        }
+      }
+      th, td{
+        line-height:2rem;
+        border-right:1px solid #eee;
+        border-bottom:1px solid #eee;
+        text-align:center;
+        input{
+          width:100%;
+          padding:0;
+          margin:2px 0;
+          box-sizing:border-box;
+          border:0;
+          box-shadow:inset 1px 1px 5px #ccc;
+          padding:0 .5rem;
+          height:2rem;
+        }
+        .del_item{
+          color:blue;
+          &:hover{
+            color:gray;
+          }
+        }
+        .add_item{
+          color:orange;
+          &:hover{
+            color:blue;
+          }
+        }
+      }
+    }
+  }
+}

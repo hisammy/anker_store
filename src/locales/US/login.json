@@ -1,0 +1,22 @@
+{
+  "login_title": "Anker | Login",
+  "login_description": "Limited-time anker.com rewards. Join anker.com and get up to $30 off your next anker.com purchase. Receive $15, $10, and $5 discounts.",
+  "login_welcome_back": "Welcome Back",
+  "login_placeholder_email": "Email address",
+  "login_placeholder_password": "Password",
+  "login_forgot_your_password": "Forgot your password?",
+  "login_remember_me": "Remember Me",
+  "login_log_in": "LOG IN",
+  "login_or": "OR",
+  "login_create_account": "CREATE ACCOUNT",
+  "login_sign_in_with_google": "Sign In with Google",
+  "login_sign_in_with_facebook": "Sign In with Facebook",
+  "login_merge_dialog_title": "Welcome to Our New Home",
+  "login_merge_dialog_desc": "<p style=\"margin:.7rem 0\">
+  We’re very pleased to welcome you to our new official site.
+  </p>
+  <p style=\"margin:.7rem 0 0 0\">
+  As a former <strong>ianker.com</strong> or <strong>m.anker.com</strong> user, your account will be automatically switched over to <strong>anker.com</strong>. To confirm this change, please enter your account password below:
+  </p>",
+  "login_email_info": "email: %s"
+}

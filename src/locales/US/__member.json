@@ -1,0 +1,12 @@
+{
+  "member_change_photo": "Change Photo",
+  "member_change_password": "Change Password",
+  "member_nav_profile": "Profile",
+  "member_nav_orders": "Orders",
+  "member_nav_address": "Address",
+  "member_nav_rewards": "Rewards",
+  "member_upload_fail": "Upload fail.",
+  "member_upload_success": "Upload Success.",
+  "member_file_format_error": "File format is not correct.",
+  "member_file_size_error": "File size must not exceed 5Mb."
+}

@@ -1,0 +1,103 @@
+{
+  "currency": "¥",
+  "marketplace": "amazon_jp",
+  "learn_more": "詳細を見る",
+  "coming_soon": "Coming Soon",
+  "series": [
+    {
+      "title": "PowerCore",
+      "desc": "スマートフォン及びタブレット端末用モバイルバッテリー",
+      "list": [
+        {
+          "sku": "A1310011",
+          "img": "A1310.png",
+          "name": "<b>PowerCore+</b> 10050",
+          "price": "3299",
+          "url": "http://www.amazon.co.jp/dp/B012SKDQP0/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        },
+        {
+          "sku": "A1315011",
+          "img": "A1315.png",
+          "name": "<b>PowerCore+</b> 13400",
+          "price": "3599",
+          "url": "http://www.amazon.co.jp/dp/B012SJ4IDK/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        },
+        {
+          "sku": "A1214011",
+          "img": "A1214.png",
+          "name": "<b>PowerCore</b> 10400",
+          "price": "1999",
+          "url": "http://www.amazon.co.jp/dp/B00Y05BQ9A/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        }
+      ]
+    },
+    {
+      "title": "PowerPort",
+      "desc": "様々な機種に対応しているUSB急速充電器",
+      "list": [
+        {
+          "sku": "A2142521",
+          "img": "A2142.png",
+          "name": "<b>PowerPort</b> 4",
+          "price": "2399",
+          "url": "http://www.amazon.co.jp/dp/B00VTJS58U/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        },
+        {
+          "sku": "A2133511",
+          "img": "A2133.png",
+          "name": "<b>PowerPort</b> 10",
+          "price": "3799",
+          "url": "http://www.amazon.co.jp/dp/B00YS3ZYWY/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        }
+      ]
+    },
+    {
+      "title": "PowerDrive",
+      "desc": "ドライブ中に充電可能なカーチャージャー",
+      "list": [
+        {
+          "sku": "A2307011",
+          "img": "A2307.png",
+          "name": "<b>PowerDrive</b> lightning",
+          "price": "1599",
+          "url": "http://www.amazon.co.jp/dp/B00VV5CX8A/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        },
+        {
+          "sku": "A2310012",
+          "img": "A2310.png",
+          "name": "<b>PowerDrive</b> 2",
+          "price": "1199",
+          "url": "http://www.amazon.co.jp/dp/B00VTIF6FG/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        },
+        {
+          "sku": "A2308011",
+          "img": "A2308.png",
+          "name": "<b>PowerDrive</b> 2 lite",
+          "price": "999",
+          "url": "http://www.amazon.co.jp/gp/product/B00WTTMFQ2/?ie=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        }
+      ]
+    },
+    {
+      "title": "PowerLine",
+      "desc": "同期と充電が可能な高品質ケーブル",
+      "list": [
+        {
+          "comment": "A8111012: 黑, A8111021: 白",
+          "sku": "A8111021",
+          "img": "powerline_lightning.png",
+          "name": "<b>PowerLine</b> ライトニング (0.9m)",
+          "price": "1299",
+          "url": "http://www.amazon.co.jp/gp/product/B013JMBAMC/?ie=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        },
+        {
+          "sku": "A8132011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (0.9m)",
+          "price": "799",
+          "url": "http://www.amazon.co.jp/dp/B014D443EW/?_encoding=UTF8&camp=247&creative=1211&linkCode=ur2&tag=10000hours-22"
+        }
+      ]
+    }
+  ]
+}

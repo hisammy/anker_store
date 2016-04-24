@@ -1,0 +1,10 @@
+{
+  "popupsignup_placeholder_email": "Email address",
+  "popupsignup_placeholder_password": "Password",
+  "password_verify_error": "Password must be 8 - 20 digits, letters or characters.",
+  "popupsignup_registration_success": "Registration successful.",
+  "popupsignup_or_connect_with": "or connect with",
+  "popupsignup_already_member_tip": "Already a member?",
+  "popupsignup_sign_in": "SIGN IN",
+  "popupsignup_default_submit_btn": "SUBSCRIBE"
+}

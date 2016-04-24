@@ -1,0 +1,117 @@
+{
+  "currency": "£",
+  "marketplace": "amazon_uk",
+  "learn_more": "Learn More",
+  "coming_soon": "Coming Soon",
+  "series": [
+    {
+      "title": "PowerCore",
+      "desc": "Successor to the hugely popular Astro series, the best-selling series of portable chargers in Amazon history.",
+      "list": [
+        {
+          "sku": "A1310011",
+          "img": "A1310.png",
+          "name": "<b>PowerCore+</b> 10050",
+          "price": "21.99",
+          "url": "http://www.amazon.co.uk/dp/B012SNMWCK/?_encoding=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        },
+        {
+          "sku": "A1315011",
+          "img": "A1315.png",
+          "name": "<b>PowerCore+</b> 13400",
+          "price": "24.99",
+          "url": "http://www.amazon.co.uk/dp/B012SRLKZ6/?_encoding=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        },
+        {
+          "sku": "A1214011",
+          "img": "A1214.png",
+          "name": "<b>PowerCore</b> 10400",
+          "price": "14.99",
+          "url": "http://www.amazon.co.uk/dp/B00Z9UY65G/?_encoding=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        }
+      ]
+    },
+    {
+      "title": "PowerPort",
+      "desc": "New and improved USB charger series from Anker, the best-selling brand of multi-port USB chargers on Amazon.",
+      "list": [
+        {
+          "sku": "A2124211",
+          "img": "A2124.png",
+          "name": "<b>PowerPort</b> 5",
+          "price": "20",
+          "url": "http://www.amazon.co.uk/dp/B00VTI8K9K/?_encoding=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        },
+        {
+          "sku": "A2123212",
+          "img": "A2123.png",
+          "name": "<b>PowerPort</b> 6",
+          "price": "22.99",
+          "url": "http://www.amazon.co.uk/dp/B00PK1IIJY/?_encoding=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        },
+        {
+          "sku": "A2133211",
+          "img": "A2133.png",
+          "name": "<b>PowerPort</b> 10",
+          "price": "25.99",
+          "url": "http://www.amazon.co.uk/dp/B00YSA0WI8/?_encoding=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        }
+      ]
+    },
+    {
+      "title": "PowerDrive",
+      "desc": "High-speed chargers for the road.",
+      "list": [
+        {
+          "sku": "A2307011",
+          "img": "A2307.png",
+          "name": "<b>PowerDrive</b> Lightning",
+          "price": "10",
+          "url": "http://www.amazon.co.uk/dp/B00VV2ANVM/?_encoding=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        },
+        {
+          "sku": "A2310011",
+          "img": "A2310.png",
+          "name": "<b>PowerDrive</b> 2",
+          "price": "5.99",
+          "url": "http://www.amazon.co.uk/dp/B00VH84L5E/?_encoding=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        },
+        {
+          "sku": "A2309011",
+          "img": "A2309.png",
+          "name": "<b>PowerDrive+</b> 1",
+          "price": "",
+          "url": "http://www.amazon.co.uk/dp/B0107VEKQG/?_encoding=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        }
+      ]
+    },
+    {
+      "title": "PowerLine",
+      "desc": "Anker's critically acclaimed charge & sync cables are now better than ever.",
+      "list": [
+        {
+          "sku": "A8132011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (3ft)",
+          "price": "5.21",
+          "asin": "B013BF2VS4",
+          "url": "http://www.amazon.co.uk/gp/product/B013BF2VS4/?ie=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        },
+        {
+          "sku": "A8133011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (6ft)",
+          "price": "5.21",
+          "url": "http://www.amazon.co.uk/gp/product/B013I2K1L4/?ie=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        },
+        {
+          "sku": "A8134011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (10ft)",
+          "price": "5.99",
+          "url": "http://www.amazon.co.uk/gp/product/B013I2GP8M/?ie=UTF8&camp=1634&creative=6738&linkCode=ur2&tag=10000hoursuk-21"
+        }
+      ]
+    }
+  ]
+}

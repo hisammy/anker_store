@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/homeVacDuo.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/dialog.css", rel="stylesheet")
+    link(href="/deals/css/header.css?#{verson}", rel="stylesheet")
+    <meta name="fb:app_id" content="#{config.FB_APP_ID}" />
+
+    <meta name="og:url" content="/deals/home_vacduo" />
+    <meta name="og:title" content="30% Off The HomeVac Duo!" />
+    <meta name="og:description" content="I just got 30% off Anker's new cordless vacuum cleaner! Act fast as it's first come first serve. Click here now."/>
+    <meta name="og:image" content="/deals/images/homeVacDuo/sharefb.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Ankerofficial" />
+    <meta name="twitter:title" content="30% Off The HomeVac Duo!" />
+    <meta name="twitter:description" content="I got 30% off @AnkerOfficial's new cordless vacuum cleaner! First come first serve. Click here: http://bit.ly/HomeVacD"/>
+    <meta name="twitter:image" content="https://www.anker.com/deals/images/homeVacDuo/sharetw.jpg?1" />
+    <meta name="twitter:url" content="/deals/home_vacduo" />
+    script.
+      var config = !{JSON.stringify(config)};
+    script(src="/deals/javascript/fastclick.js")
+    script(src="/deals/javascript/jquery.min.js")
+    script(src="/deals/javascript/jquery.cookie.js")
+    script(src="/deals/javascript/homeVacDuo.js?#{verson}")
+  body
+    include header
+    div.protection
+      div.imgItem
+        img(src="/deals/images/homeVacDuo/home.jpg?#{verson}", alt='Anker').pc
+        img(src="/deals/images/homeVacDuo/homemb.jpg?#{verson}", alt='Anker').moblie
+      
+      div
+        div
+          div.login
+            div.title
+              img(src="/deals/images/homeVacDuo/price.png?#{verson}", alt='Anker')
+            p 1. The HomeVac Duo must be purchased via Amazon US.
+            p 2. 1000 coupon codes available.
+            p 3. First come first served.
+            p 4. US only.
+            div.loginDiv
+              div(style="display:inline-block").loginDivInput
+                input(type="email" id="userEmail" placeholder="Email:").emailInput
+              input(type="button" value="JOIN NOW").btn
+            div.shareDiv
+              p Tell your friends!
+              div
+                img(src="/deals/images/homeVacDuo/facebook.png?#{verson}" shareType="facebook")
+                a(href='https://twitter.com/intent/tweet?text=I+got+30%25+off+%40AnkerOfficial%26%2339%3bs+new+cordless+vacuum+cleaner!+First+come+first+serve.+Click+here%3a+http%3a%2f%2fbit.ly%2fHomeVacD', target='_blank')
+                  img(src="/deals/images/homeVacDuo/twitter.png?#{verson}" shareType="twitter")
+                img(src="/deals/images/homeVacDuo/google.png?#{verson}" shareType="google")
+    include footer
+    include ./includes/analytics.jade

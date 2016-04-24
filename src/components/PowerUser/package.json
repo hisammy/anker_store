@@ -1,0 +1,6 @@
+{
+  "name": "PowerUser",
+  "version": "0.0.0",
+  "private": true,
+  "PowerUserApply": "./PowerUserApply.js"
+}

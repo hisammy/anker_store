@@ -1,0 +1,44 @@
+script.
+  $(function(){
+    $("#head-menu").click(function(){
+      $("#head-container").toggleClass('show');
+    })
+    $("#head-mask").click(function(){
+      $("#head-container").toggleClass('show');
+    })
+    $("#close").on("click",function(){
+      $(".Header").addClass("close");
+      ga('send', 'event', 'Regsiter', 'Close', 'PW');
+    })
+    if(document.cookie.indexOf("; token") >=0 ){
+      $(".Header").addClass("close");
+    }
+    $(".Header").height($(".registerTips").height()+$(".Header-fixed").height());
+  })
+
+.Header.clearfix.close
+  div.registerTips
+  .Header-fixed
+    .navigator
+      #head-container.module_container
+        a.logo(href='/')
+          img(src="/deals/images/logo.png", alt='Anker')
+        a#head-menu.menu
+          i.iconfont &#xe60b;
+        ul.list
+          li
+            a(href='/') HOME
+            i.iconfont &#xe60a;
+          li
+            a(href='/products') PRODUCTS
+            i.iconfont &#xe60a;
+          li.search
+            a(href='/search') SEARCH
+            i.iconfont &#xe60a;
+          li
+            a(href='/poweruser') POWER USERS
+            i.iconfont &#xe60a;
+          li
+            a(href='/support') SUPPORT
+            i.iconfont &#xe60a;
+        #head-mask.mask

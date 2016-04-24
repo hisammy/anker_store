@@ -1,0 +1,108 @@
+{
+  "sec1": {
+    "slogan": "Amerikas führende USB Lademarke",
+    "main_title": "Wie wir externe Akkus<br> perfektionieren",
+    "sub_title": "Ein 10.000-Stunden-Prozess"
+  },
+  "sec2": {
+    "title": "Detailreiches Design",
+    "desc": "Alles startet mit einem Konzept. Unsere DesignerInnen verbringen bis zu einem halben Jahr mit der Ideenentwicklung für ein Ladegerät. In dieser Zeit entscheiden sie sich für die Form und Materialien - mit dem Ziel das Produkt so standhaft und kompakt wie möglich zu kreieren. Sie arbeiten außerdem unermüdlich am Feinschliff bestimmter Gütekennzeichen wie zum Beispiel unseres innovativen LED-Indikator-Kreises. ",
+    "list": [
+      "Aluminiumhülle",
+      "Verstärkungsschicht",
+      "Elektrisch angetriebene LED-Drehscheibe"
+    ]
+  },
+  "sec3": {
+    "title": "Die besten Batteriezellen",
+    "desc": "Das Herz eines jeden Anker Akkus ist seine Hochkapazitätsbatterie. Um Kraft und Effizienz zu maximieren sind in unserer PowerCore Serie erstklassige Lithiumion-Zellen von global etablierten Herstellern wie Panasonic und LG verarbeitet. Die Zellen unterlaufen einen einjährigen Test bevor sie in unsere Akkus verbaut werden.",
+    "list": [
+      "Auf 40-50% <br>geladen",
+      "Für 1 Jahr <br>gealtert",
+      "Auf 100% geladen <br>bei 1X Geschwindigkeit",
+      "Auf 0% entladen <br>bei 2X Geschwindigkeit",
+      "Weitere 5-mal ge- und<br> entladen über 4 Stunden"
+    ]
+  },
+  "sec4": {
+    "title": "Die fortgeschrittensten Mikrochips",
+    "desc": "Eine weitere Schlüsselkomponente sind die winzigen aber leistungsstarken Microchips. Diese beziehen wir von den sichersten und verlässlichsten japanischen Qualitätsherstellern mit einer Fehlerrate von weniger als eins aus 500.000. Das ist ca. 50-mal verlässlicher als es reguläre Chip-Komponenten sind. "
+  },
+  "sec5": {
+    "title": "Führender Technologiestandard",
+    "desc": "Es sind die intelligenten Microchips die das Gehirn eines jeden Akkus bilden. Zum Leben erweckt werden sie durch Schnellladetechnlologien wie unsere PowerIQ™, VoltageBoost™ und Quick Charge™ 2.0 Technologien. Unsere IngenieurInnen verbringen bis zu 200 Stunden mit der Veredlung jedes winzigen Chips und seiner komplexen Platine.",
+    "list": [
+      {
+        "name": "PowerIQ®",
+        "desc": "Erkennt Ihr Gerät. Liefert die schnellste Ladung."
+      },
+      {
+        "name": "VoltageBoost™",
+        "desc": "Sorgt für die schnellste Geschwindigkeit, egal welches Kabel Sie verwenden. "
+      },
+      {
+        "name": "Qualcomm® Quick Charge™ 2.0",
+        "desc": "Lädt kompatible Geräte bis zu 75% schneller. "
+      }
+    ],
+    "faster": "Schneller",
+    "safer": "Sicherer",
+    "sub_img": "/deals/images/10000hours/sec5/iconSecr.png",
+    "sub_desc": "MultiProtect™<br/>Diese Chips sind mit einer Schicht von fortgeschrittenen Sicherheitselementen ausgestattet, welche gemeinsam unser einzigartiges MultiProtect™-Sicherheitssystem bilden. Vergleichbar mit einem starken Immunsystem schützt es nicht nur den Akku sondern auch Ihre angeschlossenen Geräte und  Kabel und - am wichtigsten - Sie.",
+    "sub_list": [
+      "Ausgangsstrombegrenzer",
+      "Batteriezellenschutz",
+      "Ausgangsstromstabilisator",
+      "Kurzschlusschutz",
+      "Ausgangsspannungüberspannungsschutz",
+      "Temperaturregelung",
+      "Eingangsspannungüberspannungsschutz",
+      "Überlastreset",
+      "Autoabschaltungschlafmodus",
+      "Unterspannungsschutz"
+    ]
+  },
+  "sec6": {
+    "title": "Rigorose Tests",
+    "desc": "Bevor unsere Akkus die Produktion verlassen dürfen müssen sie extensive Tests durchlaufen. Unser Qualitätskontrollteam verbringt über 100 Stunden mit der umfassenden Prüfung eines Produktes. Die Tests decken um die zwanzig potentielle Risiken wie zum Beispiel Feuer, Reibung oder Feuchtigkeit. ",
+    "list": [
+      "Temperatur - Hält über 143 Stunden extremer Temperaturtests stand.",
+      "Schock - Gerüttelt in alle Richtungen für insgesamt 9 Stunden.",
+      "USB-Ports - 5.000-maliges Ein- und Ausstecken",
+      "Einwirkung - Wiederholte Aufpralle einer 510 g  schweren Stahlkugel von einer Höhe über 1,2 m."
+    ]
+  },
+  "sec7": {
+    "title": "Umfassende Sicherheitsbescheinigungen",
+    "desc": "Nachdem alle Tests abgeschlossen sind kümmern wir uns um alle notwendigen Sicherheitszertifikate. Wir erlangen sogar Zertifizierungen, die weit über den Standard für unsere Produktkategorien hinausgehen - zum Beispiel das höchste Energieeffizienz-Rating vom US Department of Energy. Maximale Verlässlichkeit und Sicherheit wird so garantiert. "
+  },
+  "sec8": {
+    "title": "Geprüft, versiegelt, versendet",
+    "desc": "Schließlich ist unser Akku bereit für seine Verpackung. Aber auch das benötigt Zeit. Wir verbringen Stunden damit sie auf Aufpralle, Erschütterungen und extreme Temperaturen zu testen. Nur wenn Verpackung und Produkt das Prozedere völlig unversehrt durchlaufen besiegeln wir den Artikel und schicken den Anker Akku auf den Weg zu Ihnen. "
+  },
+  "sec9": {
+    "title": "Die erste Wahl von über 10 Millionen zufriedener Kunden",
+    "desc": "Diese Spitzenleistung bleibt nicht unbemerkt. Ankers externe Akkus und Ladegeräte wurden in tausenden Onlinereviews sowie von unzähligen Technikblogs und führenden Medien als die besten ihrer Klasse gewählt. Lesen Sie was diese zu sagen haben:",
+    "list": [
+      {
+        "user": "Chip",
+        "comment": "Unser aktueller Testsieger mit saftigen 12.000mAh heißt Anker [...] (Er) setzt den Bestwert in der Kategorie ‘Leistung’ [...] riesiger Stromspeicher, drei USB-Anschlüsse, coole Form"
+      },
+      {
+        "user": "Giga",
+        "comment": "Effizienz-Sieger ist einmal mehr Anker” “[...] Das beste Gesamtpaket und hat sich unseren GIGA-Award als Top-Hardware redlich verdient.”"
+      },
+      {
+        "user": "Chefredakteur,  Apfeltalk",
+        "comment": "Aus eigener Erfahrung kann ich diese Dinger nur empfehlen und der Preis ist mehr als angemessen."
+      },
+      {
+        "user": "APPgefahren",
+        "comment": "Die Produkte von Anker sind auch bei uns in der Reaktion aufgrund ihres guten Preis-Leistungs-Verhältnisses geschätzt.” [...] “Von uns bekommt das Akkupack daher auf jeden Fall eine absolute Kaufempfehlung"
+      }
+    ]
+  },
+  "sec10": {
+    "desc": "Werfen Sie einen Blick auf die externen Akkus und anderen Gadget an denen wir jüngst gearbeitet haben: "
+  }
+}

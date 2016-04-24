@@ -1,0 +1,38 @@
+{
+  "contact_title": "Anker | Contact Us",
+  "contact_sub_title": "Contact Us",
+  "contact_sub_desc": "Whatever your question, we’re here to help.",
+  "customer_service_inquiries": "Customer Service Inquiries",
+  "customer_service_inquiries_desc": "Please get in touch about any issues you’re having, and we’ll try our best to respond with 24 hours.",
+  "email_us": "Email us",
+  "support_email": "support@anker.com",
+  "call_us": "Call us",
+  "contact_tels": "<p>
+    <span>United States</span>
+    <span>+1 (800) 988 7973</span>
+    <span>Mon-Fri 9AM-5PM (PST)</span>
+  </p>
+  <p>
+    <span>United Kingdom</span>
+    <span>+44 (0) 1604 936 200</span>
+    <span>Mon-Fri 6AM-11AM (GMT)</span>
+  </p>
+  <p>
+    <span>Germany</span>
+    <span>+49 (0) 69 9579 7960</span>
+    <span>Mon-Fri 6:00-11:00</span>
+  </p>
+  <p>
+    <span>Japan</span>
+    <span>+81 03 4455 7823</span>
+    <span>Mon-Fri 9:00-17:00</span>
+  </p>
+  <p>
+    <span>China</span>
+    <span>+86 400 0550 036</span>
+    <span>Mon-Fri 9:00-17:30</span>
+  </p>",
+  "contact_support_center": "Need to return a product? Visit our <a href=\"/support\">Support Center</a> for returns information.",
+  "business_inquiries": "Business Inquiries",
+  "contact_business_center": "For all business-related inquiries, please visit our <a href=\"/business\">Business Center</a>."
+}

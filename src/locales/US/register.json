@@ -1,0 +1,12 @@
+{
+  "register_title": "Anker | Create Account",
+  "register_description": "Limited-time anker.com rewards. Join anker.com and get up to $30 off your next anker.com purchase. Receive $15, $10, and $5 discounts.",
+  "register_tip_title": "Create Account",
+  "register_placeholder_email": "Email address",
+  "register_placeholder_password": "Password",
+  "register_subscribe_tip": "Subscribe to the Anker Newsletter",
+  "register_register": "REGISTER",
+  "register_sign_in": "< Sign in",
+  "password_verify_error": "Password must be 8 - 20 digits, letters or characters.",
+  "register_registration_success": "Registration successful."
+}

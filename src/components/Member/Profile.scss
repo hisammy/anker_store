@@ -1,0 +1,300 @@
+@import '../variables.scss';
+.input-calendar {
+    font-family: 'Pontano Sans', sans-serif;
+    position: relative;
+}
+
+.input-calendar-wrapper {
+    z-index:10;
+    position: absolute;
+    padding: 5px 12px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 0 0 9px 5px rgba(0,0,0,0.05);
+    background-color: #fff;
+    width: 189px;
+    text-align: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input-calendar .input-calendar-value {
+    width: 120px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 16px;
+    padding: 2px 8px;
+}
+
+.input-calendar .input-calendar-value:focus {
+    outline: none;
+    border: 1px solid #f39c12;
+}
+
+.input-calendar .calendar-icon {
+    display: inline-block;
+    padding: 0 5px;
+    height: 27px;
+    line-height: 27px;
+    position:absolute;
+    top:10px;
+}
+
+.input-calendar .days,
+.input-calendar .months,
+.input-calendar .years {
+    width: 189px;
+    padding-bottom: 2px;
+}
+
+.input-calendar .cell {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #fff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.input-calendar .cell:hover {
+    color: #f39c12;
+    border: 1px solid #f39c12;
+    border-radius: 4px;
+}
+
+.input-calendar .cell.current {
+    background: #f39c12;
+    color: #fff;
+    border-radius: 4px;
+    opacity: .8;
+}
+
+.input-calendar .day {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+}
+
+.input-calendar .day.prev,
+.input-calendar .day.next {
+    opacity: .4;
+}
+
+.input-calendar .month {
+    width: 58px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.input-calendar .year {
+    width: 58px;
+    height: 38px;
+    line-height: 38px;
+}
+
+.input-calendar .days-title .cell {
+    height: 25px;
+    line-height: 28px;
+    opacity: 0.5;
+    cursor: default;
+}
+
+.input-calendar .days-title .cell:hover {
+    color: #000;
+    border: 1px solid #fff;
+}
+
+.input-calendar .navigation-title {
+    width: 100px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.input-calendar .years-view .navigation-title {
+    cursor: default;
+}
+
+.input-calendar .years-view .navigation-title:hover {
+    color: #000;
+}
+
+.input-calendar .navigation-title:hover {
+    color: #f39c12;
+}
+
+.input-calendar .icon-wrapper {
+    cursor: pointer;
+}
+
+.input-calendar .icon {
+    cursor: pointer;
+}
+
+.input-calendar .icon:hover,
+.input-calendar .today-btn:hover,
+.input-calendar .icon-wrapper:hover {
+    color: #f39c12;
+}
+
+.input-calendar .icon > .fa {
+    width: 20px;
+}
+
+.input-calendar .today-btn {
+    cursor: pointer;
+}
+
+.input-calendar .cell.day.today {
+    position: relative;
+}
+
+.input-calendar .cell.day.today:after {
+    content: '.';
+    position: absolute;
+    bottom: 15px;
+    font-size: 20px;
+    color: #F39C12;
+}
+.fa{
+  width:1.2rem;
+  height:1.2rem;
+  font-size:2rem;
+}
+.span-calendar{
+    display:block;
+    overflow:visible;
+}
+.Profile{
+  max-width:$max-content-width;
+  margin:0 auto;
+  &-container{
+    margin-top:4.6rem;
+    margin-bottom:100px;
+    ul{
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    }
+    form{
+      >div{
+        margin-top:1rem;
+        vertical-align:top;
+      }
+      .email{
+        input{
+          background-color:$gray-light;
+        }
+      }
+      .userName{
+        display:block;
+      }
+      .dob{
+        width:25%;
+        margin-right:5%;
+        display:inline-block;
+        border-bottom:1px solid $gray-light;
+      }
+      .gender{
+        width:25%;
+        margin-right:5%;
+        display:inline-block;
+      }
+      .phone{
+        width:40%;
+        display:inline-block;
+      }
+      .city{
+        width:18%;
+        margin-right:4%;
+        display:inline-block;
+      }
+      .zipCode{
+        width:18%;
+        display:inline-block;
+      }
+      .country{
+        width:25%;
+        margin-right:5%;
+        display:inline-block;
+      }
+      .state{
+        width:25%;
+        margin-right:5%;
+        display:inline-block;
+      }
+      .invited{
+        padding:2rem;
+        margin-top:1rem;
+        background-color:#aad4e8;
+        position:relative;
+        display:none;
+        .copy{
+          position:absolute;
+          right:1rem;
+          bottom:1rem;
+        }
+        .iconfont{
+          font-size:2rem;
+        }
+      }
+      button{
+        background-color:$blue;
+        color:white;
+        padding:.6rem 3rem;
+        border:0 none;
+      }
+      .submit{
+        display:block;
+        margin:1rem 0;
+        text-align:right;
+      }
+    }
+  }  
+}
+@media screen and (max-width: 768px) {
+  .Profile{
+    &-container{
+      margin:2rem 1rem;
+      ul{
+      margin:0 .5rem;
+      }
+      form{
+        .dob{
+          width:45%;
+          margin-right:5%;
+        }
+        .gender{
+          width:50%;
+          margin-right:0;
+        }
+        .phone{
+          display:block;
+          width:auto;
+        }
+        .city{
+          width:45%;
+          margin-right:5%;
+        }
+        .zipCode{
+          width:50%;
+        }
+        .country{
+          width:45%;
+          margin-right:5%;
+        }
+        .state{
+          width:50%;
+          margin-right:0;
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/header.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/pu_flash_deal.css?#{verson}", rel="stylesheet")
+    <meta name="fb:app_id" content="#{config.FB_APP_ID}" />
+
+    //- <meta name="og:url" content="/deals/ingress_giveaway" />
+    //- <meta name="og:title" content="Enter The #AnkerIngress Giveaway Here!" />
+    //- <meta name="og:description" content="Anker and Ingress have joined forces with a massive 300 portable charger giveaway. US only. Ends 3/20/2016." />
+    //- <meta name="og:image" content="/deals/images/ingress/share.jpg" />
+
+    script.
+      var config = !{JSON.stringify(config)};
+      var token = "!{token}";
+    script(src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+    script(src="//cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js")
+    script.
+      window.FastClick || document.write('<script src="//cdn.bootcss.com/fastclick/1.0.6/fastclick.min.js"><\/script>');
+      window.jQuery || document.write('<script src="//cdn.bootcss.com/jquery/2.1.4/jquery.min.js"><\/script>');
+      $.cookie || document.write('<script src="//cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"><\/script>');
+
+  body
+    include header
+    div.pu-deal
+      //- .page0(style="display:#{token?'':''}")
+      div.banner
+        img(src="/deals/images/pu_flash_deal/banner.jpg?#{verson}").img
+        div.text
+          h2 POWER USERS
+          div.info !{banner_text}
+      div.mob-banner
+        h3
+          i.iconfont.hide &#xe619;
+          i.iconfont.show &#xe616;
+          span Power Users explain
+        div.info.hide !{banner_text}
+      div.sub-banner
+        i.iconfont &#xe610;
+        h2 POWER USER FLASH DEAL
+        i.iconfont &#xe610;
+      div.module-items
+        - var activity_items = data.activity_items || [];
+        //- - var test = { can_click: true, id: 123, price: 20.99,  deal_price: 9.99 };
+        //- - test.status = 'started'; // not_started, started, ended, success
+        //- //- - test.status = 'success'; test.user_code = '6UQN-H9ESN8-6W9HJL';
+        //- - test.variant = { id: 456, discount: '30%', images: [{mini_url: 'https://dga378iy6u5ix.cloudfront.net/spree/products/3085/mini/A1107011_ND01.jpg'}] };
+        //- - test.variant.name = 'PowerCore mini';test.variant.description = 'The Compact High-Capacity Portable Charger';
+        //- - var tmp = Object.assign({}, test); tmp.status = 'review_success';tmp.user_code = '6UQN-H9ESN8-6W9HJL';
+        //- - activity_items.push(tmp);activity_items.push(test);activity_items.push(test);activity_items.push(test);
+        //- - activity_items.push(test);activity_items.push(test);
+        ul#prods.clearfix.wraper
+          - each item in activity_items
+            - var variant = item.variant || {};
+            - var images = variant.images || [];
+            - var image = images[0] || {};
+            //- - var inAmazon = variant.sell_type == 'amazon';
+            - var link = item.market_url;
+            //- - console.log(variant)
+            - var dealPrice = item.deal_price || 0; var originPrice = item.price || 0;
+            - var discount = dealPrice && originPrice ? Math.round((1 - dealPrice / originPrice) * 100) : 0; // 都有值才显示折扣
+            li.box
+              div.item
+                a(href="#{link}", target="_blank")
+                  span.border
+                  div.image
+                    span.tag-amazon
+                    span.tag-sellout
+                    - if (image.mini_url)
+                      img(src="#{image.mini_url}")
+                  div.title #{variant.name}
+                  //- div.description #{variant.description}
+                  - if (item.price && dealPrice && dealPrice !== originPrice)
+                    div.price
+                      p.paid $#{parseFloat(dealPrice).toFixed(2)}
+                      p.original $#{parseFloat(originPrice).toFixed(2)}
+                  - else
+                    div.price
+                      div.paid
+                        - if (originPrice)
+                          span $#{parseFloat(dealPrice || originPrice).toFixed(2)}
+                        - else
+                          | &nbsp;
+                  //- p.ends Ends in #{item.end_at}
+              div.actions
+                div.info
+                  - if (item.status == 'not_started')
+                    i.action.disable COMING SOON
+                  - else if (item.status == 'ended')
+                    i.action.disable CODE CLAIMED
+                  - else if (item.status == 'started')
+                    - if (item.can_click)
+                      a.action(class="j-getcode", data-id="#{item.id}") GET CODE
+                      div.pre-hide
+                        a(href="#{link}", target="_blank").highlight.go-amazon
+                          span BUY AT AMAZON <br>
+                        p.highlight.code
+                        div.review
+                          p.tac
+                            input(type="url", name="review_url" placeholder="Enter review URL" required=true).review-url
+                            a.action(class="j-review", data-id="#{item.id}").underline SUBMIT
+                    - else
+                      a.action.disable GET CODE
+                  - else if (item.status == 'success')
+                    - if (item.user_code)
+                      a(href="#{link}", target="_blank").highlight.go-amazon
+                        span BUY AT AMAZON <br>
+                      p.highlight.code (#{item.user_code})
+                      - if (item.can_review)
+                        div.review
+                          p.tac
+                            input(type="url", name="review_url", placeholder="Enter review URL", value="#{item.user_review_url || ''}").review-url
+                            a.action(class="j-review", data-id="#{item.id}").underline SUBMIT
+                      - else
+                        | &nbsp;
+
+                  - else if (item.status == 'review_success')
+                    - if (item.user_code)
+                      a(href="#{link}", target="_blank").highlight.go-amazon
+                        span BUY AT AMAZON <br>
+                      p.highlight.code (#{item.user_code})
+                      - if (item.can_review)
+                        div.review
+                          p.tac
+                            input(type="url", name="review_url", placeholder="Enter review URL", value="#{item.user_review_url || ''}").review-url
+                            a.action(class="j-review", data-id="#{item.id}").underline SUBMIT
+            
+              - if (discount)
+                .discount
+                  i #{discount + '%'}
+                  i OFF
+
+    include footer
+    script(src="/deals/javascript/pu_flash_deal.js?#{verson}")
+    include ./includes/analytics.jade

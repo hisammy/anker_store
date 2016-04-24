@@ -1,0 +1,62 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/powerHouse.css?#{verson}", rel="stylesheet")
+    link(href="/deals/css/header.css?#{verson}", rel="stylesheet")
+    <meta name="fb:app_id" content="#{config.FB_APP_ID}" />
+
+    <meta name="og:url" content="/deals/powerhouse?ic=#{inviter_code}" />
+    <meta name="og:title" content="Anker PowerHouse is Coming" />
+    <meta name="og:description" content="Anker is launching PowerHouse......and equips you with the latest tech for free! Click here to learn more." />
+    <meta name="og:image" content="/deals/images/powerHouse/facebookShare.jpg" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@Ankerofficial" />
+    <meta name="twitter:title" content="Anker PowerHouse is Coming" />
+    <meta name="twitter:description" content="Can't believe @AnkerOfficial are giving out free chargers for their #PowerHouse launch!? http://anker.com/deals/ph?ic=#{invitation_code}"/>
+    <meta name="twitter:image" content="http://www.anker.com/deals/images/powerHouse/twitterShare.jpg" />
+    <meta name="twitter:url" content="/deals/anker_qc" />
+
+    script(src="/deals/javascript/fastclick.js")
+    script(src="/deals/javascript/jquery.min.js")
+    script(src="/deals/javascript/jquery.cookie.js")
+    script.
+      var config = !{JSON.stringify(config)};
+      var inviter_code = "!{invitation_code}";
+    script(src="/deals/javascript/powerHouse.js?#{verson}")
+  body
+    include header
+    div.powerhouse
+      .page0
+        div.banner
+          img(src="/deals/images/powerHouse/home.jpg?#{verson}", alt='Anker').imgpc
+          div.homeTips 
+            div
+              div
+                h3 POWERHOUSE IS HERE
+                p(style="font-size:16px;") The World's Most Advanced 400Wh Portable Power Supply
+                
+                p.pt6
+                  span Preorder Now for 
+                  span(style="color:#00a8de")$399 
+                  span(style="text-decoration: line-through;font-size:14px") $499
+                p 
+                  span Using Code: 
+                  span(style="color:#00a8de") ANKPower
+                div.otherLogin
+                  a(href="http://www.amazon.com/Anker-PowerHouse-Generator-Recharges-Emergency/dp/B0196GQAKM/ref=sr_1_1?ie=UTF8&qid=1461042780&sr=8-1&keywords=anker+powerhouse&tag=ianker-20" target="_blank" style="background-color:#F9A706;").sharebtn.facebook#facebookShare 
+                    span Buy at Amazon
+                 div To check your result, please log in first 
+                 div and then return to this page.
+                ul(style="display:none")
+                  li  
+                    span Get PowerHouse (and More) for 
+                    strong Free
+                  li  
+                    strong $30 
+                    span Discount for First-Time Sign-ups
+    include footer
+    include ./includes/analytics.jade

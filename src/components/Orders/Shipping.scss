@@ -1,0 +1,73 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.Shapping {
+  max-width:$max-content-width;
+  margin:0 auto;
+  p,ul,li{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  .orderDetail{
+    margin:4.6rem 0 100px 0;
+    .orderPath{
+      margin-bottom:1rem;
+      color:$gray-dark;
+      a:visited{
+        color:$gray-dark;
+      }
+      a{
+        text-decoration:underline;
+      }
+    }
+    img {
+      width:7rem;
+      height:7rem;
+    }
+    .orderInfo{
+      flex:1;
+    }
+    .price{
+      margin-top:1rem;
+      margin-right:1rem;
+    }
+    .package{
+      line-height:2.5rem;
+    }
+    .orderItem{
+      border:1px solid $gray-light;
+      padding-left:.5rem;
+      li{
+        display:flex;
+        padding:.5rem;
+      }
+    }
+    .tracking_info{
+      background-color:$gray-light;
+      padding:1rem;
+      margin-top:1rem;
+      >div:first-child{
+        color:$blue;
+      }
+      div{
+        color:$gray;
+        line-height:1.8rem;
+      }
+      .time{
+        margin:0 1rem;
+      }
+    }
+  }
+  p,ul,li{
+    list-style:none;
+    margin:0;
+    padding:0;
+  }
+  @media screen and (max-width: 768px) {
+    .orderDetail{
+      margin: 1rem;
+    }
+  }
+}

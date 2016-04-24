@@ -1,0 +1,503 @@
+@import '../variables.scss';
+.Process {
+  padding:2rem 0;
+  .module-container {
+    display:table;
+    .table{
+      width:100%;
+      display:table;
+    }
+  }
+  .addresses {
+    position:fixed;
+    top:0;left:0;
+    background:rgba(0,0,0,.1);
+    width:100%;
+    height:100%;
+    z-index:2;
+    .container {
+      width: 700px;
+      margin:10rem auto 0;
+      background:white;
+      .header {
+        position:relative;
+        background:$blue;
+        color:white;
+        text-align:center;
+        line-height:3rem;
+        font-size:1.2rem;
+        .close {
+          position:absolute;
+          top:0;right:0;
+          font-size:2.5rem;
+          text-align:center;
+          line-height:3rem;
+          width:3rem;
+          height:3rem;
+          cursor:pointer;
+          color:white;
+          transition:500ms;
+          &:hover {
+            transform:rotate(-90deg)
+          }
+        }
+      }
+      .content {
+        border:1px solid $gray;
+        .list {
+          margin:0;
+          padding:1rem;
+          li {
+            list-style:none;
+            display:inline-block;
+            width:50%;
+            .item {
+              background:$gray-light;
+              cursor:pointer;
+              margin:.5rem;
+              padding:1rem;
+              border:2px solid $gray-light;
+              border-radius:.5rem;
+              &:hover{
+                border-color:$blue;
+              }
+              p{
+                margin:.3rem 0;
+              }
+            }
+          }
+        }
+        .close{
+          display:none;
+        }
+      }
+    }
+  }
+  .order-input{
+  	display:table-cell;
+    vertical-align:top;
+ 	  padding:2rem;
+  	.page-title{
+  	  text-align:center;
+  	  .item{
+  	  	display:inline-block;
+  	  	.iconfont{
+  	  	  float:left;
+  	  	  font-size:3rem;
+  	  	}
+  	  	span{
+  	  	  line-height:4.5rem;
+  	  	  padding-left:1.5rem;
+  	  	  font-size:2rem;
+  	  	  display:inline-block;
+  	  	}
+  	  }
+  	}
+  	.customer, .address, .promotion, .email{
+      &.fill{
+        input, select{
+          background:$gray-light;
+          border-color:white;
+          pointer-events:none;
+        }
+        .next{
+          a{
+            display:none;
+            &.edit{
+              display:inline-block;
+              width:auto;
+            }
+          }
+        }
+      }
+      >h5{
+        font-size:1.2rem;
+        margin-bottom:0;
+        .describe{
+          font-size:.9rem;
+          font-weight:400;
+          color:$blue;
+          margin-left:1rem;
+        }
+      }
+      .inputs{
+        margin:0;
+        padding:0;
+        display:table;
+        width:100%;
+        li{
+          list-style:none;
+          float:left;
+          margin-top:1rem;
+          &.p50{
+            width:50%;
+            div{
+              width:92%;
+            }
+          }
+          &.p100{
+            width:100%;
+            div{
+              width:96%;
+            }
+          }
+          &.p25{
+            width:25%;
+            float:right;
+            div{
+              width:84%;
+            }
+          }
+          &.p33{
+            width:33.33%;
+            div{
+              width:88%;
+            }
+          }
+          &.p75{
+            width:75%;
+            div{
+              width:94%;
+            }
+          }
+        }
+      }
+  	  .next{
+        padding-bottom:2rem;
+        text-align:center;
+  	  	a{
+  	  	  width:46%;
+  	  	  line-height:3.2rem;
+          display:inline-block;
+          margin:2rem 4% 0 0;
+          text-align:center;
+          &.submit{
+            color:white;
+            background:$blue;
+          }
+          &.cancel{
+            background:$gray;
+            color:white;
+          }
+          &.edit{
+            color:$blue;
+            text-decoration:underline;
+            display:none;
+          }
+  	  	}
+  	  }
+  	}
+    .customer{
+      .links{
+        margin:0;
+        padding:1rem 0;
+        display:table;
+        width:100%;
+        li{
+          list-style:none;
+          display:table-cell;
+          padding:0 .5rem;
+          text-align:center;
+          a{
+            display:block;
+            color:white;
+            text-decoration:none;
+            line-height:3rem;
+            .iconfont{
+              font-size:2rem;
+              line-height:3rem;
+              vertical-align:middle;
+              display:inline-block;
+              margin-right:.5rem;
+            }
+            span{
+              font-size:.9rem;
+              display:inline-block;
+              line-height:3rem;
+            }
+            &.facebook{
+              background:$facebook-blue;
+            }
+            &.google{
+              background:$google-red;
+            }
+            &.anker{
+              background:$blue;
+            }
+          }
+        }
+      }
+    }
+    .promotion{
+      .apply ,.delete{
+        float:left;
+        line-height:3.2rem;
+        padding:0;
+        color:white;
+        text-align:center;
+        width:80%;
+      }
+      .apply{
+        border:1px solid $blue;
+        background:$blue;
+      }
+      .delete{
+        border:1px solid $gray;
+        background:$gray;
+      }
+      .list{
+        display:table;
+        margin:0;
+        padding:0;
+        li{
+          &:hover{
+            border-color:$blue;
+          }
+          .iconfont{
+            display:inline-block;
+          }
+          cursor:pointer;
+          list-style:none;
+          margin:2% 2% 0 0;
+          padding:2%;
+          float:left;
+          width:42%;
+          border:1px solid $gray;
+          .price{
+            font-size:1.2rem;
+            margin:1rem 0;
+          }
+          .name, .date, .note{
+            display:block;
+            color:$gray;
+          }
+          .note{
+            word-break:break-all;
+          }
+          .check{
+            text-align:right;
+          }
+        }
+      }
+    }
+  }
+  .order-info {
+  	border-left:1px solid $gray;
+  	display:table-cell;
+    vertical-align:top;
+  	padding:2rem;
+  	width:40%;
+    .list {
+      margin:0;
+      padding:3rem 0 1rem;
+      dt {
+        font-weight:700;
+        line-height:3rem;
+      }
+      dt, dd {
+        list-style:none;
+        margin: 0;
+        display:table;
+        width:100%;
+      }
+      dd {
+        .image{
+          float:left;
+          width:80px;
+          height:80px;
+          img{
+            width:100%;
+            height:100%;
+          }
+        }
+        .text{
+          margin:0 1rem 0 100px;
+          >p{
+            margin: 0;
+          }
+          .name{
+            font-weight:700;
+          }
+          .color, .quantity{
+            color:$gray;
+          }
+        }
+      }
+    }
+    .count {
+      border-top:1px solid $gray;
+      padding:2rem 0;
+      margin:0;
+      color:$gray;
+      li{
+        list-style:none;
+        display:inline-block;
+        width:100%;
+        .key{
+          float:left;
+        }
+        .value{
+          float:right;
+        }
+      }
+    }
+    .total {
+      border-top:1px solid $gray;
+      width:100%;
+      display:table;
+      padding:2rem 0;
+      line-height:2rem;
+      font-size:1.2rem;
+      .key{
+        float:left;
+      }
+      .value{
+        float:right;
+      }
+    }
+  }
+  .checkout{
+    margin:2rem;
+    line-height:3rem;
+    color:white;
+    background:$blue;
+    cursor:pointer;
+    font-size:1.4rem;
+    text-align:center;
+    .price{
+      margin-right:1.5rem;
+    }
+    .line{
+      margin-left:1.5rem;
+    }
+    &.hide{
+      display:none;
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .Process {
+    padding-bottom:4rem;
+    .addresses {
+      position:relative;
+      .container {
+        width:100%;
+        margin:0;
+        .header {
+          background:white;
+          color:$gray-dark;
+          line-height:4rem;
+          font-size:2rem;
+          border-bottom:1px solid $gray;
+          margin:2rem 0;
+          .close {
+            display:none;
+          }
+        }
+        .content {
+          border:0;
+          .list {
+            padding:.5rem;
+          }
+          .close {
+            display:block;
+            width:20rem;
+            background:$gray;
+            color:white;
+            line-height:3rem;
+            height:3rem;
+            text-align:center;
+            margin:2rem auto;
+          }
+        }
+      }
+    }
+    .order-input {
+      display:block;
+      padding:0;
+      .customer {
+        padding-left:4%;
+        .links {
+          li{
+            display:block;
+            margin-top:1rem;
+          }
+        }
+      }
+      .address {
+        padding-left:4%;
+        .inputs {
+          li{
+            display:inline-block;
+            vertical-align:top;
+            &.p25, &.p33 {
+              width:50%;
+              div {
+                width:92%;
+              }
+            }
+            &.p75{
+              width:100%;
+              div{
+                width:96%;
+              }
+            }
+          }
+        }
+      }
+      .promotion{
+        padding-left:4%;
+        .list{
+          li{
+            margin:3% 0 0;
+            width:90%;
+            .price{
+              margin:0;
+            }
+          }
+        }
+      }
+    }
+    .order-info{
+      padding:2.6%;
+      margin:3rem 0 0;
+      display:block;
+      width:100%;
+      left:-2.6%;
+      position:relative;
+      background:$blue;
+      border:0;
+      .list{
+        display:none;
+      }
+      .count, .total{
+        border:none;
+        padding:0 5%;
+        color:white;
+      }
+      .total{
+        margin-top:2%;
+        display:table;
+        width:90%;
+        line-height:3rem;
+      }
+    }
+    .checkout{
+      position:relative;
+      width:100%;
+      padding:0 2.6%;
+      left:-2.6%;
+      font-size:1.2rem;
+      margin:5% 0 0;
+      .price{
+        display:none;
+      }
+    }
+    .list{
+      .order-input, .order-info, .checkout{
+        display:none;
+      }
+    }
+  }
+}

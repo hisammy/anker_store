@@ -1,0 +1,154 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.Business {
+  margin: 0 auto 20px;
+  line-height: 1.5;
+  .title{
+    padding: 30px 0 0;
+    text-align:center;
+    h2 {
+      margin:0;
+      font-size: 2.4rem;
+      font-weight: 400;
+      color:$gray-dark;
+    }
+  }
+  a{
+    color: $blue;
+    text-decoration: underline;
+  }
+  :focus{
+    outline: 0;
+  }
+  .content{
+  	padding: 12px 12px 0;
+    h3, h4, h5{
+      margin:0;
+      padding: 12px 0 0 0;
+    }
+    p{
+      margin:1em 0;
+      padding:0;
+    }
+    ul{padding: 0;}
+    img{max-width: 100%;}
+  }
+  .ellipsis{
+    overflow: hidden;
+    height:6.2em;
+    /*$height: 4.2em;
+    height: $height;
+    &:after{
+      content: "\02026";
+    }*/
+    @media only screen and (max-width: 768px){
+      height:auto
+    }
+  }
+  $spacing: 2px;
+  .list{
+    list-style-type: none;
+    display: table;
+    /*border-spacing: 5px 0;*/
+    margin: 0 -$spacing;
+    li{
+      display: table-cell;
+      width: 25%;
+    }
+    .img{
+      margin: 0 $spacing;
+      height: 150px;
+      background-repeat:no-repeat;
+      background-position: 50% 50%;
+      background-size:contain;
+    }
+    .cnt{
+      padding: 0 $spacing;
+      h4{
+        min-height:3em;
+      }
+    }
+    .desc{
+      display:none;
+      &.active{
+        display:block;
+        border-top: 1px solid $gray;
+        h4{
+          font-size:1.5em;
+        }
+      }
+    }
+    .btns{
+    }
+    button{
+      border: none;
+      height: $button-height;
+      padding: 0 10px;
+      background: $blue;
+      color: #FFF;
+    }
+    .line{
+      position:relative;
+      z-index:7;
+      display:block;
+      width: 0;
+      margin: 0 auto;
+      height:3px;
+      margin-bottom:-2px;
+      background: $blue;
+      transition: all .4s ease-in-out;
+      &.active{
+        width: 100%;
+      }
+    }
+    .detail1{margin:0 -300% 0 0;}
+    .detail2{margin:0 -200% 0 -100%;}
+    .detail3{margin:0 -100% 0 -200%;}
+    .detail4{margin:0 0 0 -300%;}
+  }
+  @media only screen and (max-width: 768px){
+    .list{
+      li{
+        display:block;
+        width:100%;
+        padding-bottom:16px;
+      }
+      .summary{
+        display:table;
+      }
+      .img{
+        display:table-cell;
+        vertical-align: middle;
+        width: 120px;
+        height: 100%;
+        background-size:cover;
+      }
+      .cnt{
+        display:table-cell;
+        vertical-align: top;
+        padding-left: 10px;
+        h4{
+          padding:0;
+          min-height:auto;
+        }
+      }
+      .btns{
+        margin-bottom:0;
+      }
+      .line{display:none;}
+      .desc{
+        &.active{
+          margin:0;
+          border-top:none;
+          h4{
+            font-size:1.2em;
+            padding-bottom:5px;
+            border-bottom: 1px solid $gray;
+          }
+        }
+      }
+    }
+  }
+}

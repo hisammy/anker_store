@@ -1,0 +1,22 @@
+{
+  "products_title": "Anker | Products",
+  "twitter_site": "@Ankerofficial",
+  "crumb_home": "Home",
+  "crumb_products": "Products",
+  "reviews_stat": "%s Reviews",
+  "price_currency": "USD",
+  "currency_sign": "$",
+  "products_color": "Color",
+  "products_quantity": "Quantity",
+  "buy_at_amazon": "BUY AT AMAZON",
+  "product_specs": "Product Specs",
+  "tab_highlights": "Highlights",
+  "tab_faq": "FAQ",
+  "tab_reviews": "Reviews",
+  "tab_related": "Related",
+  "related_desc": "Customers Who Bought This Item Also Bought",
+  "success": "SUCCESS",
+  "added_to_cart": "Item added to your cart.",
+  "continue_shopping": "Continue Shopping",
+  "go_to_cart": "Go to Cart"
+}

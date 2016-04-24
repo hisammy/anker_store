@@ -1,0 +1,176 @@
+doctype html
+html
+  head
+    title= title
+    meta(name="viewport",content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    link(href="/deals/css/global.css?1", rel="stylesheet")
+    link(href="/deals/css/powerline.css?1", rel="stylesheet")
+    script(src="/deals/javascript/jquery.min.js")
+    script(src="/deals/javascript/jquery.mousewheel.js")
+    script(src="/deals/javascript/powerline.js?2")
+    script(src="http://hammerjs.github.io/dist/hammer.min.js")
+  body
+    include header
+    div.tool
+      ul
+       li
+         a#index0.circle(index=0)
+        li
+          a#index1.noCircle(index=1)
+        li
+          a#index2.noCircle(index=2)
+        li
+          a#index3.noCircle(index=3)
+        li
+          a#index4.noCircle(index=4)
+        li
+          a#index5.noCircle(index=5)
+        li
+          a#index6.noCircle(index=6)
+        li
+          a#index7.noCircle(index=7)
+        li
+          a#index8.noCircle(index=8)
+    div.con#con
+      div.num_box#num_box1
+        div.num#num0
+          div
+            div.tips 
+              p Creating the World's 
+              p Best Lightning Cable
+              H3 
+                strong PowerLine&nbsp;
+                span Lightning 
+        div.num#num1
+          div.heard
+            h3 The Bottom Line
+            p The Lightning cable is one of Apple’s lowest rated products ever, notorious for being unreliable and prone to damage. 
+            p iPad and iPhone users have begun to lose hope for a durable and dependable cable...
+          div.childNum
+            img(src='/deals/images/powerline/2.png').childImg1
+            img(src='/deals/images/powerline/2_m.png').childImg2
+          div.foot
+            p As America’s leading USB charging brand, we don’t think that’s good enough. 
+            p We decided it was time for a solution. We set out on a journey to create the best Lightning cable in the world. 
+            p A cable that lasts longer, works better and costs less.
+        div.num#num2
+          div.num2div
+            div
+              h3 The Problem
+              p Our first task was to discover the most common Lightning cable problems.
+              p We analyzed over 10,000 Amazon reviews from countless cable companies and conducted our own research.
+          div.num3ImgList
+            div.divImg
+              span Cable fails to charge and sync
+              img(src='/deals/images/powerline/3.jpg')
+            div.divImg
+              span.bgWhite Connector junction breaks
+              img(src='/deals/images/powerline/4.jpg')
+            div.divImg
+              span Plastic wire cover splits
+              img(src='/deals/images/powerline/5.jpg')
+            div.divImg
+              span Connector breaks
+              img(src='/deals/images/powerline/6.jpg')
+            div.divImg
+              span.bgWhite Slow Charging
+              img(src='/deals/images/powerline/7.jpg')
+          div.WSCSlideWrapper.num3ImgList1
+            div.WSCSlide.WSCSlideTransition
+              div.WSCSlide_img
+                span Cable fails to charge and sync
+                img(src='/deals/images/powerline/3.jpg')
+              div.WSCSlide_img
+                span.bgWhite Connector junction breaks
+                img(src='/deals/images/powerline/4.jpg')
+              div.WSCSlide_img
+                span Plastic wire cover splits
+                img(src='/deals/images/powerline/5.jpg')
+              div.WSCSlide_img
+                span Connector breaks
+                img(src='/deals/images/powerline/6.jpg')
+              div.WSCSlide_img
+                span.bgWhite Slow Charging
+                img(src='/deals/images/powerline/7.jpg')
+        div.num#num3
+          div
+            div.num3Heard
+              div.num3Tips
+                h3 The Solution
+                H3(style="color:#00a2e1;font-size:28px") 
+                  strong PowerLine&nbsp;
+                  span Lightning 
+            div.num3Contetn
+              div.img0
+                img(src='/deals/images/powerline/12.png')
+              div.img1
+                img(src='/deals/images/powerline/9.png')
+              div.line1
+              div.line2
+              div.img2
+                img(src='/deals/images/powerline/11.png')
+              div.line6
+              div.img3
+                img(src='/deals/images/powerline/10.png')
+              div.line4
+              div.line5
+            img(src='/deals/images/powerline/12_m.png').num3Img
+        div.num#num4
+          div
+            div.tips
+              h3 Kevlar Reinforced Insulation
+              ul
+                li Internal wiring is heavily protected to avoid partial breakage and maintain charging speed
+                li Insulation is strengthened to prevent splitting
+              h3.tips1 5000+
+              p Bend Lifespan
+        div.num#num5
+          div
+            div.tips
+              h3 Dual PVC Connector
+              ul
+                li Unmatched strength in an area that is usually a cable’s weakest point
+                li Offers durability 5 times higher than other cables
+        div.num#num6
+          div
+            div.tips
+              h3 Laser Welded
+              ul
+                li Precision engineered shielding stops wiring separating from the connector 
+                li Ensures PowerLine Lightning is solid and durable from inside out
+        div.num#num7
+          div.head Praise for PowerLine Lightning
+          div.num7Pc
+            div#num7Img
+              img(src='/deals/images/powerline/16_1.png')#img1
+            div.foot
+              a#btn1.select(index=1) 1
+              a#btn2(index=2) 2
+          div.num7M
+            div#num7Img1
+              img(src='/deals/images/powerline/16-1m.jpg')#imgM
+            div.foot1
+              a#btn1.select(index=1) 1
+              a#btn2(index=2) 2
+              a#btn2(index=3) 3
+        div.num#num8
+          div.head 
+            img(src='/deals/images/powerline/pl.png')#img1
+            strong PowerLine 
+            span Lightning
+          ul#powerlineList
+            each item in products
+              li
+                div
+                  i.line
+                  div.img
+                    img(src='#{item[0].mini_url}')
+                  div.color
+                    each attr in item
+                      img(src="#{attr.option_values[0].image.mini_url}")
+                  div.name #{item[0].name}
+                  div.desc #{item[0].description}
+                  div.btn
+                    a(target='_blank' href='#{item[0].url}' name='#{item[0].name}') Buy at Amazon
+    include ./includes/analytics.jade
+    include ./includes/popup.jade

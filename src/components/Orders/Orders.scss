@@ -1,0 +1,148 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.Orders {
+  background: white;
+  max-width:$max-content-width;
+  margin:0 auto;
+
+  &-container {
+    margin-top:3.6rem;
+    margin-bottom:86px;
+    .itemImg{
+      margin-left:1rem;
+      display:inline-block;
+      img{
+        width:5rem;
+      }
+    }
+    .more{
+      text-align:center;
+      .loadMore{
+        ursor: pointer;
+        display: inline-block;
+        width: 30rem;
+        max-width: 90%;
+        height: 40px;
+        line-height: 40px;
+        background: #eeeeee;
+        text-decoration: none;
+      }
+      a:hover{
+        background:$blue;
+        color:white;
+      }
+    }
+    .empty{
+      text-align:center;
+      color:$gray;
+      i{
+        font-size:60px;
+      }
+    }
+    >ul{
+      overflow:hidden;
+      >li{
+        vertical-align:top;
+        border:1px solid $blue;
+        margin:1rem 0;
+        .orderDetail{
+          position:relative;
+          padding:1rem;
+          div:first-child{
+            border-top:1px solid $blue;
+            padding-top:1rem;
+          }
+          .viewDetail{
+            position:absolute;
+            top:50%;
+            margin-top:-1.5rem;
+            right:3%;
+            a{
+              font-weight:bold;
+              border:1px solid white;
+              display:inline-block;
+              text-decoration:underline;
+              color:$blue;
+            }
+          }
+        }
+        >ul{
+          margin:1rem 0;
+          >li{
+            margin-top:1rem;
+            .itemDiv{
+              display:flex;
+              width:100%;
+            }
+            .price{
+              margin-right:1rem;
+              padding-top:1.3rem;
+            }
+            
+          }
+        }
+      }
+    }
+    .itemContent{
+      display:inline-block;
+      margin-left:1rem;
+      flex:1;
+    }
+  }
+  .noData{
+    display:table;
+    width:100%;
+    text-align:center;
+    div{
+      display:table-cell;
+      vertical-align:middle;
+    }
+    i{
+      font-size:12px;
+    }
+    p{
+      margin:0;
+    }
+  }
+  &-status{
+     background-color:$blue;
+     line-height:3rem;
+     color:white;
+     font-weight:bold;
+     font-size:1.2rem;
+     padding-left:1rem;
+  }
+  .complete{
+    background-color:$gray;
+    
+  }
+  .completeLi{
+    border:1px solid $gray;
+    .orderId{
+      border-top:1px solid $gray !important;
+    }
+    .viewDetail{
+      a{
+        color:$gray !important;
+      }
+    }
+  }
+}
+ul,li{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+@media screen and (max-width: 768px) {
+  .Orders {
+    &-container{
+      margin:2rem 1rem;
+      .itemImg{
+        margin-left:1rem;
+      }      
+    }
+  }
+}
+

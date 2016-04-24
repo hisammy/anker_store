@@ -1,0 +1,98 @@
+@import '../variables.scss';
+
+.GlassScreenProtectors{
+  font-size: 1rem;
+  color: #545454;
+  line-height: 1.5;
+  a{
+    color: $gray-dark;
+    text-decoration: none;
+  }
+  a,:focus {outline:0;}
+  .hide{display: none;}
+  .title{
+    padding: 30px 0 0;
+      h1{
+        margin:0;
+        padding: 12px 0;
+        font-size: 2rem;
+        font-weight: 400;
+        text-align: center;
+      }
+      .tip{
+        margin:0;
+        text-align: center;
+      }
+  }
+  .content{
+    padding: 10px 10px 0;
+    p{
+      margin:12px 0;
+      padding:0;
+    }
+    .nav{
+      text-align: center;
+      a{
+        display: inline-block;
+        width: 200px;
+        max-width: 45%;
+        line-height: 36px;
+        border-radius: 8px 8px 0 0;
+        font-size: 1.2rem;
+        transition: all .5s;
+        &.active{
+          background: $blue;
+          color: #FFF;
+        }
+      }
+    }
+    /*ul{
+      display: block;
+      margin: 0;padding: 0;
+      list-style: none;
+      background:#efefef;
+    }
+    li{
+      position: relative;
+      display: inline-block;
+      vertical-align: top;
+    }*/
+    .box{
+      position: relative;
+    }
+    .list{
+      transition: all .5s;
+      &.hide{
+        display: block;
+        background: #FFF;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        opacity: 0;
+      }
+    }
+    dl{
+      margin: 0;
+      text-align: center;
+      line-height: 32px;
+      dt{
+        background: $blue;
+        color:#FFF;
+      }
+      dd{
+        margin: 0;
+        a{
+          display: block;
+        }
+      }
+      p{
+        margin: 0;
+        border-top: 1px solid $gray-light;
+      }
+    }
+  }
+  @media only screen and (max-width: 768px){
+
+  }
+}

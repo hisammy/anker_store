@@ -1,0 +1,12 @@
+{
+  "review_title": "Review",
+  "review_orders": "Orders",
+  "review_order": "Order: %s",
+  "color_colon": "Color: %s",
+  "quantity_colon": "Quantity: %s",
+  "price_colon": "Price: %s",
+  "review_title": "Title",
+  "review_content": "Content",
+  "review_submit": "Submit",
+  "review_success": "Review successfully."
+}

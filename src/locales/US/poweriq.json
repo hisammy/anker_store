@@ -1,0 +1,19 @@
+{
+  "poweriq_title": "Anker | PowerIQ™",
+  "poweriq_sub_title": "PowerIQ™",
+  "poweriq_sub_desc": "Detects your device.<br/>
+  Delivers the fastest charge.",
+  "poweriq_desc_list": [
+    {
+      "title": "Slow chargers explained.",
+      "text": "Why does your smartphone charge faster from some chargers and slower from others? The issue isn't just power output, it's compatibility. Standard chargers are hard-wired with one charging protocol even though every mobile device is unique."
+    },
+    {
+      "title": "Charge faster. Save time.",
+      "text": "PowerIQ™ technology dynamically detects and adapts to your device's unique charging protocol enabling it to charge at full speed. So thanks to PowerIQ™, together with Anker's industry-leading power output, charge faster and save time."
+    }
+  ],
+  "poweriq_devices_title": "Less time charging. More time doing.",
+  "poweriq_review_rating": "Review rating:",
+  "poweriq_by_at_amazon": "Buy at Amazon"
+}

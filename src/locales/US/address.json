@@ -1,0 +1,13 @@
+{
+  "address_title": "Anker | My Address",
+  "default_country": "United States",
+  "default_country_abbr": "USA",
+  "address_term_new_address": "New Address",
+  "address_term_address_book": "Address Book",
+  "phone_number_colon": "Phone number: %s",
+  "address_colon": "Address: %s",
+  "zip_code_colon": "Zip code: %s",
+  "address_address_added": "Address added.",
+  "address_address_deleted": "Address deleted.",
+  "address_primary_address_changed": "Primary Address Changed."
+}

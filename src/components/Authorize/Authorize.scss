@@ -1,0 +1,408 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.Authorize {
+  position:relative;
+  background-image:url(../../public/login.jpg);
+  background-repeat:no-repeat;
+  background-position:0 50%;
+  &.no-bg{
+    background-image:none;
+  }
+  &.custom-bg{
+    background-image:none;
+    .Authorize-container{
+      /*display: flex;*/
+      max-width:1200px;
+      /*margin: 0 16px;*/
+      margin:0 auto;
+      background-repeat: no-repeat;
+      /*background-size: 100% auto;*/
+      background-position: 0 50%;
+      text-align:right;
+      &.mob{
+        text-align: center;
+      }
+    }
+    .Login, .Register, .Forget{
+      margin-left: 2%;
+      margin-right: 2%;
+    }
+  }
+  .wrap{
+    max-width:1200px;
+    margin:0 auto;
+  }
+  .confirmBtn{
+    color: white;
+    background: $blue;
+    margin-top:.5rem;
+  }
+  .diagDiv{
+    margin-top:1.5rem;
+  }
+  .cancelBtn{
+    color: white;
+    background: $gray;
+    margin-top:.5rem;
+  }
+  .oldPassword{
+    width:100%;
+    margin-right:.5rem;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .errorTips{
+    color:red;
+  }
+  &-container {
+    margin: 0 auto;
+    overflow:hidden;
+    text-align:center;
+    font-size:100%;
+    .submit{
+      width:100%;
+      background:$blue;
+      color:white;
+      line-height:$button-height;
+      border:none;
+    }
+    .title{
+      font-size:3.4rem;
+      line-height:normal;
+      text-align:center;
+      margin:12px 0 12px;
+      padding:0;
+      font-weight:normal;
+    }
+    .input{
+      margin:0;
+      padding:0;
+      list-style:none;
+      >li{
+        padding:5px 0;
+        text-align:left;
+      }
+      .input-box{
+        position:relative;
+        input{
+          box-sizing: border-box;
+          border:1px solid color(black lightness(+76%));
+          border-radius:0;
+          line-height:$input-height;
+          height:$input-height;
+          width:100%;
+          padding:0 5px;
+          &:focus{
+            outline:0;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.15);
+            border-color: $gray-dark;
+          }
+        }
+      }
+    }
+  }
+  a{
+    color:$gray-dark;
+  }
+  .fr{float: right;}
+  @media screen and (max-width: 767px) {
+    .loginImg{
+      display:none;
+    }
+    .confirmBtn{
+      color: white;
+      background: $blue;
+      margin-top:.5rem;
+      width:100%;
+    }
+    .title{
+      font-size:2.3rem;
+    }
+    .oldPassword{
+      width:100%;
+    }
+    &-container {
+      background-image:none;
+    }
+    .Register{
+      display:block;
+      width:auto;
+    }
+    .Forget{
+      display:block;
+      width:auto;
+      display:block;
+      padding:0;
+      margin:3.6rem 0 100px 0;
+    }
+    .Activation{
+      h3{
+        font-size:2.3rem;
+      }
+    }
+    .Login{
+      width:auto;
+      display:block;
+      padding:0;
+      margin:2rem 2%;
+      left:0;
+      top:0;
+      .third{
+        .log-ass{
+          .googleBtn{
+            width:100%;
+            .iconfont{
+              font-size: 2.8rem;
+            }
+          }
+          .facebookBtn{
+            margin-top:1rem;
+            width:100%;
+          }
+          button{
+            width:100%;
+            i{
+              left:5px;
+            }
+          }
+        }
+      }
+    }
+    &-container {
+      .title{
+        font-size:2.5rem;
+      }
+    }
+    .diagDiv{
+      margin-top:1.5rem;
+    }
+  }
+}
+.loginTip{
+  position:absolute;
+  top:-5rem;
+  left:0;
+  right:0;
+  line-height:12px;
+  background:fade($blue, 80%);
+  color:yellow;
+  transition:200ms;
+  &.show{
+    top:$head-space;
+  }
+  span{
+    padding:12px;
+  }
+  .iconfont{
+    font-size:12px;
+    color:white;
+    display: block;
+    align-items:center;
+    justify-content:center;
+  }
+}
+.forgetTips{
+  margin-bottom:1rem;
+  text-align:center;
+  color:$gray;
+}
+.loginImg{
+  width:100%;
+}
+.Login{
+  margin-top:2rem;
+  display:inline-block;
+  vertical-align: top;
+  width:30rem;
+  margin-bottom:3rem;
+  background-color:rgba(255,255,255,0.8);
+  padding:1rem;
+  border-radius:1rem;
+  .cell{
+    padding: 1rem;
+    color: $gray-dark;
+  }
+  p{
+    color:white;
+    margin: 0;
+    padding: 0;
+  }
+  button{
+    font-size:1.2rem;
+  }
+  .auth-act{
+    justify-content:space-between;
+    line-height:3rem;
+    >span{
+      .iconfont{
+        margin-right:$size-base;
+        vertical-align: 1px;
+      }
+    }
+    .remember{
+      float:left;
+    }
+    padding:12px 0;
+  }
+  .third{
+    margin:.4rem 0;
+    padding:0;
+    list-style:none;
+    font-size:14px;
+    >li{
+      display: block;
+      justify-content:space-between;
+    }
+    .log{
+      &-or{
+        font-size:14px;
+        color:$gray;
+        padding:12px 0;
+        >i{
+          border-bottom:1px solid $gray;
+          vertical-align:middle;
+          padding:0;
+          height:0px;
+          overflow:hidden;
+          display:inline-block;
+          width:47%;
+        }
+        >span{
+          width:6%;
+          display:inline-block;
+        }
+      }
+      &-ass{
+        justify-content:space-between;
+        padding-top:1rem;
+        >div{
+          justify-content:center;
+          >i{
+            color:white;
+            font-size:12px;
+          }
+        }
+        .googleBtn{
+          background:$google-red;
+          position:relative;
+          text-align:center;
+          button{
+            background:$google-red;
+            font-size:1rem;
+            .iconfont{
+              top: -.2rem;
+              margin-right: .5rem;
+              position: relative;
+              vertical-align: top;
+            }
+          }
+        }
+        .facebookBtn{
+          background:$facebook-blue;
+          margin-top:1rem;
+          text-align:center;
+          button{
+            background:$facebook-blue;
+            font-size:1rem;
+          }
+        }
+        i{
+          vertical-align:middle;
+          font-size:2rem;
+        }
+        button{
+          color: white;
+          line-height: 32px;
+          border:0 none;
+          width:15rem;
+
+        }
+      }
+      &-sign{
+        >a{
+          padding:0 12px;
+        }
+      }
+    }
+  }
+}
+.Forget{
+  margin: 4.6rem 0 100px 0;
+  display: inline-block;
+  vertical-align: top;
+  width: 30rem;
+  margin-bottom: 17rem;
+  background-color:rgba(255,255,255,0.8);
+  padding: 1rem;
+  border-radius: 4%;
+}
+.Register {
+  margin: 4.6rem 2% 200px;
+  @media screen and (max-width: 767px) {
+
+  }
+  display: inline-block;
+  vertical-align: top;
+  width: 30rem;
+  /*margin-bottom: 3rem;*/
+  background-color:rgba(255,255,255,0.8);
+  padding: 1rem;
+  border-radius: 4%;
+  select{
+    border-radius:0;
+    height:2rem;
+    width:100%;
+  }
+  .cell{
+    padding-left: 50px;
+  }
+  .codeDiv{
+    width:80%;
+    display:inline-block;
+    vertical-align:middle;
+  }
+  .code{
+    margin-right:5%;
+  }
+  .codeImg{
+    width:20%;
+    height:3.2rem;
+  }
+}
+.hide{
+  display:none!important;
+}
+.Activation{
+  margin:4.3rem 0 100px 0;
+  div{
+    text-align:center;
+    margin-top:.5rem;
+  }
+  h3{
+    text-align:center;
+    font-size:3.4rem;
+    margin:0;
+    padding:0;
+  }
+  a,.email{
+    color:$blue;
+  }
+  .btn{
+    margin-bottom:1rem;
+    button{
+      background-color:$blue;
+      color:white;
+      padding:.6rem 3rem;
+      border:0 none;
+    }
+  }
+}
+.bg-box{
+  padding: 0 16px;
+}
+.uploadBackgroun{
+  max-width:100%;
+  margin-top:1rem;
+}

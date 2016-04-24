@@ -1,0 +1,156 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.Address {
+  max-width:$max-content-width;
+  margin:0 auto;
+  &-container {
+    margin:4.3rem 0 100px 0;
+    div{
+      margin-top:1rem;
+    }
+    form{
+      >div{
+        display:inline-block;
+        vertical-align:middle;
+      }
+    }
+   
+    .firstname{
+      width:48%;
+      margin-right:4%;
+    }
+    .lastname{
+      width:48%;
+    }
+    .address1{
+      width:71%;
+      margin-right:4%;
+    }
+    .address2{
+      width:25%;
+    }
+    .addCountry{
+      width:21%;
+      margin-right:4%;
+    }
+    .addState{
+       width:21%;
+       margin-right:4%;
+    }
+    .city{
+       width:21%;
+       margin-right:4%;
+    }
+    .zipCode{
+       width:25%;
+    }
+    .phone{
+      width:100%;
+    }
+    h3{
+      font-size:1.2rem;
+      margin:0rem;
+    }
+    .book{
+      margin-top:1rem;
+    }
+    select{
+      border-radius:0;
+    }
+    .btn{
+      text-align:right;
+      margin-top:1rem;
+      width:100%;
+      button{
+        background-color:$blue;
+        color:white;
+        padding:1rem 4rem;
+        border:0 none;
+      }
+    }
+  .list{
+    padding:0;
+    margin:0;
+    li{
+      width:30%;
+      margin-right:3%;
+      display:inline-block;
+      .addrDetal{
+        background:#E3E6EA;
+        line-height:1.5rem;
+        padding:1rem .5rem;
+        display:block;
+        div{
+          display:block;
+          margin-top:0;
+        }
+      }
+      .addrTool{
+        text-align:center;
+        a{
+          text-decoration:none;
+          cursor:pointer;
+          margin:0 1rem;
+          .iconfont{
+            font-size:2.2rem;
+          }
+          .setDefaultBtn{
+            font-size:1.6rem;
+          }
+          .selected{
+            color:#4ba6df;
+          }
+        }
+      }
+    }
+  }
+  }
+  @media screen and (max-width: 768px) {
+    h3{
+      text-align:center;
+      marin:0;
+      font-size:2rem;
+    }
+    &-container{
+      margin:2rem 1rem;
+      .firstname,.lastname,.address1,.address2{
+        width:100%;
+        margin-right:0;
+      }
+      .addCountry{
+        width:48%;
+        margin-right:4%;
+      }
+      .addState{
+         width:48%;
+         margin-right:0;
+      }
+      .city{
+         width:48%;
+         margin-right:4%;
+      }
+      .zipCode{
+         width:48%;
+      }
+      .list{
+        li{
+          width:100%;
+          margin-right:0;
+          div{
+            display:block;
+            margin-top:0;
+          }
+          .addrTool{
+            display:block;
+            a{
+              margin-right:1rem;
+              display:inline-block;
+            }
+          }
+        }
+      }
+    }
+  }
+}

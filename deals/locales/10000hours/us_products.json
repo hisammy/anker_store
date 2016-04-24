@@ -1,0 +1,150 @@
+{
+  "currency": "$",
+  "marketplace": "amazon",
+  "learn_more": "Learn More",
+  "coming_soon": "Coming Soon",
+  "series": [
+    {
+      "title": "PowerCore+",
+      "desc": "Our flagship series of premium portable chargers.",
+      "list": [
+        {
+          "sku": "A1310011",
+          "img": "A1310.png",
+          "name": "<b>PowerCore+</b> 10050",
+          "desc": "The most advanced portable charger we’ve ever made.",
+          "price": "29.99",
+          "url": "http://www.amazon.com/dp/B013HSQXZC/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=E7OV3GN5FDMT5JEI"
+        },
+        {
+          "sku": "A1315011",
+          "img": "A1315.png",
+          "name": "<b>PowerCore+</b> 13400",
+          "desc": "High-speed portable power with lightning fast recharge.",
+          "price": "37.99",
+          "url": "http://www.amazon.com/dp/B013HSWY5K/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=3UC6DXGJMJTHA3DV"
+        }
+      ]
+    },
+    {
+      "title": "PowerCore",
+      "desc": "Successor to the hugely popular Astro series, the best-selling series of portable chargers in Amazon history.",
+      "list": [
+        {
+          "sku": "A1214011",
+          "img": "A1214.png",
+          "name": "<b>PowerCore</b> 10400",
+          "desc": "An ultra portable 2-port power bank for phones, tablets, and more.",
+          "price": "19.99",
+          "url": "http://www.amazon.com/dp/B00Z9QVE4Q/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=ABFHY7ZNUZBA35AO"
+        },
+        {
+          "sku": "A1252011",
+          "img": "A1252011.png",
+          "name": "<b>PowerCore</b> 15600",
+          "desc": "A super high capacity portable charger with industry-leading output.",
+          "price": "32.99",
+          "url": "http://www.amazon.com/dp/B00VLNT9KW/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=OBA53WGDKS4OMAWH"
+        },
+        {
+          "sku": "A1271011",
+          "img": "A1252011.png",
+          "name": "<b>PowerCore</b> 20100",
+          "desc": "Fast-charging, long-lasting portable power for all your devices.",
+          "price": "39.99",
+          "url": "http://www.amazon.com/dp/B00X5RV14Y/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=ZBDED2NYC3NVA4XZ"
+        }
+      ]
+    },
+    {
+      "title": "PowerPort",
+      "desc": "New and improved USB charger series from Anker, the best-selling brand of multi-port USB chargers on Amazon.",
+      "list": [
+        {
+          "sku": "A2142121",
+          "img": "A2142.png",
+          "name": "<b>PowerPort</b> 4",
+          "desc": "A small yet powerful quad-port charger, perfect for home and travel.",
+          "price": "26.99",
+          "url": "http://www.amazon.com/dp/B00VH8G1SY/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=E3SXJP5V6PEQMYTI"
+        },
+        {
+          "sku": "A2124111",
+          "img": "A2124.png",
+          "name": "<b>PowerPort</b> 5",
+          "desc": "The internet’s favorite USB charger.",
+          "price": "23.99",
+          "url": "http://www.amazon.com/dp/B00VH8ZW02/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=CKVZKRM2BN3K3TVE"
+        },
+        {
+          "sku": "A2133111",
+          "img": "A2133.png",
+          "name": "<b>PowerPort</b> 10",
+          "desc": "The ultimate USB charging station.",
+          "price": "39.99",
+          "url": "http://www.amazon.com/dp/B00YRYS4T4/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=5WSWS52UMJFYWZIN"
+        }
+      ]
+    },
+    {
+      "title": "PowerDrive",
+      "desc": "High-speed chargers for the road.",
+      "list": [
+        {
+          "sku": "A2307011",
+          "img": "A2307.png",
+          "name": "<b>PowerDrive</b> Lightning",
+          "desc": "Max-speed charging for iPhone, iPad and iPod.",
+          "price": "13.99",
+          "url": "http://www.amazon.com/dp/B00VH8L1U2/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=LDXWX33TQVRTULCA"
+        },
+        {
+          "sku": "A2310011",
+          "img": "A2310.png",
+          "name": "<b>PowerDrive</b> 2",
+          "desc": "Simultaneous turbo charging for the road.",
+          "price": "7.99",
+          "url": "http://www.amazon.com/dp/B00VH84L5E/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=NHBRYRMQQIZAMRHX"
+        },
+        {
+          "sku": "A2309011",
+          "img": "A2309.png",
+          "name": "<b>PowerDrive+</b> 1",
+          "desc": "The world’s fastest USB car charger.",
+          "price": "8.99",
+          "url": "http://www.amazon.com/dp/B00VHV0SAS/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=6O6TQB6PDWKDVVGR"
+        }
+      ]
+    },
+    {
+      "title": "PowerLine",
+      "desc": "Anker's critically acclaimed charge & sync cables are now better than ever.",
+      "list": [
+        {
+          "sku": "A8132011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (3ft)",
+          "desc": "The world’s fastest, most durable charging cable.",
+          "price": "4.99",
+          "url": "http://www.amazon.com/dp/B012VWH6PQ/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=BKBAGSBVEGA4NG2A"
+        },
+        {
+          "sku": "A8133011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (6ft)",
+          "desc": "The world’s fastest, most durable charging cable. Now 2X longer.",
+          "price": "5.99",
+          "url": "http://www.amazon.com/dp/B012VZ7MUM/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=WDNNEEJHJBSXFEQC"
+        },
+        {
+          "sku": "A8134011",
+          "img": "powerline.png",
+          "name": "<b>PowerLine</b> Micro USB (10ft)",
+          "desc": "The world’s fastest, most durable charging cable. Now over 3X longer.",
+          "price": "7.99",
+          "url": "http://www.amazon.com/dp/B012WF7ORW/?_encoding=UTF8&camp=1789&creative=9325&linkCode=ur2&tag=oct2015-20&linkId=VHM6EBH7GFT4MBJ7"
+        }
+      ]
+    }
+  ]
+}

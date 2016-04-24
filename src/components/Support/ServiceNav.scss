@@ -1,0 +1,84 @@
+@import '../variables.scss';
+/*$ankerBlue: color(#4ba6df);*/
+
+.ServiceNav {
+  font-size: 1rem;
+  color: #545454;
+  line-height: 1.5;
+  a{
+    color: $gray-dark;
+    text-decoration: none;
+  }
+  a,:focus {outline:0;}
+  ul{
+    display: block;
+    margin: 0;padding: 0;
+    list-style: none;
+    background:#efefef;
+  }
+  li{
+    /*float:left;*/
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    /*width: 16.66%;*/
+    width: 20%;
+    text-align: center;
+    word-wrap: break-word;
+    background:#efefef;
+    /*box-sizing: border-box;*/
+    border-left: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+    margin-left: -1px;
+    /*&:hover{
+      i{color: $blue;}
+    }*/
+    &:hover, &.cur{
+      background: $blue;
+      color: white;
+      a{
+        color: white;
+      }
+      i{color: white;}
+    }
+    a{
+      display: block;
+      height: 68px;
+      padding: 8px 1px;
+    }
+  }
+  i{
+    display: block;
+    padding: 5px 0 10px;
+    font-size: 32px;
+    line-height: 1;
+    color:$gray-dark;
+  }
+  @media only screen and (max-width: 768px){
+    font-size: $size-base;
+    li{
+      width: 33.3%;
+      &:nth-child(5){
+        &:after{
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          width: 1px;
+          background: #FFF;
+        }
+      }
+    }
+    i {
+      font-size: 35px;
+    }
+  }
+  @media only screen and (max-width: 460px){
+    li{
+      a {
+        height: 82px;
+      }
+    }
+  }
+}

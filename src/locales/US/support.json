@@ -1,0 +1,326 @@
+{
+  "support_nav": {
+    "downloads": "Downloads & Drivers",
+    "refunds_exchanges": "Refunds & Exchanges",
+    "privacy_policy": "Privacy Policy",
+    "term_of_use": "Term of Use",
+    "warranty": "Warranty"
+  },
+  "download_title": "Anker | Downloads & Drivers",
+  "download_search_title": "DOWNLOAD",
+  "download_search_desc": "Search by Product Name",
+  "download_search_placeholder": "Search Anker",
+  "download_could_not_find_anything": "Sorry, we couldn’t find anything <br/>
+  Please search again",
+  "exchange_title": "Anker | Refunds & Exchanges",
+  "exchange_banner_title": "REFUNDS & EXCHANGES",
+  "exchange_banner_desc": "Thank you for visiting our after-sales self-service web page. Here, we hope that you will be able to resolve whatever problems you are experiencing. We're very sorry for whatever inconvenience your purchase may have caused you.
+  <br/>
+  Please kindly be advised that all of our Anker products have a full 18-month warranty. If your product does not meet your needs within this period, feel free to contact us by submitting a feedback form below in order to let us know what we can do to help you.
+  <br/>
+  Moreover, as a reminder, if you are having trouble using one of our products, you can always refer to the FAQ or Instruction Manuals section on our website, where you may be able to resolve the issue yourself.
+  <br/>
+  Thank you in advance for all of the information you are providing.",
+  "exchange_anker_store": "Anker Store",
+  "exchange_amazon_store": "Amazon Store",
+  "exchange_amazon_purchase_site": "Amazon Purchase Site",
+  "exchange_contact_info": "Contact Information",
+  "exchange_input_email": "Email Address",
+  "exchange_input_name": "Name",
+  "exchange_input_orderid": "Order ID",
+  "exchange_input_product_name": "Product Name",
+  "exchange_order_details": "Order Details",
+  "exchange_please_select": "Please select",
+  "exchange_order_id": "Order ID: %s",
+  "exchange_input_exchange": "Refund or exchange",
+  "exchange_input_quantity": "Quantity",
+  "exchange_input_problem": "Reason for request",
+  "exchange_series_no": "Series No.:",
+  "exchange_series_no_tip": "Located on the product as \"SN: AXXXXXXX\"",
+  "exchange_issue_details": "Issue Details",
+  "exchange_images": "Images",
+  "exchange_fill_purchase_site": "Please choose your Amazon purchase country website.",
+  "exchange_fill_name": "Please enter your name.",
+  "exchange_fill_order_number": "Please enter your order number.",
+  "exchange_fill_product_name": "Please enter product name.",
+  "exchange_fill_preference": "Please select your refund or exchange preference.",
+  "exchange_fill_problem": "Please select a reason for your request.",
+  "exchange_request_success": "Request successful.",
+  "exchange_file_format_error": "File format is not correct.",
+  "exchange_file_size_error": "File size must not exceed 5Mb.",
+  "exchange_upload_fail": "Upload fail.",
+  "privacy_title": "Anker | Privacy Policy",
+  "privacy_sub_title": "Privacy Policy",
+  "privacy_contents": [
+    {
+      "title": "What information do we collect?",
+      "text": "<p>We collect information from you when you register on our site, place an order or subscribe to our
+        newsletter. </p>
+      <p>When ordering or registering on our site, as appropriate, you may be asked to enter your name, email
+        address, mailing address or phone number. You may, however, visit our site anonymously.</p>"
+    },
+    {
+      "title": "What do we use your information for?",
+      "text": "<p>Any of the information we collect from you may be used in one of the following ways: </p>
+      <p><strong>To process transactions</strong></p>
+      <p>Your information, whether public or private, will not be sold, exchanged, transferred, or given to any
+        other company for any reason whatsoever, without your consent, other than for the express purpose of
+        delivering the purchased product or service requested.</p>
+      <p><strong>To send periodic emails</strong></p>
+      <p>The email address you provide for order processing, may be used to send you information and updates
+        pertaining to your order, in addition to receiving occasional company news, updates, related product or
+        service information, etc.</p>
+      <p>Note: If at any time you would like to unsubscribe from receiving future emails, we include detailed
+        unsubscribe instructions at the bottom of each email.</p>"
+    },
+    {
+      "title": "How do we protect your information?",
+      "text": "<p>We implement a variety of security measures to maintain the safety of your personal information when you
+        place an order or enter, submit, or access your personal information.</p>
+      <p>We offer the use of a secure server. All supplied sensitive/credit information is transmitted via Secure
+        Socket Layer (SSL) technology and then encrypted into our Payment Gateway Providers Database only to be
+        accessible by those authorized with special access rights to such systems, who are required to keep the
+        information confidential.</p>
+      <p>After a transaction, your private information (credit cards, social security numbers, financials, etc.)
+        will not be stored on our servers.</p>"
+    },
+    {
+      "title": "Do we use cookies?",
+      "text": "<p>Yes. Cookies are small files that a site or its service provider transfers to your computer's hard drive
+        through your web browser (if you allow it to) that enables the site’s or service provider’s systems to
+        recognize your browser and capture and remember certain information. </p>
+      <p>We use cookies to help us remember and process the items in your shopping cart, understand and save your
+        preferences for future visits, keep track of advertisements and compile aggregate data about site traffic
+        and site interaction so that we can offer better site experiences and tools in the future.</p>"
+    },
+    {
+      "title": "Do we disclose any information to outside parties?",
+      "text": "<p>We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information.
+        This does not include trusted third parties who assist us in operating our website, conducting our business,
+        or servicing you, so long as those parties agree to keep this information confidential. We may also release
+        your information when we believe release is appropriate to comply with the law, enforce our site policies,
+        or protect ours or others rights, property, or safety. However, non-personally identifiable visitor
+        information may be provided to other parties for marketing, advertising, or other uses.</p>"
+    },
+    {
+      "title": "Third Party Links",
+      "text": "<p>Occasionally, at our discretion, we may include or offer third party products or services on our website.
+        These third party sites have separate and independent privacy policies. We therefore have no responsibility
+        or liability for the content and activities of these linked sites. </p>
+      <p>Nonetheless, we seek to protect the integrity of our site and welcome any feedback about these sites.</p>"
+    },
+    {
+      "title": "California Online Privacy Protection Act Compliance",
+      "text": "<p>Because we value your privacy we have taken the necessary precautions to be in compliance with the
+        California Online Privacy Protection Act. We therefore will not distribute your personal information to
+        outside parties without your consent. </p>
+      <p>As part of the California Online Privacy Protection Act, all users of our site may make any changes to
+        their information at anytime by logging into their account and going to 'Edit User Profile'.</p>"
+    },
+    {
+      "title": "Children’s Online Privacy Protection Act Compliance",
+      "text": "<p>We are in compliance with the requirements of COPPA (Childrens Online Privacy Protection Act), and we do
+        not collect any information from anyone under 13 years of age. Our website, products and services are all
+        directed to people who are at least 13 years old or older.</p>"
+    },
+    {
+      "title": "Online Privacy Policy Only",
+      "text": "<p>This online Privacy Policy applies only to information collected through our website and not to any
+      information collected offline.</p>"
+    },
+    {
+      "title": "Terms of Use",
+      "text": "<p>Please also read our Terms of Use, which explains proper use of our website at <a href=\"http://www.anker.com\" target=\"_bank\">www.anker.com</a></p>"
+    },
+    {
+      "title": "Your Consent",
+      "text": "<p>By using our site, you consent to our website Privacy Policy.</p>"
+    },
+    {
+      "title": "Changes to Our Privacy Policy",
+      "text": "<p>If we decide to change our Privacy Policy, we will update the Privacy Policy modification date below.</p>
+      <p>Last modified: 9/24/2015</p>"
+    }
+  ],
+  "support_contact_us": "Contact Us",
+  "support_contact_us_desc": "If you have any questions about our Privacy Policy, please contact us at <a href=\"Mailto:support@anker.com\">support@anker.com</a>",
+  "terms_title": "Anker | Terms of Use",
+  "terms_sub_title": "Terms of Use",
+  "terms_contents": [
+    {
+      "title": "Introduction",
+      "text": "<p>These Terms of Use govern your use of this website. By using this website, you accept these Terms of Use in full. If you disagree with these Terms of Use or any part of these Terms of Use, you must not use this website. </p>
+      <p>This website uses cookies. By using this website and agreeing to these Terms of Use, you consent to anker.com's use of cookies in accordance with the terms of anker.com's Privacy Policy.</p>"
+    },
+    {
+      "title": "License to Use Website",
+      "text": "<p>Unless otherwise stated, anker.com and / or its licensors own the intellectual property rights in the website and material on the website. Subject to the license below, all these intellectual property rights are reserved.</p>
+      <p>You may view, download (for caching purposes only), and print pages, user manuals, or other product information from the website for your own personal use, subject to the restrictions set out below and elsewhere in these Terms of Use.</p>
+      <h4>You must not:</h4>
+      <p>● Republish material from this website (including republication on another website), sell, rent or sub-license material from the website</p>
+      <p>● Show any material from the website in public</p>
+      <p>● Reproduce, duplicate, copy or otherwise exploit material on this website for a commercial purpose</p>
+      <p>● Edit or otherwise modify any material on the website</p>
+      <p>● Redistribute material from this website except for content specifically and expressly made available for redistribution</p>"
+    },
+    {
+      "title": "Acceptable Use",
+      "text": "<p>You must not use this website in any way that causes, or may cause, damage to the website or impairment of the availability or accessibility of the website, or in any way which is unlawful, illegal, fraudulent or harmful, or in connection with any unlawful, illegal, fraudulent or harmful purpose or activity.</p>
+      <p>You must not use this website to copy, store, host, transmit, send, use, publish or distribute any material which consists of (or is linked to) any spyware, computer virus, Trojan horse, worm, keystroke logger, rootkit or other malicious computer software.</p>
+      <p>You must not conduct any systematic or automated data collection activities (including without limitation scraping, data mining, data extraction and data harvesting) on or in relation to this website without anker.com's express written consent.</p>
+      <p>You must not use this website to transmit or send unsolicited commercial communications.</p>
+      <p>You must not use this website for any purposes related to marketing without anker.com's express written consent.</p>"
+    },
+    {
+      "title": "User Content",
+      "text": "<p>In these Terms of Use, \"your user content\" means material (including without limitation text, images, audio material, video material and audio-visual material) that you submit to this website, for whatever purpose.</p>
+      <p>You grant to anker.com a worldwide, irrevocable, non-exclusive, royalty-free license to use, reproduce, adapt, publish, translate and distribute your user content in any existing or future media. You also grant to anker.com the right to sub-license these rights, and the right to bring an action for infringement of these rights. </p>
+      <p>Your user content must not be illegal or unlawful, must not infringe any third party's legal rights, and must not be capable of giving rise to legal action whether against you or anker.com or a third party (in each case under any applicable law).</p>
+      <p>You must not submit any user content to the website that is or has ever been the subject of any threatened or actual legal proceedings or other similar complaint. </p>
+      <p>anker.com reserves the right to edit or remove any material submitted to this website, or stored on anker.com's servers, or hosted or published upon this website.</p>
+      <p>Notwithstanding anker.com's rights under these Terms of Use in relation to user content, anker.com does not undertake to monitor the submission of such content to, or the publication of such content on, this website.</p>"
+    },
+    {
+      "title": "No Warranties",
+      "text": "<p>This website is provided \"as is\" without any representations or warranties, express or implied. anker.com makes no representations or warranties in relation to this website or the information and materials provided on this website. </p>
+      <p>Without prejudice to the generality of the foregoing paragraph, anker.com does not warrant that:</p>
+      <p>● This website will be constantly available, or available at all; or </p>
+      <p>● The information on this website is complete, true, accurate or non-misleading. </p>
+      <p>Nothing on this website constitutes, or is meant to constitute, advice of any kind. If you require advice in relation to any legal, financial or medical matter you should consult an appropriate professional.</p>"
+    },
+    {
+      "title": "Limitations of Liability",
+      "text": "<p>anker.com will not be liable to you (whether under the law of contact, the law of torts or otherwise) in relation to the contents of, or use of, or otherwise in connection with, this website: </p>
+      <p>● To the extent that the website is provided free-of-charge, for any direct loss</p>
+      <p>● For any indirect, special or consequential loss</p>
+      <p>● For any business losses, loss of revenue, income, profits or anticipated savings, loss of contracts or business relationships, loss of reputation or goodwill, or loss or corruption of information or data.</p>
+      <p>These limitations of liability apply even if anker.com has been expressly advised of the potential loss.</p>"
+    },
+    {
+      "title": "Exceptions",
+      "text": "<p>Nothing in this website disclaimer will exclude or limit any warranty implied by law that it would be unlawful to exclude or limit, and nothing in this website disclaimer will exclude or limit anker.com's liability in respect of any:</p>
+      <p>● Death or personal injury caused by anker.com's negligence</p>
+      <p>● Fraud or fraudulent misrepresentation on the part of anker.com</p>
+      <p>● Matter which it would be illegal or unlawful for anker.com to exclude or limit, or to attempt or purport to exclude or limit, its liability.</p>"
+    },
+    {
+      "title": "Reasonableness",
+      "text": "<p>By using this website, you agree that the exclusions and limitations of liability set out in this website disclaimer are reasonable. </p>
+      <p>If you do not think they are reasonable, you must not use this website.</p>"
+    },
+    {
+      "title": "Other Parties",
+      "text": "<p>You accept that, as a limited liability entity, anker.com has an interest in limiting the personal liability of its officers and employees. You agree that you will not bring any claim personally against anker.com's officers or employees in respect of any losses you suffer in connection with the website.</p>
+      <p>Without prejudice to the foregoing paragraph, you agree that the limitations of warranties and liability set out in this website disclaimer will protect anker.com's officers, employees, agents, subsidiaries, successors, assigns and sub-contractors as well as anker.com</p>"
+    },
+    {
+      "title": "Unenforceable Provisions",
+      "text": "<p>If any provision of this website disclaimer is, or is found to be, unenforceable under applicable law, that will not affect the enforceability of the other provisions of this website disclaimer.</p>"
+    },
+    {
+      "title": "Indemnity",
+      "text": "<p>You hereby indemnify anker.com and undertake to keep anker.com indemnified against any losses, damages, costs, liabilities and expenses (including without limitation legal expenses and any amounts paid by anker.com to a third party in settlement of a claim or dispute on the advice of anker.com's legal advisers) incurred or suffered by anker.com arising out of any breach by you of any provision of these Terms of Use, or arising out of any claim that you have breached any provision of these Terms of Use.</p>"
+    },
+    {
+      "title": "Breaches",
+      "text": "<p>Without prejudice to anker.com's other rights under these Terms of Use, if you breach these Terms of Use in any way, anker.com may take such action as anker.com deems appropriate to deal with the breach, including suspending your access to the website, prohibiting you from accessing the website, blocking computers using your IP address from accessing the website, contacting your internet service provider to request that they block your access to the website and/or bringing court proceedings against you.</p>"
+    },
+    {
+      "title": "Assignment",
+      "text": "<p>anker.com may transfer, sub-contract or otherwise deal with anker.com's rights and/or obligations under these Terms of Use without notifying you or obtaining your consent. You may not transfer, sub-contract or otherwise deal with your rights and/or obligations under these Terms of Use.</p>"
+    },
+    {
+      "title": "Severability",
+      "text": "<p>If a provision of these Terms of Use is determined by any court or other competent authority to be unlawful and/or unenforceable, the other provisions will continue in effect. If any unlawful and/or unenforceable provision would be lawful or enforceable if part of it were deleted, that part will be deemed to be deleted, and the rest of the provision will continue in effect.</p>"
+    },
+    {
+      "title": "Entire Agreement",
+      "text": "<p>These Terms of Use, together with anker.com's Privacy Policy, constitute the entire agreement between you and anker.com in relation to your use of this website, and supersede all previous agreements in respect of your use of this website.</p>"
+    },
+    {
+      "title": "Law and Jurisdiction",
+      "text": "<p>These Terms of Use will be governed by and construed in accordance with US law, and any disputes relating to these Terms of Use will be subject to the exclusive jurisdiction of the courts of California.</p>"
+    },
+    {
+      "title": "Changes to Our Terms of Use",
+      "text": "<p>If we decide to change our Terms of Use, we will update the Terms of Use modification date below.</p>
+      <p>Last Modified: 9/5/2013</p>"
+    }
+  ],
+  "warranty_title": "Anker | Warranty",
+  "warranty_sub_title": "Warranty",
+  "warranty_contents": [
+    {
+      "title": "30-Day Money-Back Guarantee for Any Reason",
+      "text": "<p>You may return your undamaged product and packaging within 30 days of purchase to receive a FULL REFUND for any reason. If the reason for return isn’t quality-related, the customer must pay the return shipping costs.</p>"
+    },
+    {
+      "title": "18-Month Warranty for Quality-Related Issues",
+      "text": "<div>
+        <h5>● Requests within country of purchase</h5>
+        <p>We will take care of all quality-related issues with a REPLACEMENT or FULL REFUND including any return shipping costs. Please note: Any provided shipping labels must be used within 20 days of purchase.</p>
+      </div>
+      <div>
+        <h5>● Requests from outside country of purchase</h5>
+        <p>We will take care of all quality-related issues with a FULL REFUND or REPLACEMENT. International shipping costs must be covered by the customer. If the item cannot be returned then we will offer a 50% REFUND.</p>
+      </div>
+      <div>
+          <h5>● Requests for orders shipped internationally</h5>
+          <p>We will take care of all quality-related issues with a FULL REFUND including any return shipping costs. This includes purchases shipped overseas from the USA via Amazon or eBay.</p>
+      </div>"
+    },
+    {
+      "title": "For purchases made through other retailers:",
+      "text": "<p>Other retailers’ after-sales support policies will vary. Please contact the retailer directly for specific guidance on their warranty process.</p>
+      <p>Unauthorized reselling of Anker products is strictly prohibited.</p>"
+    }
+  ],
+  "warranty_faqs": "FAQs:",
+  "warranty_faqs_list": [
+    {
+      "title": "1. What isn’t covered by the warranty?",
+      "text": "<p>● Purchases from unauthorized resellers</p>
+      <p>● Improperly operated devices</p>
+      <p>● Lost or stolen products</p>
+      <p>● Purchases made over 18 months ago (unless otherwise stated)</p>
+      <p>● Non quality-related issues (after 30 days of purchase)</p>
+      <p>● Free products</p>"
+    },
+    {
+      "title": "2. When does the warranty begin?",
+      "text": "<p>It begins the day you place your order.</p>"
+    },
+    {
+      "title": "3. How do I claim the warranty?",
+      "text": "<p>Before submitting a warranty claim, please refer to the specific FAQs for your product and attempt all troubleshooting suggestions.</p>
+      <p>If you believe the item is defective and under warranty, please submit a Return or Exchange request on the product’s support page, or contact us at  <a href='Mailto:support@anker.com'>support@anker.com</a></p>"
+    },
+    {
+      "title": "4. What is a valid proof of purchase?",
+      "text": "<p>● An Amazon order number or eBay username for a purchase made through AnkerDirect</p>
+      <p>● A dated sales receipt from an authorized Anker Reseller that shows a description of the product along with its price</p>"
+    },
+    {
+      "title": "5. What if I don’t have any proof of purchase?",
+      "text": "<p>● If you made your purchase through AnkerDirect, we may be able to locate your order using your email address, name or shipping address.</p>
+      <p>● If you made your purchase through an authorized Anker Reseller, you may contact the Reseller to see if they can provide a copy of your receipt.</p>
+      <p>● If the product was a gift, you may ask the giver to provide you with a copy of the receipt or claim the warranty on your behalf.</p>"
+    },
+    {
+      "title": "6. Will the warranty be renewed if my product is replaced?",
+      "text": "<p>The warranty continues from the date of your original purchase. It won’t be renewed after a replacement has been provided.</p>"
+    },
+    {
+      "title": "7. Who are authorized Anker Retailers and Resellers?",
+      "text": "<p>Our major authorized Retailers and Resellers are Newegg, Staples, Walmart.com and Amazon.com LLC. For more information, please contact us at  <a href='Mailto:support@anker.com'>support@anker.com</a></p>"
+    }
+  ],
+  "faqs_title": "Anker | FAQs",
+  "pet_title": "Anker | PET Screen Protectors",
+  "pet_main_title": "PET Screen Protectors",
+  "glass_title": "Anker | Tempered Glass Screen Protectors",
+  "glass_main_title": "Tempered Glass Screen Protectors",
+  "pet_glass_select_yours": "Select yours:",
+  "pet_glass_type_phone": "Phone",
+  "pet_glass_type_tablet": "Tablet"
+}

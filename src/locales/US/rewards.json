@@ -1,0 +1,13 @@
+{
+  "rewards_title": "Anker | My Rewards",
+  "rewards_new_reward": "New Reward",
+  "rewards_discount_code": "Discount code",
+  "rewards_apply_code": "APPLY CODE",
+  "rewards_my_rewards": "My Rewards",
+  "status_colon": "Status: %s",
+  "name_colon": "Name: %s",
+  "note_colon": "Note: %s",
+  "rewards_date_format": "Date: %s ~ %s",
+  "fill_promo_code": "Please enter a promo code.",
+  "rewards_promo_code_added": "Promo code added."
+}

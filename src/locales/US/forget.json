@@ -1,0 +1,8 @@
+{
+  "forget_title": "Anker | Retrieve Password",
+  "forget_tips_title": "Retrieve Password",
+  "forget_tips_desc": "We’ll send you a link so you can reset your password.",
+  "forget_placeholder_email": "Email address",
+  "forget_cancel_link": "< Cancel",
+  "forget_sent_reset_email_tip": "We’ve sent you a link to reset your password."
+}

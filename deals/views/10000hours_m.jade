@@ -1,0 +1,185 @@
+doctype html
+html
+  //- include ./includes/head.jade
+  head
+    title #{title}
+    meta(name="viewport", content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no")
+    meta(name="keywords", content="#{keywords}")
+    link(href="/deals/css/global.css", rel="stylesheet")
+    link(href="/deals/css/10000hours_m.css", rel="stylesheet")
+    if test
+      script.
+        alert(window.screen.width +':'+ window.innerWidth)
+    script.
+      if(Math.min(window.screen.width, window.innerWidth) > 768){
+      location.href = location.href.replace('/m', '');
+      }
+   if country == 'jp'
+      style.
+        @font-face {font-family: 'Noto Sans Japanese'; src: url(//fonts.gstatic.com/ea/notosansjapanese/v3/NotoSansJP-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosansjapanese/v3/NotoSansJP-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosansjapanese/v3/NotoSansJP-Light.otf) format('opentype')}
+  body
+    div(class="#{country}").TenThousandHours
+      header.header
+        a.logo(href="/")
+          img(src='/deals/images/logo.png' alt="Anker")
+        if country != 'us'
+          p.brand America’s Leading USB Charging Brand
+        div.country#j-country
+          p.list
+            each item in countrys
+              - var isActive = item == country;
+              a(href="#{isActive ? '#' : `?country=${item}`}" class="#{isActive ? 'active' : ''}") #{item.toLocaleUpperCase()}
+
+      //- nav.navigator#j-nav
+
+      div.m-nav
+        | SEE PRODUCTS
+        i.iconfont &#xe60f;
+
+      section.section.sec1#sec1
+        div.wrap.text
+          p.slogan.zFadeInDown !{data.sec1.slogan}
+          h2.main.zFadeInDown !{data.sec1.main_title}
+          p.sub.zFadeIn !{data.sec1.sub_title}
+
+      section.section.sec2#sec2
+        div.wrap
+          h2 !{data.sec2.title}
+          p !{ data.sec2.desc}
+          div(data-scrollspy="active").sec2AnimateWrap.zScrollSpy
+            span.sec2AnimateText
+              each item,i in data.sec2.list
+                span !{item}
+            //- div.sec2Animate
+            //-    each item,i in data.sec2.list
+            //-     span(id="#{'img' + (i+1)}")
+            //- span.sec2AnimateIcon
+            //-   each item,i in data.sec2.list
+            //-     span #{i+1}
+
+      section.section.sec3#sec3
+        div.wrap
+          h2 !{data.sec3.title}
+          p.bc !{data.sec3.desc}
+          p(id="timeLine" data-scrollspy="zFadeInDown").zScrollSpy
+            each item,i in data.sec3.list
+              span !{item.replace('<br>', ' ')}
+
+      section.section.sec4#sec4
+        div.wrap
+          div(data-scrollspy="zFadeInDown2").zScrollSpy
+            h2 !{data.sec4.title}
+            p #{data.sec4.desc}
+
+      section.section.sec5#sec5
+        div.wrap
+          div(data-scrollspy="zFadeInDown3").zScrollSpy
+            h2 !{data.sec5.title}
+            p !{data.sec5.desc}
+            div.pt20
+              each item,i in data.sec5.list
+                div.techItem
+                  i
+                  b #{item.name}
+                  //- p !{item.desc}
+            span(data-v="Faster").j-ga.sec5Btn.active #{data.sec5.faster}
+            span(data-v="Safer").j-ga.sec5Btn #{data.sec5.safer}
+        div.wrap.hide
+          h2 !{data.sec5.title}
+          div
+            p
+              if data.sec5.sub_img
+                img(src="#{data.sec5.sub_img}")
+              | !{data.sec5.sub_desc}
+          div.protectDes
+            each item,i in data.sec5.sub_list
+              span #{item}
+          span(data-v="Faster").j-ga.sec5Btn #{data.sec5.faster}
+          span(data-v="Safer").j-ga.sec5Btn.active #{data.sec5.safer}
+
+      section.section.sec6#sec6
+        div.wrap
+          h2 !{data.sec6.title}
+          p.bc !{data.sec6.desc}
+          ul
+            each item,i in data.sec6.list
+              - var info = item.split('-')
+              li
+                i
+                p.title #{info.shift()}
+                p #{info.length ? info.join('-') : item}
+
+      section.section.sec7#sec7
+        div.wrap
+          h2 !{data.sec7.title}
+          p.bc !{data.sec7.desc}
+          p.tac
+            img(src='/deals/images/10000hours/sec7/centif.png' ).mt50
+
+      section.section.sec8#sec8
+        div.wrap
+          h2 !{data.sec8.title}
+          p.bc !{data.sec8.desc}
+
+      section.section.sec9#sec9
+        div.wrap
+          h2 !{data.sec9.title}
+          p !{data.sec9.desc}
+          div.slider
+            each item,i in data.sec9.list
+              - var comment = `"${item.comment}"`;var user = `-${item.user}`;
+              div(class="#{i == 0 ? 'active' : ''}").sliderItem
+                p !{comment}
+                span #{user}
+
+      section.section.sec10#sec10
+        div.wrap
+          p !{data.sec10.desc}
+
+      section.section.sec11.products#sec11
+        each series,i in products.series
+          div.series-box
+            div.wrap
+              div.series
+                h2
+                  span !{series.title}
+                  p !{series.desc}
+                  case series.title
+                    when 'PowerCore+'
+                      img(src="/deals/images/10000hours/powercore.png")
+                    when 'PowerCore'
+                      img(src="/deals/images/10000hours/powercore.png")
+                    when 'PowerPort'
+                      img(src="/deals/images/10000hours/powerport.png")
+                    when 'PowerDrive'
+                      img(src="/deals/images/10000hours/powerdrive.png")
+                    when 'PowerLine'
+                      img(src="/deals/images/10000hours/powerline.png")
+                ul
+                  - var keys = country != 'us' ? '' : JSON.stringify({key: affiliate.key, tag: affiliate.val});
+                  - var specLink = country == 'us' && ['PowerCore+', 'PowerCore'].indexOf(series.title) >= 0 ? 'j-spec' : '';
+                  each item,i in series.list
+                    - var cache = caches[item.sku] || {};
+                    //- B012SJ4IDK 在卖, fantasia的API状态缺提示没有销售
+                    - item.price = cache.price || item.price;
+                    - var btn = item.btn ? item.btn : (item.price ? products.learn_more : products.coming_soon);
+                    - var btn_class = item.btn ? '' : (item.price ? 'active' : 'disable');
+                    li
+                      a(class="#{specLink}" target="_blank" data-keys="#{keys}" href="#{item.url ? (affiliate ? affiliate.format(affiliate.key, affiliate.val, item.url) : item.url) : ''}")
+                        img(src="/deals/images/10000hours/prod/#{item.img}")
+                        p.pName !{item.name}
+                        p.tMain
+                          span #{!item.price ? '' : (products.currency +' '+ item.price) }
+                          i(class="#{'btn ' + btn_class}") #{btn}
+                        if item.desc
+                          p.desc !{item.desc}
+
+      //- div#imgLoaderContainer.hide
+
+    footer
+      script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+      script.
+        window.jQuery || document.write('<script src="//cdn.staticfile.org/jquery/2.1.4/jquery.min.js"><\/script>');
+      script(src="/deals/javascript/10000hours.js?1.js")
+    include ./includes/analytics.jade
+      include ./includes/popup.jade

@@ -1,0 +1,99 @@
+<html>  body
+    .Footer
+      dialog({...this.state.dialogoption}='')
+        .module-container
+          .table
+            .links.cell
+              .(class='{"linklist', +='', (this.state.links[1]='', ?='', :='')
+                h3(onclick='{this.linkToggle.bind(this,', 1)}='')
+                  | About
+                  i.iconfont 
+                ul
+                  li
+                    a(href='/about', onclick='{Link.handleClick}') Our Company
+                  | {/*
+                  li
+                    a(href='/press', onclick='{Link.handleClick}') Press Center
+                  | */}
+                  li
+                    a(href='/contact', onclick='{Link.handleClick}') Contact Anker
+                  li
+                    a(href='/business', onclick='{Link.handleClick}') Wholesale
+                  li
+                    a(href='/poweriq', onclick='{Link.handleClick}') PowerIQ™
+              .(class='{"linklist', +='', (this.state.links[0]='', ?='', :='')
+                h3(onclick='{this.linkToggle.bind(this,', 0)}='')
+                  | Support
+                  i.iconfont 
+                ul
+                  li
+                    a(href='/support/download', onclick='{Link.handleClick}') Drivers & Downloads
+                  li
+                    a(href='/support/refund-exchange', onclick='{Link.handleClick}') Refund & Exchange
+                  li
+                    a(href='/support/privacy-policy', onclick='{Link.handleClick}') Privacy Policy
+                  li
+                    a(href='/support/warranty', onclick='{Link.handleClick}') Warranty
+                  li
+                    a(href='/support/terms', onclick='{Link.handleClick}') Terms of Use
+                  | {/*
+                  li
+                    a(href='/support/faq', onclick='{Link.handleClick}') FAQs
+                  | */}
+            .cell
+              .(class='{"subscribe', +='', (this.state.email_lock='', ?='', :='')
+                form(onsubmit='{this.state.email_lock', ?='', :='', this.subscribe.bind(this)}='')
+                  h3 Subscribe
+                  p Be the first to know about our latest products.
+                  .input
+                    input(type='text', placeholder='Enter your email address', value='{this.state.email}', onchange='{this.state.email_lock', ?='', :='', this.emailchange.bind(this)}='')
+                  .submit
+                    | {this.state.email_lock ?
+                    a(onclick='{this.editEmail.bind(this)}') EDIT
+                    | :
+                    a(onclick='{this.subscribe.bind(this)}') SUBMIT
+                    | }
+              .follow
+                a(target='_blank', href='http://www.facebook.com/Anker.fans')
+                  i.iconfont 
+                a(target='_blank', href='https://twitter.com/Ankerofficial')
+                  i.iconfont 
+                a(target='_blank', href='http://instagram.com/anker_official?ref=badge')
+                  i.iconfont 
+                a(target='_blank', href='https://www.linkedin.com/company/ianker')
+                  i.iconfont 
+                a(target='_blank', href='http://www.youtube.com/user/AnkerOceanwing')
+                  i.iconfont 
+                a(target='_blank', href='https://plus.google.com/114663344536204280808')
+                  i.iconfont.google 
+            .contact.cell
+              .tels
+                h4 Call us
+                div
+                  p
+                    a(href='tel:+1 (800) 988 7973') +1 (800) 988 7973 (US)
+                  p Mon-Fri 9AM-5PM (PST)
+                div
+                  p
+                    a(href='tel:+44 (0) 1604 936 200') +44 (0) 1604 936 200 (UK)
+                  p Mon-Fri 6AM - 11AM (GMT)
+              .email
+                h4 Email
+                p
+                  a(href='mailto:support@anker.com') Support@anker.com
+          .clearfix.sub
+            p.copyright Copyright © 2016 Anker Technology Co., Ltd.
+            .country
+              | {this.state.country_list.map((item, i) => {
+              | if(this.state.country === item.code) {
+              | return (
+              a(key='{i}', href='/country', onclick='{Link.handleClick}')
+                img(src='{require("../../public/country/country_"', +='', this.state.country.tolowercase()='')
+                span {item.name}
+              | )
+              | }
+              | })}
+        .(class='{"backTop', +='', (this.state.backtop='', ?='', :='', onclick='{this.backTop.bind(this)}')
+          i.iconfont 
+          span Back to the Top
+ </html>

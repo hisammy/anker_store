@@ -1,0 +1,189 @@
+/* React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
+
+@import '../variables.scss';
+
+.Contact {
+  margin: 0 auto;
+  line-height: 1.5;
+  a{
+    color: $blue;
+    /*text-decoration: none;*/
+  }
+  :focus{
+    outline: 0;
+  }
+  .fr{
+    float: right;
+  }
+  .title{
+    padding: 30px 0 0;
+    text-align:center;
+    h2 {
+      margin:0;
+      font-size: 2.4rem;
+      font-weight: 400;
+      color:$gray-dark;
+    }
+    p{
+      margin: 0;
+    }
+  }
+  .content{
+  	padding: 12px 10px 0;
+    h3, h4, h5{
+      margin:0;
+      padding: 10px 0 0 0;
+    }
+    h3{
+      margin-bottom:5px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $gray;
+    }
+    p{
+      margin:0 0 1em;
+      padding:0;
+    }
+    dl{}
+    dt{
+      font-weight:600;
+      font-size:1.1em;
+    }
+    dd{margin: 0 0 1em;}
+    .tels{
+      p{margin-bottom: 4px;}
+      span{
+        display:inline-block;
+        width:200px;
+        &:nth-child(1) {
+          /*font-weight:600;*/
+          width:140px;
+        }
+        &:nth-child(2) {
+          width:150px;
+        }
+      }
+    }
+    @media only screen and (max-width: 768px){
+      h3{text-align:center;}
+      .tels{
+        span{
+          &:nth-child(1) {
+            display:block;
+          }
+        }
+      }
+    }
+    /*form*/
+    .form{
+      label{
+        display:block;
+        /*padding: 0 0 5px;*/
+      }
+    }
+    /* input:focus, textarea:focus, select:focus {
+      transition: border-color 200ms;border-color:#4D90FE;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset,0 0 8px rgba(82, 168, 236, 0.6);
+    }
+    input, textarea, select{
+      border: 1px solid #777;
+      box-sizing: border-box;
+    }
+    input, select{
+      height: $input-height;
+    }
+    input, textarea{
+      padding: 0 10px;
+    } */
+    input[type="radio"], input[type="checkbox"] {
+      box-shadow:none;
+      vertical-align: -8px;
+      margin-right: 5px;
+    }
+    textarea{
+      box-sizing: border-box;
+      padding: .5rem .6rem;
+      min-height: 65px;
+      border:1px solid $gray-light;
+      border-radius:5px;
+    }
+    .placeholder{
+      color:$gray;
+    }
+    input[readonly]{
+      border-color:#ccc;
+      background:#f9f9f9;
+      box-shadow:none;
+    }
+    button{
+      border: none;
+      padding: 0 15px;
+    }
+    i{font-style: normal;}
+    .large{
+      width: 100%;
+    }
+    .submit{
+      margin-right: 10px;
+      background: $blue;
+      color: #FFF;
+    }
+    .reset{
+      background: $gray;
+      color:#FFF;
+    }
+    .captcha-box{
+      text-align: right;
+      p{
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+    .captcha{
+      display: inline-block;
+      width: 222px;
+    }
+    .captcha-img{
+      height: $normal-height;
+      max-width: 90px;
+      padding-right: 10px;
+      vertical-align: top;
+    }
+    @media only screen and (max-width: 768px){
+      .captcha-box{
+        text-align:left;
+        input{
+          float: left;
+        }
+        img{
+          float: right;
+          padding-right: 0;
+        }
+        p{
+          display: table;
+          width: 100%;
+        }
+        button{
+          display:table-cell;
+          width: 49%;
+          margin:0;
+          &:first-child{
+            margin-right: 2%;
+          }
+        }
+      }
+      .captcha{
+        width: 80%;
+      }
+    }
+    @media only screen and (max-width: 450px){
+      .captcha{
+        width: 72%;
+      }
+    }
+    @media only screen and (max-width: 320px){
+      .captcha{
+        width: 67%;
+      }
+    }
+  }
+}
